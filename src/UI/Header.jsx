@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 
 export const Header = () => {
     return (
-        <header className="w-full px-20 absolute">
+        <header className="w-full px-20 absolute z-10">
             <nav className="py-8 flex flex-row items-center justify-between border-b border-white/20">
                 <div>
                     <NavLink to={'/'} className={({ isActive }) => `w-[110px] text-sm py-1 rounded-full ${ isActive && 'border' } inline-block text-center align-middle`} >INICIO</NavLink>

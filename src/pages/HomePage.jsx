@@ -1,22 +1,25 @@
 import { CodeBracketIcon, LockClosedIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline"
-import { Button, Card } from "../components"
+import { Button, Card, NewsCarrousel } from "../components"
+import { WeInspireBeauty } from "../lottie"
 
 export const HomePage = () => {
     return (
         <section>
             <div className="relative flex items-center justify-center h-screen">
-                <div className="flex flex-col items-center gap-28">
+                {/* <div className="flex flex-col items-center gap-28">
                     <p className="text-center flex flex-col gap-2 text-5xl font-light">
                         <span>Producción de</span>
                         <span className="font-normal">cosméticos naturales</span>
                         <span>de primera calidad</span>
                     </p>
                     <Button text="MÁS INFORMACIÓN" />
-                </div>
+                </div> */}
+                <WeInspireBeauty />
+
             </div>
 
             <div className="container relative m-auto">
-                <div className="absolute w-16 h-16 bg-pink-600 rounded-full right-3 top-[100px]"></div>
+                <div className="absolute w-16 h-16 bg-pink-600 rounded-full right-3 top-[100px] animate-bounce"></div>
                 <div className="absolute w-16 h-16 bg-pink-600 rounded-full left-[42%] top-[42%]"></div>
                 <div className="flex flex-col items-center gap-14 py-20 backdrop-blur-lg">
                     <h2 className="text-5xl text-center font-light text-pink-600">
@@ -49,6 +52,9 @@ export const HomePage = () => {
                 <Card text="Confidencialidad" >
                     <LockClosedIcon className="h-40" />
                 </Card>
+            </div>
+            <div className="container m-auto h-[500px]">
+                <NewsCarrousel />
             </div>
         </section>
     )
