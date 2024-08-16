@@ -4,11 +4,18 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none;  /* Para Internet Explorer y Edge */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Para Chrome, Safari y Opera */
 }
 
 body {
     background-color: black;
     color: white;
+    font-family: 'Archivo Expanded', sans-serif;
 }
 
 .swiper {
