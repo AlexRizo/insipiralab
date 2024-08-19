@@ -1,17 +1,17 @@
 import { OpenLinkIcon } from "../icons"
 
-export const ProcessCard = () => {
+export const ProcessCard = ({children, img = '', text = '', url = '/#' }) => {
     return (
-        <div className="flex bg-[#E71567] relative py-2 w-">
-            <div></div>
-            <div className="absolute">
-                <img src="/img/home/proceso-empaque-1.png" alt="" width="55px" />
+        <div className="flex items-center bg-[#E71567] relative px-14 py-3 gap-10 h-52 rounded-3xl">
+            <div className="w-[55px]"></div>
+            <div className="absolute left-24 bottom-1 rotate-[25deg]">
+                <img src={ img } alt="" width="55px" />
             </div>
-            <div>
-                <span>Desarrollo de producto desde cero</span>
+            <div className="w-96 text-2xl text-center">
+                { children }
             </div>
-            <div>
-                <OpenLinkIcon />
+            <div className="h-full">
+                <OpenLinkIcon className="mt-5 cursor-pointer" />
             </div>
         </div>
     )
