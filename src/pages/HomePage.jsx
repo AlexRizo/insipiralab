@@ -90,7 +90,7 @@ export const HomePage = () => {
                 <EnvasesSlider />
             </div>
 
-            <div className="container m-auto h-[500px]">
+            <div className="container m-auto py-20 bg-white">
                 <NewsCarrousel />
             </div>
         </section>

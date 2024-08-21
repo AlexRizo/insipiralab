@@ -3,17 +3,19 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
-      transitionProperty: {
-        'width': 'width'
-      },
       animation: {
         alarge: "alarge 2s forwards",
-        alarge_reverse: "alarge 2s reverse forwards",
+        alarge_reverse: "alarge 1s reverse forwards",
+        button_fade: "button_fade 1s forwards",
       },
       keyframes: {
         alarge: {
-          "from": { width: "25%" },
-          "to": { width: "45%" },
+          "from": { width: "430px" },
+          "to": { width: "600px" },
+        },
+        button_fade: {
+          "from": { opacity: 0 },
+          "to": { opacity: 1 },
         },
       },
     },
