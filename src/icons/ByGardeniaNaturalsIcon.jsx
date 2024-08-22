@@ -8,7 +8,7 @@ export const ByGardeniaNaturalsIcon = (props) => {
         {...props}
       >
         <defs>
-          <clipPath id="a">
+          <clipPath id="z">
             <path
               data-name="Rect\xE1ngulo 12"
               fill="#fff"
@@ -17,7 +17,7 @@ export const ByGardeniaNaturalsIcon = (props) => {
           </clipPath>
         </defs>
         <g data-name="Grupo 136">
-          <g data-name="Grupo 4" clipPath="url(#a)" fill="#fff">
+          <g data-name="Grupo 4" clipPath="url(#z)" fill="#fff">
             <path
               data-name="Trazado 9"
               d="M0 .184h3.929C7.271.184 8.4 1.9 8.4 4.518c0 1.673-.542 3.326-2.326 3.668 2.145.558 2.754 2.468 2.754 4.355 0 2.768-.881 5.02-4.312 5.02H0zm4.2 7.487c2.078 0 2.642-1.244 2.642-3.153 0-2.1-.723-3.068-3.5-3.068H1.716v6.221zm-.022 8.668c2.371 0 2.98-1.18 2.98-3.8 0-2.1-.722-3.6-2.935-3.6H1.716v7.4z"

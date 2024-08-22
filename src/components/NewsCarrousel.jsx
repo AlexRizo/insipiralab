@@ -5,6 +5,7 @@ import { NewsSlide } from './NewsSlide';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { BubbleIcon, SliderArrowIcon } from '../icons';
 
 
 export const NewsCarrousel = () => {
@@ -15,7 +16,6 @@ export const NewsCarrousel = () => {
         const swiperInstance = swiperRef.current.swiper;
         const activeIndex = swiperInstance.activeIndex; // Índice del slide activo
         setSlideActive(activeIndex);
-        console.log(activeIndex);
     };
 
     const nextSlide = () => {
@@ -33,7 +33,7 @@ export const NewsCarrousel = () => {
         setTimeout(() => {
             swiperRef.current.swiper.slidePrev();
             handleSlideChange();
-        } , 500);
+        } , 300);
     };
     
     const isActive = (index = 0) => {
@@ -46,35 +46,100 @@ export const NewsCarrousel = () => {
     
     return (
         <>
-        <button className='text-black' onClick={ nextSlide }>Next</button>
-        <button className='text-black' onClick={ prevSlide }>Prev</button>
+            <div className=' absolute w-full px-40 top-1/2 left-0 flex justify-between'>
+                <button className='rotate-180' onClick={ prevSlide }>
+                    <SliderArrowIcon />
+                </button>
+                <button className='' onClick={ nextSlide }>
+                    <SliderArrowIcon />
+                </button>
+            </div>
             <Swiper
                 ref={ swiperRef }
-                spaceBetween={ 20 }
-                slidesPerView={ '3' }
+                spaceBetween={ 10 }
+                slidesPerView={ 3.5 }
                 slidesPerGroup={ 1 }
-                className="mySwiper !h-[600px]"
-                // onSlideChange={ handleSlideChange }
+                className="mySwiper !h-[600px] z-20"
                 allowTouchMove={ false }
                 modules={[ Navigation ]}
             >
                 <SwiperSlide className={`${ isActive(0) } rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent`}>
-                    <NewsSlide isActive={ slideActive === 0 } />
+                    <NewsSlide isActive={ slideActive === 0 } title='Embellecen a la mujer con cosméticos sustentables' author='El Informador' img='bg-[url("./img/home/news-slider-imagen-1.jpg")]' >
+                        <p className="text-lg leading-6">
+                            En medio de mucha<br/> necesidad<br/>
+                            económica y desesperación<br/> por 
+                            la pandemia del<br/> COVID-19,<br/>
+                            Denisse Reynoso comenzó<br/> a 
+                            elaborar pomadas y<br/> cremas en 
+                            el patio de la<br/> casa de sus 
+                            papás. Así<br/> nació Gardenia 
+                            Naturals.
+                        </p>
+                    </NewsSlide>
                 </SwiperSlide>
                 <SwiperSlide className={`${ isActive(1)} rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent`}>
-                    <NewsSlide isActive={ slideActive === 1 } />
+                    <NewsSlide isActive={ slideActive === 1 } title='Acné y pandemia la llevan al éxito' author='Mural' img='bg-[url("./img/home/news-slider-imagen-2.jpg")]' >
+                        <p className="text-lg leading-6">
+                            La necesidad de dinero<br/> 
+                            a la economía de su<br/> casa, combinada 
+                            con las<br/> ganas de tener una piel<br/> 
+                            bonita, hicieron que Denisse<br/> Reynoso 
+                            Barragán creara<br/> Laboratorio, 
+                            Formulación y<br/> Desarrollos Gardenia<br/> 
+                            Naturals, Cosmética Natural<br/> e Insumos.
+                        </p>
+
+                    </NewsSlide>
                 </SwiperSlide>
                 <SwiperSlide className={`${ isActive(2) } rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent`}>
-                    <NewsSlide isActive={ slideActive === 2 } />
+                    <NewsSlide isActive={ slideActive === 2 } title='Gana Premio Emprendedor Coparmex laboratorio de cosméticos' author='Mural' img='bg-[url("./img/home/news-slider-imagen-3.jpg")]' >
+                        <p className="text-lg leading-6">
+                            La llegada a la luna fue el tema<br/> 
+                            en la edición 18 del Premio<br/> 
+                            Emprendedor Coparmex,<br/> 
+                            debido a los sueños que<br/> 
+                            representan.
+                        </p>
+                    </NewsSlide>
                 </SwiperSlide>
-                <SwiperSlide className={`${isActive(3)} rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent`}>
-                    <NewsSlide isActive={ slideActive === 3 } />
+                <SwiperSlide className={`${ isActive(3) } rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent`}>
+                    <NewsSlide isActive={ slideActive === 3 } title='Embellecen a la mujer con cosméticos sustentables' author='El Informador' img='bg-[url("./img/home/news-slider-imagen-1.jpg")]' >
+                        <p className="text-lg leading-6">
+                            En medio de mucha<br/> necesidad<br/>
+                            económica y desesperación<br/> por 
+                            la pandemia del<br/> COVID-19,<br/>
+                            Denisse Reynoso comenzó<br/> a 
+                            elaborar pomadas y<br/> cremas en 
+                            el patio de la<br/> casa de sus 
+                            papás. Así<br/> nació Gardenia 
+                            Naturals.
+                        </p>
+                    </NewsSlide>
                 </SwiperSlide>
-                <SwiperSlide className={`${isActive(4)} rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent`}>
-                    <NewsSlide isActive={ slideActive === 4 } />
+                <SwiperSlide className={`${ isActive(4)} rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent`}>
+                    <NewsSlide isActive={ slideActive === 4 } title='Acné y pandemia la llevan al éxito' author='Mural' img='bg-[url("./img/home/news-slider-imagen-2.jpg")]' >
+                        <p className="text-lg leading-6">
+                            La necesidad de dinero<br/> 
+                            a la economía de su<br/> casa, combinada 
+                            con las<br/> ganas de tener una piel<br/> 
+                            bonita, hicieron que Denisse<br/> Reynoso 
+                            Barragán creara<br/> Laboratorio, 
+                            Formulación y<br/> Desarrollos Gardenia<br/> 
+                            Naturals, Cosmética Natural<br/> e Insumos.
+                        </p>
+
+                    </NewsSlide>
                 </SwiperSlide>
-                <SwiperSlide className={`${isActive(5)} rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent`}>
-                    <NewsSlide isActive={ slideActive === 5 } />
+                <SwiperSlide className={`${ isActive(5) } rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent`}>
+                    <NewsSlide isActive={ slideActive === 5 } title='Gana Premio Emprendedor Coparmex laboratorio de cosméticos' author='Mural' img='bg-[url("./img/home/news-slider-imagen-3.jpg")]' >
+                        <p className="text-lg leading-6">
+                            La llegada a la luna fue el tema<br/> 
+                            en la edición 18 del Premio<br/> 
+                            Emprendedor Coparmex,<br/> 
+                            debido a los sueños que<br/> 
+                            representan.
+                        </p>
+                    </NewsSlide>
                 </SwiperSlide>
                 <SwiperSlide className='opacity-0 !w-[600px]'></SwiperSlide>
                 <SwiperSlide className='opacity-0 !w-[600px]'></SwiperSlide>

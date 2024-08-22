@@ -1,7 +1,7 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EnvaseSlide } from './EnvaseSlide';
-import { SliderArrowIcon } from '../icons/SliderArrowIcon';
+import { SliderArrowIcon } from '../icons';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';

@@ -1,7 +1,7 @@
 import { CodeBracketIcon, LockClosedIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline"
 import { Button, Card, EnvasesSlider, NewsCarrousel } from "../components"
 import { WeInspireBeauty } from "../lottie"
-import { ByGardeniaNaturalsIcon } from "../icons"
+import { BubbleIcon, ByGardeniaNaturalsIcon } from "../icons"
 import { ProcessCard } from "../components/ProcessCard"
 
 export const HomePage = () => {
@@ -90,8 +90,12 @@ export const HomePage = () => {
                 <EnvasesSlider />
             </div>
 
-            <div className="container m-auto py-20 bg-white">
+            <div className="w-full px-64 m-auto pt-20 pb-56 bg-white relative overflow-hidden">
+                <BubbleIcon size="size-28" x="right-16" y="top-9" />
+                <BubbleIcon size="size-20" x="left-[29rem]" y="top-[9rem]" />
+                <h1 className="text-[#D80196] text-5xl font-thin text-center mb-36">Prensa y reconocimiento</h1>
                 <NewsCarrousel />
+                <BubbleIcon size="size-36" x="left-52" y="bottom-32" backdrop="backdrop-blur-md" />
             </div>
         </section>
     )
