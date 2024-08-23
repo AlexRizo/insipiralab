@@ -4,7 +4,7 @@ import { NavItem } from "../components"
 export const Header = () => {
     return (
         <header className="w-full px-20 absolute z-10">
-            <nav className="py-8 flex flex-row items-center justify-between border-b border-white/20">
+            <nav className="py-8 flex flex-row items-center justify-between">
                 <div>
                     <NavItem text="INICIO" path="/" />
                 </div>

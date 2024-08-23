@@ -5,3 +5,8 @@ export * from './ByGardeniaNaturalsIcon';
 export * from './SliderArrowIcon';
 export * from './BubbleIcon';
 export * from './InspiralabFooterIcon';
+export * from './InstagramIcon';
+export * from './FacebookIcon';
+export * from './TiktokIcon';
+export * from './YoutubeIcon';
+export * from './OpenLinkShortIcon';

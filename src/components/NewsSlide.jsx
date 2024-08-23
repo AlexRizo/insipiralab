@@ -11,7 +11,12 @@ export const NewsSlide = ({ isActive = false, title = '', author = '', img = '',
                 </div>
                 <div className='w-full'>
                     { children }
-                    <Button className={`ml-auto opacity-0 text-sm ${ isActive && 'animate-button_fade' } animation-delay-2000`} text="LEER MÁS" />
+                    <Button 
+                        className={`ml-auto opacity-0 text-[13px] ${ isActive && 'animate-button_fade' } animation-delay-2000 relative px-[4.5rem]`}
+                        text="LEER MÁS"
+                        button={ 0 }
+                        buttonClass='absolute right-4'
+                    />
                 </div>
             </div>
         </>
