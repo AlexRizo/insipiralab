@@ -15,6 +15,14 @@
         transition: width 1s ease;
         width: 430px;
     }
+
+    .order-list {
+        transition: background-color 0.5s;
+    }
+
+    .order-list-fade {
+        transition: display 0.5s step-end;
+    }
 }
 
 html {

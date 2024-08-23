@@ -10,3 +10,6 @@ export * from './FacebookIcon';
 export * from './TiktokIcon';
 export * from './YoutubeIcon';
 export * from './OpenLinkShortIcon';
+export * from './ArrowIcon';
+export * from './OpenIcon';
+export * from './OpenedIcon';
