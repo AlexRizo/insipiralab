@@ -17,11 +17,17 @@
     }
 
     .order-list {
-        transition: background-color 0.5s;
+        transition: background-color 0.6s ease,
+                    opacity 0.6s ease-in-out;
     }
 
-    .order-list-fade {
-        transition: display 0.5s step-end;
+    .display-transition {
+        animation: button-opened-rotate 0.5s ease-in-out forwards;
+        transition: opacity 2s;
+    }
+    
+    .animate-button {
+        animation: button-rotate 0.5s ease-in forwards;
     }
 }
 
@@ -58,6 +64,24 @@ body {
     align-items: center;
 }
 
-.mask-image {
+@keyframes button-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-45deg);
+    }
+    
+}
+
+@keyframes button-opened-rotate {
+    0% {
+        transform: rotate(70deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
     
 }
