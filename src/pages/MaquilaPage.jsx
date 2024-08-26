@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { MaquilaCard } from "../components/MaquilaCard"
 import { OrderList } from "../components/OrderList"
-import { ArrowIcon } from "../icons"
+import { ArrowIcon, TriangleIcon } from "../icons"
+import { ListContent, TimeLine } from "../components";
 
 export const MaquilaPage = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    
     return (
         <section className="bg-white">
             <div className="w-full h-screen bg-[url('./img/maquila/maquila-bg.jpg')] bg-center bg-no-repeat bg-cover flex items-center justify-center">
@@ -37,8 +41,26 @@ export const MaquilaPage = () => {
                 <MaquilaCard text="Innovaciones" img="bg-[url('./img/maquila/maquila-card-6.png')] !bg-[180px,0px] bg-center bg-[#CECECE]" />
             </div>
 
-            <div className="container m-auto">
-                <OrderList />
+            <div className="container m-auto pt-14 pb-20">
+                <h1 className="text-5xl text-[#E71567] text-center font-light mb-28">Servicios</h1>
+                <div className="flex justify-center gap-14">
+                    <OrderList setIndex={ setCurrentIndex } />
+                    <ListContent index={ currentIndex } />
+                </div>
+            </div>
+
+            <div className="w-full p-6 text-center bg-[#E71567] text-[#E0A5FF] text-5xl font-light">
+                <h1>Proceso de maquila</h1>
+            </div>
+
+            <div className="container m-auto pb-20 pt-10 flex items-center flex-col">
+                <h1 className="text-[#E71567] text-[28px] font-semibold flex items-center justify-center gap-2">
+                    <TriangleIcon />
+                    <span>
+                        Desarrollo de producto desde cero
+                    </span>
+                </h1>
+                <TimeLine />
             </div>
         </section>
     )

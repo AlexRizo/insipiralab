@@ -17,17 +17,21 @@
     }
 
     .order-list {
-        transition: background-color 0.6s ease,
-                    opacity 0.6s ease-in-out;
+        transition: background-color 0.4s ease,
+                    opacity 0.4s ease-in-out;
+    }
+
+    .list-content {
+        transition: opacity 0.4s ease-in-out;
     }
 
     .display-transition {
-        animation: button-opened-rotate 0.5s ease-in-out forwards;
+        animation: button-opened-rotate 0.7s ease-in-out forwards;
         transition: opacity 2s;
     }
     
     .animate-button {
-        animation: button-rotate 0.5s ease-in forwards;
+        animation: button-rotate 0.4s ease-in forwards;
     }
 }
 
