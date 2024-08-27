@@ -10,7 +10,7 @@ export const OpenLinkShortIcon = (props) => {
         <path
           d="M7.425 62.29l12.011-12.011-11.024-.01v-2.783H24.2v15.791h-2.78l-.01-11.024L9.4 64.264z"
           transform="translate(-7.425 -47.486)"
-          fill="#fff"
+          fill={ props.color }
         />
       </svg>
     )

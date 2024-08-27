@@ -16,10 +16,10 @@ export const Footer = () => {
                 </div>
                 <div className='flex justify-end w-1/3'>
                     <nav className='flex flex-col items-center gap-4'>
-                        <InstagramIcon />
-                        <FacebookIcon />
-                        <TiktokIcon />
-                        <YoutubeIcon />
+                        <InstagramIcon color="#fff" />
+                        <FacebookIcon color="#fff" />
+                        <TiktokIcon color="#fff" />
+                        <YoutubeIcon color="#fff" />
                     </nav>
                 </div>
             </footer>

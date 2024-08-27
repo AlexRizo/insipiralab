@@ -33,6 +33,10 @@
     .animate-button {
         animation: button-rotate 0.4s ease-in forwards;
     }
+
+    .animation-spin {
+        animation: spin 100s linear infinite;
+    }
 }
 
 html {
@@ -88,4 +92,14 @@ body {
         transform: rotate(0deg);
     }
     
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
