@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom"
 import { NavItem } from "../components"
+import { InspiralabHeaderIcon } from "../icons"
 
 export const Header = () => {
     return (
@@ -12,7 +12,7 @@ export const Header = () => {
                     <NavItem text="MAQUILA" path="/maquila" />
                 </div>
                 <div className="text-4xl">
-                    <h1>INSPIRA<span className="font-bold">LAB</span></h1>
+                    <InspiralabHeaderIcon />
                 </div>
                 <div>
                     <NavItem text="NOSOTROS" path="/nosotros" />

@@ -21,3 +21,4 @@ export * from './LegalIcon';
 export * from './ManufacturaIcon';
 export * from './SeleccionIcon';
 export * from './EnvaseIcon';
+export * from './InspiralabHeaderIcon';
