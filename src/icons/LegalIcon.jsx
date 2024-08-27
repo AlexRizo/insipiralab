@@ -9,7 +9,7 @@ export const LegalIcon = (props) => {
         {...props}
       >
         <defs>
-          <clipPath id="a">
+          <clipPath id="ac">
             <path
               data-name="Rect\xE1ngulo 56"
               fill="none"
@@ -21,7 +21,7 @@ export const LegalIcon = (props) => {
         </defs>
         <g
           data-name="Grupo 39"
-          clipPath="url(#a)"
+          clipPath="url(#ac)"
           fill="none"
           stroke="#e71667"
           strokeLinecap="round"

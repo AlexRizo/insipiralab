@@ -3,6 +3,7 @@ import { MaquilaCard } from "../components/MaquilaCard"
 import { OrderList } from "../components/OrderList"
 import { ArrowIcon, TriangleIcon } from "../icons"
 import { ListContent, TimeLine } from "../components";
+import { desarrolloData, envasesListosData } from "../data/data";
 
 export const MaquilaPage = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -60,7 +61,41 @@ export const MaquilaPage = () => {
                         Desarrollo de producto desde cero
                     </span>
                 </h1>
-                <TimeLine />
+
+                <div className="mt-36">
+                    <TimeLine data={ desarrolloData } />
+                </div>
+
+                <h1 className="text-[#E71567] text-[28px] font-semibold mt-36">
+                    <span>
+                        Desde 100 pzas.
+                    </span>
+                </h1>
+
+                <div className="my-16">
+                    <img src="./img/maquila/maquila-100-piezas.jpg" alt="" />
+                </div>
+
+                <h1 className="text-[#E71567] text-[28px] font-semibold flex items-start justify-center gap-2 text-center">
+                    <TriangleIcon className="mt-2" />
+                    <span>
+                        Cosméticos terminados listos para envasar<br /> en el envase que selecciones
+                    </span>
+                </h1>
+
+                <div className="mt-28">
+                    <TimeLine data={ envasesListosData } />
+                </div>
+
+                <h1 className="text-[#E71567] text-[28px] font-semibold mt-36">
+                    <span>
+                        Desde 100 pzas.
+                    </span>
+                </h1>
+
+                <div className="mt-16">
+                    <img src="./img/maquila/maquila-100-piezas-2.jpg" alt="" />
+                </div>
             </div>
         </section>
     )

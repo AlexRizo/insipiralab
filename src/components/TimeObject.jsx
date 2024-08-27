@@ -9,7 +9,7 @@ export const TimeObject = ({ children, index = '', text, isLast = false }) => {
                 <div hidden={ isLast } className="border-2 absolute border-[#E71567] w-[230px] left-0"></div>
             </div>
             <div className="mt-10 -rotate-90 w-[192px] h-[56px] flex items-center justify-center">
-                <p className="text-[#E71567] font-light text-xl w-[140px] flex justify-end">{ text }</p>
+                <p className="text-[#E71567] font-light text-xl w-[145px] flex justify-end">{ text }</p>
             </div>
         </div>
     )

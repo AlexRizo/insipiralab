@@ -20,3 +20,4 @@ export * from './IdeaIcon';
 export * from './LegalIcon';
 export * from './ManufacturaIcon';
 export * from './SeleccionIcon';
+export * from './EnvaseIcon';

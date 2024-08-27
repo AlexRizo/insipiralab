@@ -8,7 +8,7 @@ export const InspiralabFooterIcon = (props) => {
         {...props}
       >
         <defs>
-          <clipPath id="a">
+          <clipPath id="ab">
             <path
               data-name="Rect\xE1ngulo 49"
               fill="none"
@@ -26,7 +26,7 @@ export const InspiralabFooterIcon = (props) => {
                       <g data-name="Grupo 38">
                         <g
                           data-name="Grupo 37"
-                          clipPath="url(#a)"
+                          clipPath="url(#ab)"
                           transform="translate(-2062.599 -5985.186) translate(2062.599 5985.186)"
                         >
                           <path

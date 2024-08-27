@@ -9,7 +9,7 @@ export const IdeaIcon = (props) => {
         {...props}
       >
         <defs>
-          <clipPath id="a">
+          <clipPath id="aa">
             <path
               data-name="Rect\xE1ngulo 76"
               fill="none"
@@ -22,7 +22,7 @@ export const IdeaIcon = (props) => {
         <g data-name="Grupo 80">
           <g
             data-name="Grupo 79"
-            clipPath="url(#a)"
+            clipPath="url(#aa)"
             fill="none"
             stroke="#e71667"
             strokeLinecap="round"
