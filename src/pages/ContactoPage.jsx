@@ -16,8 +16,8 @@ export const ContactoPage = () => {
                 <div className='flex flex-col gap-10'>
                     <h1 className='text-[#F5F5F5] text-5xl'>Contáctanos</h1>
                     <div className='flex flex-col gap-5'>
-                        <Button text='WhatsApp' className='w-[468px] flex justify-center border-[#E71667] text-[#E71567] text-3xl' iconColor='#E71567' />
-                        <Button text='Correo electrónico' className='w-[468px] flex justify-center border-[#E71667] text-[#E71567] text-3xl' iconColor='#E71567' />
+                        <Button text='WhatsApp' className='!w-[448px] flex justify-center border-[#E71667] text-[#E71567] !text-3xl' button={0} iconColor='#E71567' />
+                        <Button text='Correo electrónico' className='!w-[448px] flex justify-center border-[#E71667] text-[#E71567] !text-3xl' button={0} iconColor='#E71567' />
                     </div>
                     <p className='inline-flex uppercase'>
                         <span className='mr-3 mt-1'><LocationIcon /></span>
@@ -32,7 +32,7 @@ export const ContactoPage = () => {
                         <span className='bg-[#E0A5FF] size-[63px] rounded-full flex items-center justify-center'><YoutubeIcon color="#E71567" /></span>
                     </div>
                 </div>
-                <div><WeInspireBeautyCircle className="animation-spin" /></div>
+                <div><WeInspireBeautyCircle className="animation-spin relative -top-32 left-5" /></div>
             </div>
         </section>
     )
