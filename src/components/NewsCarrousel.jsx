@@ -1,11 +1,11 @@
-import { act, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { NewsSlide } from './NewsSlide';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { BubbleIcon, SliderArrowIcon } from '../icons';
+import { SliderArrowIcon } from '../icons';
 
 
 export const NewsCarrousel = () => {
@@ -33,7 +33,7 @@ export const NewsCarrousel = () => {
         setTimeout(() => {
             swiperRef.current.swiper.slidePrev();
             handleSlideChange();
-        } , 300);
+        } , 500);
     };
     
     const isActive = (index = 0) => {
@@ -46,7 +46,7 @@ export const NewsCarrousel = () => {
     
     return (
         <>
-            <div className=' absolute w-full px-40 top-1/2 left-0 flex justify-between'>
+            <div className='absolute w-full px-40 top-1/2 left-0 flex justify-between'>
                 <button className='rotate-180' onClick={ prevSlide }>
                     <SliderArrowIcon />
                 </button>
@@ -64,8 +64,13 @@ export const NewsCarrousel = () => {
                 modules={[ Navigation ]}
             >
                 <SwiperSlide className={`${ isActive(0) } rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent`}>
-                    <NewsSlide isActive={ slideActive === 0 } title='Embellecen a la mujer con cosméticos sustentables' author='El Informador' img='bg-[url("./img/home/news-slider-imagen-1.jpg")]' >
-                        <p className="text-lg leading-6">
+                    <NewsSlide 
+                        isActive={ slideActive === 0 }
+                        title={ <>Embellecen a la mujer con<br /> cosméticos sustentables</> }
+                        author='El Informador'
+                        img='bg-[url("./img/home/news-slider-imagen-1.jpg")]'
+                    >
+                        <p className="3xl:text-lg text-base leading-6">
                             En medio de mucha<br/> necesidad<br/>
                             económica y desesperación<br/> por 
                             la pandemia del<br/> COVID-19,<br/>
@@ -78,8 +83,12 @@ export const NewsCarrousel = () => {
                     </NewsSlide>
                 </SwiperSlide>
                 <SwiperSlide className={`${ isActive(1)} rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent`}>
-                    <NewsSlide isActive={ slideActive === 1 } title='Acné y pandemia la llevan al éxito' author='Mural' img='bg-[url("./img/home/news-slider-imagen-2.jpg")]' >
-                        <p className="text-lg leading-6">
+                    <NewsSlide 
+                        isActive={ slideActive === 1 } 
+                        title={ <>Acné y pandemia<br/> la llevan al éxito</> }
+                        author='Mural' img='bg-[url("./img/home/news-slider-imagen-2.jpg")]'
+                    >
+                        <p className="3xl:text-lg text-base leading-6">
                             La necesidad de dinero<br/> 
                             a la economía de su<br/> casa, combinada 
                             con las<br/> ganas de tener una piel<br/> 
@@ -92,8 +101,13 @@ export const NewsCarrousel = () => {
                     </NewsSlide>
                 </SwiperSlide>
                 <SwiperSlide className={`${ isActive(2) } rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent`}>
-                    <NewsSlide isActive={ slideActive === 2 } title='Gana Premio Emprendedor Coparmex laboratorio de cosméticos' author='Mural' img='bg-[url("./img/home/news-slider-imagen-3.jpg")]' >
-                        <p className="text-lg leading-6">
+                    <NewsSlide
+                        isActive={ slideActive === 2 }
+                        title={ <>Gana Premio<br/> Emprendedor<br/> Coparmex laboratorio<br/> de cosméticos</> }
+                        author='Mural'
+                        img='bg-[url("./img/home/news-slider-imagen-3.jpg")]'
+                    >
+                        <p className="3xl:text-lg text-base leading-6">
                             La llegada a la luna fue el tema<br/> 
                             en la edición 18 del Premio<br/> 
                             Emprendedor Coparmex,<br/> 
@@ -103,8 +117,13 @@ export const NewsCarrousel = () => {
                     </NewsSlide>
                 </SwiperSlide>
                 <SwiperSlide className={`${ isActive(3) } rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent`}>
-                    <NewsSlide isActive={ slideActive === 3 } title='Embellecen a la mujer con cosméticos sustentables' author='El Informador' img='bg-[url("./img/home/news-slider-imagen-1.jpg")]' >
-                        <p className="text-lg leading-6">
+                    <NewsSlide 
+                        isActive={ slideActive === 3 }
+                        title={ <>Embellecen a la mujer con<br /> cosméticos sustentables</> }
+                        author='El Informador'
+                        img='bg-[url("./img/home/news-slider-imagen-1.jpg")]'
+                    >
+                        <p className="3xl:text-lg text-base leading-6">
                             En medio de mucha<br/> necesidad<br/>
                             económica y desesperación<br/> por 
                             la pandemia del<br/> COVID-19,<br/>
@@ -117,8 +136,12 @@ export const NewsCarrousel = () => {
                     </NewsSlide>
                 </SwiperSlide>
                 <SwiperSlide className={`${ isActive(4)} rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent`}>
-                    <NewsSlide isActive={ slideActive === 4 } title='Acné y pandemia la llevan al éxito' author='Mural' img='bg-[url("./img/home/news-slider-imagen-2.jpg")]' >
-                        <p className="text-lg leading-6">
+                    <NewsSlide 
+                        isActive={ slideActive === 4 } 
+                        title={ <>Acné y pandemia<br/> la llevan al éxito</> }
+                        author='Mural' img='bg-[url("./img/home/news-slider-imagen-2.jpg")]'
+                    >
+                        <p className="3xl:text-lg text-base leading-6">
                             La necesidad de dinero<br/> 
                             a la economía de su<br/> casa, combinada 
                             con las<br/> ganas de tener una piel<br/> 
@@ -131,8 +154,13 @@ export const NewsCarrousel = () => {
                     </NewsSlide>
                 </SwiperSlide>
                 <SwiperSlide className={`${ isActive(5) } rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent`}>
-                    <NewsSlide isActive={ slideActive === 5 } title='Gana Premio Emprendedor Coparmex laboratorio de cosméticos' author='Mural' img='bg-[url("./img/home/news-slider-imagen-3.jpg")]' >
-                        <p className="text-lg leading-6">
+                    <NewsSlide
+                        isActive={ slideActive === 5 }
+                        title={ <>Gana Premio<br/> Emprendedor<br/> Coparmex laboratorio<br/> de cosméticos</> }
+                        author='Mural'
+                        img='bg-[url("./img/home/news-slider-imagen-3.jpg")]'
+                    >
+                        <p className="3xl:text-lg text-base leading-6">
                             La llegada a la luna fue el tema<br/> 
                             en la edición 18 del Premio<br/> 
                             Emprendedor Coparmex,<br/> 

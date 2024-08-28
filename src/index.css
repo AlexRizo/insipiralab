@@ -7,13 +7,24 @@
     }
 
     .animation-init {
-        width: 600px !important;
+        width: 540px !important;
         transition: width 2s ease-in-out;
     }
 
     .animation-exit {
         transition: width 1s ease;
-        width: 430px;
+        width: 370px;
+    }
+
+    @media screen and (min-width: 1760px) {
+        .animation-init {
+            width: 600px !important;
+        }
+
+        .animation-exit {
+            width: 430px;
+        }
+        
     }
 
     .order-list {
@@ -35,7 +46,11 @@
     }
 
     .animation-spin {
-        animation: spin 100s linear infinite;
+        animation: spin 60s linear infinite;
+    }
+
+    .marquee-animation {
+        animation: marquee 20s linear infinite;
     }
 }
 
@@ -101,5 +116,15 @@ body {
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
     }
 }
