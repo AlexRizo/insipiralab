@@ -46,7 +46,7 @@ export const NewsCarrousel = () => {
     
     return (
         <>
-            <div className='absolute w-full px-40 top-1/2 left-0 flex justify-between'>
+            <div className='absolute 3xl:w-[1600px] w-[1490px] top-1/2 flex justify-between'>
                 <button className='rotate-180' onClick={ prevSlide }>
                     <SliderArrowIcon />
                 </button>
@@ -59,7 +59,7 @@ export const NewsCarrousel = () => {
                 spaceBetween={ 10 }
                 slidesPerView={ 3.5 }
                 slidesPerGroup={ 1 }
-                className="mySwiper !h-[600px] z-20"
+                className="mySwiper !h-[600px] 3xl:!w-[1410px] !w-[1280px] z-20"
                 allowTouchMove={ false }
                 modules={[ Navigation ]}
             >

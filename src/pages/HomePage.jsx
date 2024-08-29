@@ -109,7 +109,7 @@ export const HomePage = () => {
                 <EnvasesSlider />
             </div>
 
-            <div className="w-full 3xl:px-64 px-56 m-auto 3xl:pt-20 pt-16 3xl:pb-56 pb-48 bg-white relative overflow-hidden">
+            <div className="w-full m-auto 3xl:pt-20 pt-16 3xl:pb-56 pb-48 bg-white relative flex flex-col items-center justify-center overflow-hidden">
                 <BubbleIcon size="size-28" x="right-16" y="top-9" />
                 <BubbleIcon size="size-20" x="left-[29rem]" y="top-[9rem]" />
                 <h1 className="text-[#D80196] text-5xl font-thin text-center mb-36">Prensa y reconocimiento</h1>
