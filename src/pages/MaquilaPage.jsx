@@ -24,22 +24,44 @@ export const MaquilaPage = () => {
             </div>
 
             <div className="bg-[#E0A5FF] text-center font-light pt-10 pb-6">
-                <h1 className="text-[50px] text-[#E71567] leading-none mb-8">
+                <h1 className="3xl:text-[50px] text-5xl text-[#E71567] leading-none mb-8">
                     Redefinimos el proceso de maquila cosmética<br/>
                     en México, donde combinamos:
                 </h1>
-                <p className="text-[28px] text-black">
+                <p className="3xl:text-[28px] text-[26.5px] text-black">
                     Ciencia Avanzada + Envases Exclusivos + Disponibilidad Inmediata + Desde 100 Pzas.
                 </p>
             </div>
 
-            <div className="bg-[#F5F5F5] w-full h-[890px] flex justify-center items-center gap-5 relative">
-                <MaquilaCard text="Skin care" img="bg-[url('./img/maquila/maquila-card-1.jpg')] bg-center " />
-                <MaquilaCard text="Cuidado Capilar" img="bg-[url('./img/maquila/maquila-card-2.png')] !bg-[220px,0px] bg-center bg-[#FABADB]" />
-                <MaquilaCard text="Maquillaje" img="bg-[url('./img/maquila/maquila-card-3.png')] !bg-[210px,0px] bg-center bg-[#E0A5FF]" />
-                <MaquilaCard text="Protección Solar" img="bg-[url('./img/maquila/maquila-card-4.png')] !bg-[140px,0px] bg-center bg-[#BDE7FF]" />
-                <MaquilaCard text="Cuidado Corporal" img="bg-[url('./img/maquila/maquila-card-5.png')] !bg-[130px,0px] bg-center bg-[#B9DBAA]" />
-                <MaquilaCard text="Innovaciones" img="bg-[url('./img/maquila/maquila-card-6.png')] !bg-[180px,0px] bg-center bg-[#CECECE]" />
+            <div className="bg-[#F5F5F5] w-full 3xl:h-[890px] py-32 flex justify-center items-center gap-5 relative">
+                <MaquilaCard 
+                    text="Skin care"
+                    img="./img/maquila/maquila-card-1.jpg"/>
+                <MaquilaCard 
+                    text="Cuidado Capilar"
+                    bgColor=" bg-[#FABADB]"
+                    img="./img/maquila/maquila-card-2.png"
+                    classImage="3xl:-translate-y-32 3xl:-translate-x-3 -translate-y-20 -translate-x-7" />
+                <MaquilaCard 
+                    text="Maquillaje"
+                    bgColor="bg-[#E0A5FF]"
+                    img="./img/maquila/maquila-card-3.png"
+                    classImage="3xl:-translate-y-32 3xl:-translate-x-3 -translate-y-20 -translate-x-4 w-[180px]" />
+                <MaquilaCard 
+                    text="Protección Solar"
+                    bgColor="bg-[#BDE7FF]"
+                    img="./img/maquila/maquila-card-4.png"
+                    classImage="3xl:-translate-y-32 3xl:translate-x-6 -translate-y-20 translate-x-2" />
+                <MaquilaCard 
+                    text="Cuidado Corporal"
+                    bgColor="bg-[#B9DBAA]"
+                    img="./img/maquila/maquila-card-5.png"
+                    classImage="3xl:-translate-y-28 3xl:translate-x-6 -translate-y-16 translate-x-3" />
+                <MaquilaCard 
+                    text="Innovaciones"
+                    bgColor="bg-[#CECECE]"
+                    img="./img/maquila/maquila-card-6.png"
+                    classImage="3xl:-translate-y-44 3xl:-translate-x-2 3xl:w-[190px] w-[170px] opacity-80 -translate-y-36 -translate-x-4" />
             </div>
 
             <div className="container m-auto pt-14 pb-20">

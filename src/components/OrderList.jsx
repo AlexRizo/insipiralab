@@ -32,15 +32,15 @@ export const OrderList = ({ setIndex }) => {
     }
     
     return (
-        <ul className="text-black font-light text-[25px] w-max">
+        <ul className="text-black font-light 3xl:text-2xl text-[23.5px] w-max leading-8">
             {
                 items.map(item => (
                     <li 
                         key={ item.id }
-                        className={`w-[617px] flex justify-between items-center relative gap-5 border-b h-32 border-[#707070] ${ item.id === localIndex && 'bg-[#E71567] order-list rounded-[2rem] border-transparent font-bold' } p-8 cursor-pointer ${ item.id === localIndex && animation ? animation : '' }`}
+                        className={`w-[600px] flex justify-between items-center relative gap-5 border-b h-28 border-[#707070] ${ item.id === localIndex && 'bg-[#E71567] order-list rounded-[2rem] border-transparent font-bold' } p-10 cursor-pointer ${ item.id === localIndex && animation ? animation : '' }`}
                         onClick={ () => handleNewIndex(item) }
                     >
-                        <p>{item.text}</p>
+                        <p>{ item.text }</p>
                         <div className="w-[49px] flex items-center">
                             <OpenIcon className={`absolute ${ item.id === localIndex && 'animate-button' }`} />
                             <OpenedIcon className={`absolute opacity-0 ${ item.id === localIndex && '!opacity-100 display-transition' }`} />
