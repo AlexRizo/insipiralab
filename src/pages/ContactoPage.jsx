@@ -7,7 +7,7 @@ export const ContactoPage = () => {
     return (
         <section className='h-screen w-full flex items-center justify-center gap-10 relative overflow-hidden'>
             <div className='w-[500px]'>
-                <div className="absolute size-[750px] top-10 left-28" >
+                <div className="absolute size-[750px] top-10 right-[55%]" >
                     <WeInspireBeauty />
                 </div>
             </div>
