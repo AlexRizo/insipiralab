@@ -33,10 +33,12 @@ export const NosotrosPage = () => {
                 <ArrowIcon className="absolute bottom-24" />
             </div>
 
-            <div className="w-full relative flex items-center justify-center bg-[#E0A5FF] py-36">
-                <Art1 className="absolute -left-28 -top-1" color="#e71567" />
+            <div className="w-full relative flex items-center justify-center bg-[#E0A5FF] overflow-hidden py-36">
+                <Art1 className="absolute -left-28 -top-1 hidden 3xl:block" color="#e71567" />
+                <Art1 className="absolute -left-24 -top-13 3xl:hidden" color="#e71567" width={550} />
                 <Spam text='We inspire beauty' />
-                <Art2 className="absolute -right-28 top-8" />
+                <Art2 className="absolute -right-28 top-8 hidden 3xl:block" />
+                <Art2 className="absolute -right-24 top-8 3xl:hidden" width={400} />
             </div>
 
             <div className="flex justify-center gap-16 font-light w-full bg-[#F5F5F5] text-black py-32">
@@ -73,7 +75,7 @@ export const NosotrosPage = () => {
             </div>
 
             <div className="w-full flex flex-col items-center justify-center relative">
-                <div className="w-full h-[640px] overflow-hidden relative">
+                <div className="w-full h-auto max-h-[600px] overflow-hidden relative">
                     <video autoPlay muted loop playsInline className="object-cover min-h-full">
                         <source src="/videos/nosotros-animacion.mp4" />
                     </video>
@@ -87,18 +89,19 @@ export const NosotrosPage = () => {
                 </div>
             </div>
 
-            <div className="w-full bg-white flex flex-col items-center pt-10 pb-28">
-                <h1 className="text-5xl text-[#E71567] font-light mb-10">Nuestros Valores</h1>
+            <div className="w-full bg-white flex flex-col items-center pt-14 pb-28">
+                <h1 className="text-5xl text-[#E71567] font-light mb-20">Nuestros Valores</h1>
                 <GridCol data={ GridData } />
             </div>
 
-            <div className="w-full bg-[#E71567] flex justify-center relative py-20 overflow-hidden">
-                <img src="./img/home/formulacion-y-maquila-2.png" className="absolute left-5 -bottom-24"/>
-                <p className="text-center text-black text-5xl font-thin">
+            <div className="w-full bg-[#E71567] flex justify-center relative 3xl:py-20 py-16 overflow-hidden">
+                <img src="./img/home/formulacion-y-maquila-2.png" className="absolute 3xl:left-5 left-10 3xl:-bottom-24 -bottom-16 3xl:w-auto w-[400px]"/>
+                <p className="text-center text-black 3xl:text-5xl text-[46px] leading-[3rem] font-thin">
                     ¡Gracias por ser parte de<br/> nuestra historia<br/>
                     y permitirnos <span className="font-bold">inspirar<br/> belleza!</span>
                 </p>
-                <Art1 className="absolute right-10 -bottom-52" color="#000" />
+                <Art1 className="absolute right-10 hidden 3xl:block -bottom-52" color="#000" />
+                <Art1 className="absolute right-10 3xl:hidden -bottom-52" color="#000" width={550} />
             </div>
         </section>
     )

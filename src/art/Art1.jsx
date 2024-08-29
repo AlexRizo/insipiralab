@@ -2,10 +2,10 @@ export const Art1 = (props) => {
     return (
         <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={687.387}
-        height={460.863}
+        width={ props.width || 687.387 }
+        height={ props.height || 460.863 }
         viewBox="0 0 687.387 460.863"
-        {...props}
+        className={ props.className }
       >
         <defs>
           <clipPath id="a">
