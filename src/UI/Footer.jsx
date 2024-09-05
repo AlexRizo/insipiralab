@@ -1,7 +1,10 @@
 import { NavItem } from '../components'
+import { useNavigateTo } from '../hooks/useNavigateTo'
 import { FacebookIcon, InspiralabFooterIcon, InstagramIcon, TiktokIcon, YoutubeIcon } from '../icons'
 
 export const Footer = () => {
+    const { onNavigate } = useNavigateTo()
+    
     return (
         <>
             <footer className='flex justify-between items-center py-20 px-40 w-full'>
@@ -11,7 +14,7 @@ export const Footer = () => {
                     <NavItem text='NOSOTROS' path='/nosotros' custom='!w-auto !text-left !p-0 border-0' />
                     <NavItem text='CONTACTO' path='/contacto' custom='!w-auto !text-left !p-0 border-0' />
                 </nav>
-                <div className='w-1/3'>
+                <div className='w-1/3' onClick={ onNavigate }>
                     <InspiralabFooterIcon className='m-auto' />
                 </div>
                 <div className='flex justify-end w-1/3'>

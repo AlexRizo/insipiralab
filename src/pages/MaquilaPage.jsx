@@ -10,7 +10,7 @@ export const MaquilaPage = () => {
     
     return (
         <section className="bg-white">
-            <div className="w-full h-screen bg-[url('./img/maquila/maquila-bg.jpg')] bg-center bg-no-repeat bg-cover flex items-center justify-center">
+            <div className="w-full h-screen bg-[url('/img/maquila/maquila-bg.jpg')] bg-center bg-no-repeat bg-cover flex items-center justify-center">
                 <div className="text-center">
                     <h1 className="text-[50px] font-thin leading-tight">Exclusividad y calidad</h1>
                     <p className="text-[28px] font-light leading-7">
@@ -36,31 +36,31 @@ export const MaquilaPage = () => {
             <div className="bg-[#F5F5F5] w-full 3xl:h-[890px] py-32 flex justify-center items-center gap-5 relative">
                 <MaquilaCard 
                     text="Skin care"
-                    img="./img/maquila/maquila-card-1.jpg"/>
+                    img="/img/maquila/maquila-card-1.jpg"/>
                 <MaquilaCard 
                     text="Cuidado Capilar"
                     bgColor=" bg-[#FABADB]"
-                    img="./img/maquila/maquila-card-2.png"
+                    img="/img/maquila/maquila-card-2.png"
                     classImage="3xl:-translate-y-32 3xl:-translate-x-3 -translate-y-20 -translate-x-7" />
                 <MaquilaCard 
                     text="Maquillaje"
                     bgColor="bg-[#E0A5FF]"
-                    img="./img/maquila/maquila-card-3.png"
+                    img="/img/maquila/maquila-card-3.png"
                     classImage="3xl:-translate-y-32 3xl:-translate-x-3 -translate-y-20 -translate-x-4 w-[180px]" />
                 <MaquilaCard 
                     text="Protección Solar"
                     bgColor="bg-[#BDE7FF]"
-                    img="./img/maquila/maquila-card-4.png"
+                    img="/img/maquila/maquila-card-4.png"
                     classImage="3xl:-translate-y-32 3xl:translate-x-6 -translate-y-20 translate-x-2" />
                 <MaquilaCard 
                     text="Cuidado Corporal"
                     bgColor="bg-[#B9DBAA]"
-                    img="./img/maquila/maquila-card-5.png"
+                    img="/img/maquila/maquila-card-5.png"
                     classImage="3xl:-translate-y-28 3xl:translate-x-6 -translate-y-16 translate-x-3" />
                 <MaquilaCard 
                     text="Innovaciones"
                     bgColor="bg-[#CECECE]"
-                    img="./img/maquila/maquila-card-6.png"
+                    img="/img/maquila/maquila-card-6.png"
                     classImage="3xl:-translate-y-44 3xl:-translate-x-2 3xl:w-[190px] w-[170px] opacity-80 -translate-y-36 -translate-x-4" />
             </div>
 
@@ -95,7 +95,7 @@ export const MaquilaPage = () => {
                 </h1>
 
                 <div className="my-16">
-                    <img src="./img/maquila/maquila-100-piezas.jpg" alt="" />
+                    <img src="/img/maquila/maquila-100-piezas.jpg" alt="" />
                 </div>
 
                 <h1 className="text-[#E71567] text-[28px] font-semibold flex items-start justify-center gap-2 text-center">
@@ -116,7 +116,7 @@ export const MaquilaPage = () => {
                 </h1>
 
                 <div className="mt-16">
-                    <img src="./img/maquila/maquila-100-piezas-2.jpg" alt="" />
+                    <img src="/img/maquila/maquila-100-piezas-2.jpg" alt="" />
                 </div>
             </div>
         </section>

@@ -95,7 +95,7 @@ export const NosotrosPage = () => {
             </div>
 
             <div className="w-full bg-[#E71567] flex justify-center relative 3xl:py-20 py-16 overflow-hidden">
-                <img src="./img/home/formulacion-y-maquila-2.png" className="absolute 3xl:left-5 left-10 3xl:-bottom-24 -bottom-16 3xl:w-auto w-[400px]"/>
+                <img src="/img/home/formulacion-y-maquila-2.png" className="absolute 3xl:left-5 left-10 3xl:-bottom-24 -bottom-16 3xl:w-auto w-[400px]"/>
                 <p className="text-center text-black 3xl:text-5xl text-[46px] leading-[3rem] font-thin">
                     ¡Gracias por ser parte de<br/> nuestra historia<br/>
                     y permitirnos <span className="font-bold">inspirar<br/> belleza!</span>

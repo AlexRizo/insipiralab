@@ -68,7 +68,7 @@ export const NewsCarrousel = () => {
                         isActive={ slideActive === 0 }
                         title={ <>Embellecen a la mujer con<br /> cosméticos sustentables</> }
                         author='El Informador'
-                        img='bg-[url("./img/home/news-slider-imagen-1.jpg")]'
+                        img='bg-[url("/img/home/news-slider-imagen-1.jpg")]'
                     >
                         <p className="3xl:text-lg text-base leading-6">
                             En medio de mucha<br/> necesidad<br/>
@@ -86,7 +86,7 @@ export const NewsCarrousel = () => {
                     <NewsSlide 
                         isActive={ slideActive === 1 } 
                         title={ <>Acné y pandemia<br/> la llevan al éxito</> }
-                        author='Mural' img='bg-[url("./img/home/news-slider-imagen-2.jpg")]'
+                        author='Mural' img='bg-[url("/img/home/news-slider-imagen-2.jpg")]'
                     >
                         <p className="3xl:text-lg text-base leading-6">
                             La necesidad de dinero<br/> 
@@ -105,7 +105,7 @@ export const NewsCarrousel = () => {
                         isActive={ slideActive === 2 }
                         title={ <>Gana Premio<br/> Emprendedor<br/> Coparmex laboratorio<br/> de cosméticos</> }
                         author='Mural'
-                        img='bg-[url("./img/home/news-slider-imagen-3.jpg")]'
+                        img='bg-[url("/img/home/news-slider-imagen-3.jpg")]'
                     >
                         <p className="3xl:text-lg text-base leading-6">
                             La llegada a la luna fue el tema<br/> 
@@ -121,7 +121,7 @@ export const NewsCarrousel = () => {
                         isActive={ slideActive === 3 }
                         title={ <>Embellecen a la mujer con<br /> cosméticos sustentables</> }
                         author='El Informador'
-                        img='bg-[url("./img/home/news-slider-imagen-1.jpg")]'
+                        img='bg-[url("/img/home/news-slider-imagen-1.jpg")]'
                     >
                         <p className="3xl:text-lg text-base leading-6">
                             En medio de mucha<br/> necesidad<br/>
@@ -139,7 +139,7 @@ export const NewsCarrousel = () => {
                     <NewsSlide 
                         isActive={ slideActive === 4 } 
                         title={ <>Acné y pandemia<br/> la llevan al éxito</> }
-                        author='Mural' img='bg-[url("./img/home/news-slider-imagen-2.jpg")]'
+                        author='Mural' img='bg-[url("/img/home/news-slider-imagen-2.jpg")]'
                     >
                         <p className="3xl:text-lg text-base leading-6">
                             La necesidad de dinero<br/> 
@@ -158,7 +158,7 @@ export const NewsCarrousel = () => {
                         isActive={ slideActive === 5 }
                         title={ <>Gana Premio<br/> Emprendedor<br/> Coparmex laboratorio<br/> de cosméticos</> }
                         author='Mural'
-                        img='bg-[url("./img/home/news-slider-imagen-3.jpg")]'
+                        img='bg-[url("/img/home/news-slider-imagen-3.jpg")]'
                     >
                         <p className="3xl:text-lg text-base leading-6">
                             La llegada a la luna fue el tema<br/> 
