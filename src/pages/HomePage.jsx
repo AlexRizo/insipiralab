@@ -43,12 +43,12 @@ export const HomePage = () => {
             </div>
 
             <div className="w-screen bg-[#E71567]">
-                <h1 className="text-center py-5 text-[#E0A5FF] 3xl:text-5xl text-4xl font-thin">Proceso de maquila</h1>
+                <h1 className="text-center py-2 2xl:py-5 text-[#E0A5FF] text-lg 2xl:text-4xl 3xl:text-5xl 2xl:font-thin">Proceso de maquila</h1>
             </div>
 
-            <div className="w-full flex justify-center gap-5 3xl:py-48 py-36 relative">
+            <div className="w-full flex flex-col 2xl:flex-row justify-center items-center gap-28 2xl:gap-5 py-28 2xl:py-36 3xl:py-48 relative">
                 <div className="w-full h-full overflow-hidden absolute top-0">
-                    <video autoPlay muted loop playsInline className="object-cover min-w-full max-h-full">
+                    <video autoPlay muted loop playsInline className="object-cover w-full h-full">
                         <source src="/videos/home-textura.mp4" />
                     </video>
                 </div>
@@ -65,50 +65,81 @@ export const HomePage = () => {
                     <InspiraLabArt />
                     <InspiraLabArt />
                     <InspiraLabArt />
-                    <InspiraLabArt />
-                    <InspiraLabArt />
-                    <InspiraLabArt />
-                    <InspiraLabArt />
+                    {/* <InspiraLabArt /> */}
+                    {/* <InspiraLabArt /> */}
+                    {/* <InspiraLabArt /> */}
+                    {/* <InspiraLabArt /> */}
                 </div>
             </div>
             
-            <div className="relative 3xl:h-[1000px] h-[900px] bg-white overflow-hidden">
-                <div className="h-[500px] w-[500px] absolute -top-28 left-1 mask-image">
+            <div className="relative h-[910px] 2xl:h-[900px] 3xl:h-[1000px] bg-white flex flex-col overflow-hidden">
+                <div className="2xl:size-[500px] absolute -top-28 left-1 mask-image">
                     <div className="absolute w-1/2 h-full bg-gradient-to-r from-25% from-white to-transparent"></div>
-                    <WeInspireBeauty />
+                    {/* <WeInspireBeauty /> */}
                 </div>
-                <div className="relative m-auto w-3/4 h-full flex items-center justify-center">
-                    <img src="img/home/labios.png" alt="" className="absolute 3xl:w-auto w-[420px]"/>
-                    <img src="img/home/labial-rojo.png" alt="" className="hover:scale-125 transition 3xl:w-[250px] w-[235px] absolute 3xl:-translate-y-[272px] -translate-y-56 3xl:-translate-x-64 -translate-x-56 cursor-pointer"/>
-                    <img src="img/home/labial-cafe.png" alt="" className="hover:scale-125 transition 3xl:w-[250px] w-[235px] absolute 3xl:-translate-y-[300px] -translate-y-64 translate-x-32 cursor-pointer"/>
-                    <img src="img/home/labial-magenta.png" alt="" className="hover:scale-125 transition 3xl:w-[250px] w-[235px] absolute -translate-y-36 3xl:translate-x-[450px] translate-x-96 cursor-pointer"/>
-                    <img src="img/home/labial-cafe-claro.png" alt="" className="hover:scale-125 transition 3xl:w-[250px] w-[235px] absolute 3xl:translate-y-36 translate-y-28 3xl:translate-x-[480px] translate-x-[410px] cursor-pointer"/>
-                    <img src="img/home/labial-violeta.png" alt="" className="hover:scale-125 transition 3xl:w-[250px] w-[235px] absolute 3xl:translate-y-72 translate-y-60 translate-x-16 cursor-pointer"/>
-                    <img src="img/home/labial-morado.png" alt="" className="hover:scale-125 transition 3xl:w-[250px] w-[235px] absolute 3xl:translate-y-60 translate-y-48 3xl:-translate-x-80 -translate-x-72 cursor-pointer"/>
-                    <img src="img/home/labial-naranja.png" alt="" className="hover:scale-125 transition 3xl:w-[250px] w-[235px] absolute -translate-y-5 3xl:translate-x-[-510px] translate-x-[-470px] cursor-pointer"/>
+                <div className="relative mt-auto 2xl:m-auto 2xl:w-3/4 h-[90%] 2xl:h-full flex items-center justify-center">
+                    <img 
+                        src="img/home/labios.png"
+                        className="absolute w-72 2xl:w-[420px] 3xl:w-auto translate-y-5"
+                    />
+                    <img 
+                        src="img/home/labial-rojo.png"
+                        className="hover:scale-125 transition w-[155px] 2xl:w-[235px] 3xl:w-[250px] absolute translate-y-[-250px] -translate-x-24 2xl:-translate-y-56 3xl:-translate-y-[272px] 2xl:-translate-x-56 3xl:-translate-x-64 cursor-pointer"
+                    />
+                    <img 
+                        src="img/home/labial-cafe.png"
+                        className="hover:scale-125 transition w-[155px] 2xl:w-[235px] 3xl:w-[250px] absolute translate-y-[-130px] -translate-x-24 2xl:-translate-y-64 3xl:-translate-y-[300px] 2xl:translate-x-32 cursor-pointer"
+                    />
+                    <img 
+                        src="img/home/labial-magenta.png"
+                        className="hover:scale-125 transition w-[155px] 2xl:w-[235px] 3xl:w-[250px] absolute translate-y-[-250px] translate-x-24 2xl:-translate-y-36 2xl:translate-x-96 3xl:translate-x-[450px] cursor-pointer"
+                    />
+                    <img 
+                        src="img/home/labial-cafe-claro.png"
+                        className="hover:scale-125 transition w-[155px] 2xl:w-[235px] 3xl:w-[250px] absolute translate-y-[-130px] translate-x-24 2xl:translate-y-28 3xl:translate-y-36 2xl:translate-x-[410px] 3xl:translate-x-[480px] cursor-pointer"
+                    />
+                    <img 
+                        src="img/home/labial-violeta.png"
+                        className="hover:scale-125 transition w-[155px] 2xl:w-[235px] 3xl:w-[250px] absolute translate-y-52 -translate-x-24 2xl:translate-y-60 3xl:translate-y-72 2xl:translate-x-16 cursor-pointer"
+                    />
+                    <img 
+                        src="img/home/labial-morado.png"
+                        className="hover:scale-125 transition w-[155px] 2xl:w-[235px] 3xl:w-[250px] absolute translate-y-80 2xl:translate-y-48 3xl:translate-y-60 2xl:-translate-x-72 3xl:-translate-x-80 cursor-pointer"
+                    />
+                    <img 
+                        src="img/home/labial-naranja.png"
+                        className="hover:scale-125 transition w-[155px] 2xl:w-[235px] 3xl:w-[250px] absolute translate-y-52 translate-x-24 2xl:-translate-y-5 2xl:translate-x-[-470px] 3xl:translate-x-[-510px] cursor-pointer"
+                    />
                 </div>
             </div>
 
             <div className="w-full h-10 bg-[#E0A5FF] py-6 overflow-hidden whitespace-nowrap box-border">
                 <div className="marquee-animation h-full flex items-center gap-14 relative">
-                    <p className="3xl:text-2xl text-xl font-light text-[#E71567]">WE INSPIRE BEAUTY</p>
-                    <p className="3xl:text-2xl text-xl font-light text-[#E71567]">WE INSPIRE BEAUTY</p>
-                    <p className="3xl:text-2xl text-xl font-light text-[#E71567]">WE INSPIRE BEAUTY</p>
-                    <p className="3xl:text-2xl text-xl font-light text-[#E71567]">WE INSPIRE BEAUTY</p>
-                    <p className="3xl:text-2xl text-xl font-light text-[#E71567]">WE INSPIRE BEAUTY</p>
+                    <p className="text-xs 2xl:text-xl 3xl:text-2xl font-light text-[#E71567]">WE INSPIRE BEAUTY</p>
+                    <p className="text-xs 2xl:text-xl 3xl:text-2xl font-light text-[#E71567]">WE INSPIRE BEAUTY</p>
+                    <p className="text-xs 2xl:text-xl 3xl:text-2xl font-light text-[#E71567]">WE INSPIRE BEAUTY</p>
+                    <p className="text-xs 2xl:text-xl 3xl:text-2xl font-light text-[#E71567]">WE INSPIRE BEAUTY</p>
+                    <p className="text-xs 2xl:text-xl 3xl:text-2xl font-light text-[#E71567]">WE INSPIRE BEAUTY</p>
                 </div>
             </div>
 
-            <div className="3xl:py-40 py-36">
-                <div className="m-auto max-w-[800px] relative">
-                    <WeInspireBeautyCircle className="absolute animation-spin -left-24 -top-24" />
-                    <video autoPlay muted loop playsInline className="object-contain min-w-full">
-                        <source src="/videos/home-cosmetic.mp4" />
-                    </video>
+            <div className="py-16 px-7 2xl:py-36 3xl:py-40">
+                <div className="m-auto 2xl:max-w-[800px] relative">
+                    <WeInspireBeautyCircle className="absolute hidden 2xl:block animation-spin -left-24 -top-24" />
+                    {/* <video autoPlay muted loop playsInline className="object-cover min-w-full">
+                        <source src="https://youtu.be/cR3RraFyEes" />
+                    </video> */}
+                    <iframe
+                        width="100%"
+                        height="200"
+                        src="https://www.youtube.com/embed/cR3RraFyEes"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
                 </div>
             </div>
 
-            <div className="w-full bg-[#E0A5FF] 3xl:py-16 py-14 3xl:px-40 px-28 flex items-center justify-center">
+            <div className="w-full bg-[#E0A5FF] py-14 3xl:py-16 2xl:px-28 3xl:px-40 flex items-center justify-center">
                 <EnvasesSlider />
             </div>
 

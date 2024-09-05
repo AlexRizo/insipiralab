@@ -26,8 +26,16 @@ export const EnvasesSlider = () => {
         <>
             <Swiper
                 ref={ swiperRef }
-                slidesPerView={ 5 }
-                spaceBetween={ 10 }
+                breakpoints={{
+                    1500: {
+                        slidesPerView: 5,  // 5 slides cuando la ventana es >= 1500px
+                        spaceBetween: 10,  // 20px de espacio entre slides en pantallas grandes
+                    },
+                    1000: {
+                        slidesPerView: 1,  // 2 slides cuando la ventana es >= 640px
+                        spaceBetween: 0,  // 20px de espacio entre slides en pantallas grandes
+                    },
+                }}
                 navigation={{
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
@@ -66,7 +74,7 @@ export const EnvasesSlider = () => {
                     <EnvaseSlide img='/img/home/envase-5.png' name='envase 5' />
                 </SwiperSlide>
             </Swiper>
-            <div className="absolute 3xl:w-[85%] w-[90%] flex justify-between z-10">
+            <div className="absolute 3xl:w-[85%] w-[90%] -translate-y-8 flex justify-between z-10">
                 <SliderArrowIcon onClick={ onNavigate } className="rotate-180 cursor-pointer" />
                 <SliderArrowIcon onClick={ () => onNavigate('next') } className="cursor-pointer" />
             </div>
