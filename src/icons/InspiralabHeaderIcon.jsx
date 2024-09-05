@@ -2,8 +2,8 @@ export const InspiralabHeaderIcon = (props) => {
     return (
         <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={279.295}
-        height={22.839}
+        width={props.width || 279.295}
+        height={props.height || 22.839}
         viewBox="0 0 279.295 22.839"
         {...props}
       >

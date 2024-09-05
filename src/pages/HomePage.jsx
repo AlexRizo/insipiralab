@@ -9,34 +9,37 @@ export const HomePage = () => {
         <section>
             <div className="relative flex flex-col items-center justify-center h-screen">
                 <div className="w-full h-full overflow-hidden">
-                    <video autoPlay muted loop playsInline className="object-cover min-h-screen">
+                    <video autoPlay muted loop playsInline className="object-cover object-center w-full h-full hidden 2xl:block">
                         <source src="/videos/home-cosmetic.mp4" />
+                    </video>
+                    <video autoPlay muted loop playsInline className="object-cover object-center w-full h-full 2xl:block">
+                        <source src="/videos/home-cosmetic-movil.mp4" />
                     </video>
                 </div>
                 <div className="absolute flex flex-col items-center text-center">
-                    <h1 className="text-6xl font-medium">Eleva tu<br/>marca cosmética</h1>
-                    <p className="text-4xl font-light leading-9 mt-1">
+                    <h1 className="text-3xl 2xl:text-6xl leading-7 font-medium">Eleva tu <br className="hidden xl:block"/>marca cosmética</h1>
+                    <p className="text-xl 2xl:text-4xl font-light leading-5 2xl:leading-9 mt-1">
                         con nuestras fórmulas<br/> innovadoras 
                         y envases<br/> sin igual
                     </p>
-                    <Button text="MÁS INFORMACIÓN" className="mt-9 gap-9" button={0} HIcon="16" WIcon="16" />
+                    <Button text="MÁS INFORMACIÓN" className="mt-6 2xl:mt-9 2xl:gap-9" button={ 0 } HIcon="16" WIcon="16" />
                 </div>
-                <div className="absolute bottom-10">
+                <div className="absolute bottom-10 hidden 2xl:block">
                     <ByGardeniaNaturalsIcon />
                 </div>
             </div>
 
             <div className="w-screen bg-[#E0A5FF] 3xl:py-36 py-32 relative overflow-hidden" >
-                <img src="/img/home/formulacion-y-maquila-2.png" alt="" className="absolute 3xl:left-[335px] left-[250px] rotate-[-24deg] 3xl:bottom-[28px] -bottom-[6px] w-[453px] 3xl:w-auto" />
-                <img src="/img/home/formulacion-y-maquila-1.png" alt="" className="absolute 3xl:-left-32 -left-28 rotate-6 3xl:-bottom-44 -bottom-28 3xl:w-[600px] w-[450px]" />
-                <p className="m-auto w-[585px] 3xl:text-2xl text-xl text-black text-center">
-                    Ofrecemos la formulación y/o maquila de<br/> productos 
-                    de <span className="text-[#D80196] font-bold">alta calidad</span> y cumplimos<br/> con todas 
-                    las regulaciones.<br/> Ayudamos a las marcas a ofrecer<br/>
-                    productos que complementan su<br/>
+                <img src="/img/home/formulacion-y-maquila-2.png" className="absolute rotate-[120deg] 2xl:rotate-[-24deg] -left-16 2xl:left-[250px] 3xl:left-[335px] top-4 2xl:top-[unset] 2xl:-bottom-[6px] 3xl:bottom-[28px] w-[175px] 2xl:w-[453px] 3xl:w-auto" />
+                <img src="/img/home/formulacion-y-maquila-1.png" className="hidden 2xl:block absolute 3xl:-left-32 -left-28 rotate-6 3xl:-bottom-44 -bottom-28 3xl:w-[600px] w-[450px]" />
+                <p className="m-auto 2xl:w-[585px] text-base 2xl:text-xl 3xl:text-2xl text-black text-center">
+                    Ofrecemos la formulación<br className="2xl:hidden"/> y/o maquila de<br className="hidden 2xl:block"/> productos 
+                    de<br className="2xl:hidden"/> <span className="text-[#D80196] font-bold">alta calidad</span> y cumplimos<br/> con todas 
+                    las regulaciones.<br/> Ayudamos a las marcas a<br className="2xl:hidden"/> ofrecer <br className="hidden 2xl:block"/>
+                    productos que<br className="2xl:hidden"/> complementan su<br/>
                     <span className="text-[#D80196] font-bold">propuesta de valor.</span>
                 </p>
-                <img src="/img/home/formulacion-y-maquila-1.png" alt="" className="absolute right-40 rotate-[30deg] 3xl:bottom-1 bottom-10 3xl:w-[600px] w-[520px]" />
+                <img src="/img/home/formulacion-y-maquila-1.png" className="absolute rotate-[60deg] 2xl:rotate-[30deg] -right-3 2xl:right-40 2xl:bottom-10 3xl:bottom-1 w-[175px] 2xl:w-[520px] 3xl:w-[600px]" />
             </div>
 
             <div className="w-screen bg-[#E71567]">
