@@ -7,18 +7,19 @@ export const Footer = () => {
     
     return (
         <>
-            <footer className='flex justify-between items-center py-20 px-40 w-full'>
-                <nav className='flex flex-col gap-6 w-1/3'>
+            <footer className='flex flex-col 2xl:flex-row justify-between items-center py-10 2xl:py-20 px-40 w-full'>
+                <nav className='flex flex-col items-center 2xl:items-start gap-3 2xl:gap-6 2xl:w-1/3 order-2 2xl:order-none my-10 2xl:my-0'>
                     <NavItem text='INICIO' path='/' custom='!w-auto !text-left !p-0 border-0'/>
                     <NavItem text='MAQUILA' path='/maquila' custom='!w-auto !text-left !p-0 border-0' />
                     <NavItem text='NOSOTROS' path='/nosotros' custom='!w-auto !text-left !p-0 border-0' />
                     <NavItem text='CONTACTO' path='/contacto' custom='!w-auto !text-left !p-0 border-0' />
                 </nav>
-                <div className='w-1/3' onClick={ onNavigate }>
-                    <InspiralabFooterIcon className='m-auto' />
+                <div className='2xl:w-1/3 order-1 2xl:order-none' onClick={ onNavigate }>
+                    <InspiralabFooterIcon className='m-auto hidden 2xl:block' />
+                    <InspiralabFooterIcon className='m-auto 2xl:hidden' width='236' />
                 </div>
-                <div className='flex justify-end w-1/3'>
-                    <nav className='flex flex-col items-center gap-4'>
+                <div className='flex justify-end 2xl:w-1/3 order-3 2xl:order-none'>
+                    <nav className='flex 2xl:flex-col items-center gap-4'>
                         <InstagramIcon color="#fff" />
                         <FacebookIcon color="#fff" />
                         <TiktokIcon color="#fff" />

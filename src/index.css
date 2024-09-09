@@ -6,16 +6,6 @@
         animation-delay: 1000ms;
     }
 
-    .animation-init {
-        width: 540px !important;
-        transition: width 2s ease-in-out;
-    }
-
-    .animation-exit {
-        transition: width 1s ease;
-        width: 370px;
-    }
-
     @media screen and (min-width: 1760px) {
         .animation-init {
             width: 600px !important;
@@ -24,7 +14,18 @@
         .animation-exit {
             width: 430px;
         }
-        
+    }
+
+    @media screen and (min-width: 640px) {
+        .animation-init {
+            width: 540px !important;
+            transition: width 2s ease-in-out;
+        }
+
+        .animation-exit {
+            transition: width 1s ease;
+            width: 370px;
+        }   
     }
 
     .order-list {

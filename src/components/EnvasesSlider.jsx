@@ -31,8 +31,8 @@ export const EnvasesSlider = () => {
                         slidesPerView: 5,  // 5 slides cuando la ventana es >= 1500px
                         spaceBetween: 10,  // 20px de espacio entre slides en pantallas grandes
                     },
-                    1000: {
-                        slidesPerView: 1,  // 2 slides cuando la ventana es >= 640px
+                    0: {
+                        slidesPerView: 1,  // 2 slides cuando la ventana es >= 1000px
                         spaceBetween: 0,  // 20px de espacio entre slides en pantallas grandes
                     },
                 }}
@@ -75,8 +75,12 @@ export const EnvasesSlider = () => {
                 </SwiperSlide>
             </Swiper>
             <div className="absolute 3xl:w-[85%] w-[90%] -translate-y-8 flex justify-between z-10">
-                <SliderArrowIcon onClick={ onNavigate } className="rotate-180 cursor-pointer" />
-                <SliderArrowIcon onClick={ () => onNavigate('next') } className="cursor-pointer" />
+                <div onClick={ onNavigate } className="rotate-180 cursor-pointer">
+                    <SliderArrowIcon/>
+                </div>
+                <div onClick={ () => onNavigate('next') } className="cursor-pointer" >
+                    <SliderArrowIcon/>
+                </div>
             </div>
         </>
     )

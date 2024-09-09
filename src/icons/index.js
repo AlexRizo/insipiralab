@@ -24,3 +24,4 @@ export * from './EnvaseIcon';
 export * from './InspiralabHeaderIcon';
 export * from './LocationIcon';
 export * from './BurguerMenuIcon';
+export * from './WeInspireBeautyIcon';

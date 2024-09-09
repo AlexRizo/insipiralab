@@ -1,6 +1,5 @@
-import { Button, EnvasesSlider, NewsCarrousel } from "../components"
-import { WeInspireBeauty } from "../lottie"
-import { BubbleIcon, ByGardeniaNaturalsIcon } from "../icons"
+import { Button, EnvasesSlider, NewsCarrousel, Video } from "../components"
+import { BubbleIcon, ByGardeniaNaturalsIcon, WeInspireBeautyIcon } from "../icons"
 import { ProcessCard } from "../components/ProcessCard"
 import { InspiraLabArt, WeInspireBeautyCircle } from "../art"
 
@@ -12,7 +11,7 @@ export const HomePage = () => {
                     <video autoPlay muted loop playsInline className="object-cover object-center w-full h-full hidden 2xl:block">
                         <source src="/videos/home-cosmetic.mp4" />
                     </video>
-                    <video autoPlay muted loop playsInline className="object-cover object-center w-full h-full 2xl:block">
+                    <video autoPlay muted loop playsInline className="object-cover object-center w-full h-full 2xl:hidden">
                         <source src="/videos/home-cosmetic-movil.mp4" />
                     </video>
                 </div>
@@ -73,10 +72,9 @@ export const HomePage = () => {
             </div>
             
             <div className="relative h-[910px] 2xl:h-[900px] 3xl:h-[1000px] bg-white flex flex-col overflow-hidden">
-                <div className="2xl:size-[500px] absolute -top-28 left-1 mask-image">
-                    <div className="absolute w-1/2 h-full bg-gradient-to-r from-25% from-white to-transparent"></div>
-                    {/* <WeInspireBeauty /> */}
-                </div>
+                <WeInspireBeautyIcon className=" hidden 2xl:block absolute left-20 top-10"/>
+                <WeInspireBeautyIcon className="absolute right-[35%] -top-5 2xl:hidden" width="154" />
+
                 <div className="relative mt-auto 2xl:m-auto 2xl:w-3/4 h-[90%] 2xl:h-full flex items-center justify-center">
                     <img 
                         src="img/home/labios.png"
@@ -144,11 +142,11 @@ export const HomePage = () => {
             </div>
 
             <div className="w-full m-auto 3xl:pt-20 pt-16 3xl:pb-56 pb-48 bg-white relative flex flex-col items-center justify-center overflow-hidden">
-                <BubbleIcon size="size-28" x="right-16" y="top-9" />
-                <BubbleIcon size="size-20" x="left-[29rem]" y="top-[9rem]" />
-                <h1 className="text-[#D80196] text-5xl font-thin text-center mb-36">Prensa y reconocimiento</h1>
+                <BubbleIcon size="2xl:size-28 size-12" backdrop="backdrop-blur-md" x="2xl:right-16 right-24" y="2xl:top-9 top-12"/>
+                <BubbleIcon size="size-20" x="left-[29rem]" y="top-[9rem]" hidden={ true } />
+                <h1 className="text-[#D80196] text-5xl font-thin text-center mb-36 hidden 2xl:block">Prensa y reconocimiento</h1>
                 <NewsCarrousel />
-                <BubbleIcon size="size-36" x="left-52" y="bottom-32" backdrop="backdrop-blur-md" />
+                <BubbleIcon size="2xl:size-36 size-28" x="2xl:left-52 left-10" y="2xl:bottom-32 bottom-24" backdrop="backdrop-blur-md" />
             </div>
         </section>
     )
