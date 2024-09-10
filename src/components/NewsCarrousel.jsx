@@ -24,7 +24,7 @@ export const NewsCarrousel = () => {
     };
 
     const nextSlide = () => {
-        if (slideActive === 5) return;
+        if (slideActive === 3) return;
         setSlideActive(slideActive + 1);
         setTimeout(() => {
             swiperRef.current.swiper.slideNext();
@@ -73,7 +73,7 @@ export const NewsCarrousel = () => {
                         allowTouchMove: true,
                     },
                 }}
-                className="mySwiper 2xl:!h-[600px] !h-[520px] 3xl:!w-[1410px] 2xl:!w-[1280px] z-20 px-5"
+                className="mySwiper 2xl:!h-[600px] !h-[520px] 3xl:!w-[1410px] 2xl:!w-[1280px] z-20 px-5 2xl:p-0"
                 modules={[ Navigation ]}
             >
                 {
@@ -93,6 +93,8 @@ export const NewsCarrousel = () => {
                         </SwiperSlide>
                     ))
                 }
+                <SwiperSlide></SwiperSlide>
+                <SwiperSlide></SwiperSlide>
             </Swiper>
         </>
     )

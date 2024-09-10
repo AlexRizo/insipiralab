@@ -2,7 +2,7 @@ import { Button, EnvasesSlider, NewsCarrousel, Video } from "../components"
 import { BubbleIcon, ByGardeniaNaturalsIcon, WeInspireBeautyIcon } from "../icons"
 import { ProcessCard } from "../components/ProcessCard"
 import { InspiraLabArt, WeInspireBeautyCircle } from "../art"
-import { WeInspiraLabNegro } from "../lottie"
+import { WeInspiraLabNegro, WeInspireCircle } from "../lottie"
 
 export const HomePage = () => {
     return (
@@ -125,7 +125,8 @@ export const HomePage = () => {
 
             <div className="py-16 px-7 2xl:py-36 3xl:py-40">
                 <div className="m-auto 2xl:max-w-[800px] relative">
-                    <WeInspireBeautyCircle className="absolute hidden 2xl:block animation-spin -left-24 -top-24" />
+                    {/* <WeInspireBeautyCircle className="absolute hidden 2xl:block animation-spin -left-24 -top-24" /> */}
+                    <WeInspireCircle className="absolute size-40 -left-20 -top-20" />
                     {/* <video autoPlay muted loop playsInline className="object-cover min-w-full">
                         <source src="https://youtu.be/cR3RraFyEes" />
                     </video> */}

@@ -10,9 +10,11 @@ export const ProcessCard = ({ children, img = '', url = '/#' }) => {
             <div className="w-64 2xl:w-80 3xl:w-96 text-base leading-4 2xl:text-xl 3xl:text-2xl text-center">
                 { children }
             </div>
-            <div className="h-full absolute right-3 top-2 2xl:block 2xl:top-[unset] 2xl:right-[unset]">
-                <OpenLinkIcon className="2xl:mt-5 cursor-pointer" width={13} />
+            <div className="h-full absolute right-3 top-2 2xl:static 2xl:top-[unset] 2xl:right-[unset]">
+                <OpenLinkIcon className="2xl:mt-5 cursor-pointer"  /> 
             </div>
         </div>
     )
 }
+
+// width={13}

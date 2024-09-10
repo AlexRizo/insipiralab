@@ -1,45 +1,11 @@
 import { useEffect, useState } from "react";
-
-const indexes = [
-    { 
-        id: 0,
-        text: 'Introducimos en México las más avanzadas innovaciones y tendencias globales, respaldadas por nuestra continua investigación y desarrollo.',
-        img: '/img/maquila/orderlist-image-content-1.jpg'
-    },
-    { 
-        id: 1,
-        text: 'Somos pioneros en ofrecer a los mexicanos envases con los diseños más destacados del mundo, disponibles de inmediato.',
-        img: '/img/maquila/orderlist-image-content-2.jpg'
-    },
-    { 
-        id: 2,
-        text: 'Garantizamos los tiempos de entrega más rápidos en el sector maquilador, con la posibilidad de recibir tu producto en tan solo una semana.',
-        img: '/img/maquila/orderlist-image-content-3.jpg'
-    },
-    { 
-        id: 3,
-        text: 'Ofrecemos mínimos de compra a partir de 100 o 500 piezas, según el envase que elijas.',
-        img: '/img/maquila/orderlist-image-content-4.jpg'
-    },
-    { 
-        id: 4,
-        text: 'Nuestro equipo de científicos, altamente capacitados, desarrolla tu cosmético personalizado desde cero, siendo reconocidos como los mejores formuladores del país.',
-        img: '/img/maquila/orderlist-image-content-5.jpg'
-    },
-    { 
-        id: 5,
-        text: 'Introducimos en México las más avanzadas innovaciones y tendencias globales, respaldadas por nuestra continua investigación y desarrollo.',
-        img: '/img/maquila/orderlist-image-content-6.jpg'
-    }
-]
-
-
+import { listContentData } from "../data/data";
 export const ListContent = ({ index }) => {
     const [currentIndex, setCurrentIndex] = useState({ id: 0, text: '', img: '' });
     const [animation, setAnimation] = useState('');
 
     useEffect(() => {
-        const item = indexes.find(i => i.id === index);
+        const item = listContentData.find(i => i.id === index);
         setAnimation('opacity-0');
         
         setTimeout(() => {

@@ -46,55 +46,57 @@ export const MaquilaPage = () => {
                     text="Skin care"
                     bgColor="bg-[#FFE9BA]"
                     img={ isMobile ? '/img/maquila/maquila-card-1-mobile.png' : '/img/maquila/maquila-card-1.jpg' }
-                    classImage="w-[50px]"/>
+                    classImage="w-[50px] 2xl:w-full"/>
                 <MaquilaCard 
                     text="Cuidado Capilar"
                     bgColor=" bg-[#FABADB]"
                     img={ isMobile ? '/img/maquila/maquila-card-2-mobile.png' : '/img/maquila/maquila-card-2.png' }
-                    classImage="translate-x-2.5 2xl:-translate-y-20 2xl:-translate-x-7 3xl:-translate-y-32 3xl:-translate-x-3 w-[124px] 2xl:w-auto" />
+                    classImage="translate-x-2.5 2xl:-translate-y-20 3xl:-translate-y-32 w-[124px] 2xl:w-auto" />
                 <MaquilaCard 
                     text="Maquillaje"
                     bgColor="bg-[#E0A5FF]"
                     img="/img/maquila/maquila-card-3.png"
-                    classImage="translate-x-3 2xl:-translate-y-20 2xl:-translate-x-4 3xl:-translate-y-32 3xl:-translate-x-3 w-[105px] 2xl:w-[180px]" />
+                    classImage="2xl:-translate-y-20 3xl:-translate-y-32 w-[105px] 2xl:w-[180px]" />
                 <MaquilaCard 
                     text="Protección Solar"
                     bgColor="bg-[#BDE7FF]"
                     img="/img/maquila/maquila-card-4.png"
-                    classImage="3xl:-translate-y-32 3xl:translate-x-6 2xl:-translate-y-20 2xl:translate-x-2 w-[70px] 2xl:w-auto" />
+                    classImage="3xl:-translate-y-32 2xl:-translate-y-20 w-[70px] 2xl:w-auto" />
                 <MaquilaCard 
                     text="Cuidado Corporal"
                     bgColor="bg-[#B9DBAA]"
                     img="/img/maquila/maquila-card-5.png"
-                    classImage="3xl:-translate-y-28 3xl:translate-x-6 2xl:-translate-y-16 2xl:translate-x-3 w-[60px] 2xl:w-auto" />
+                    classImage="3xl:-translate-y-28 2xl:-translate-y-16 w-[60px] 2xl:w-auto" />
                 <MaquilaCard 
                     text="Innovaciones"
                     bgColor="bg-[#CECECE]"
                     img="/img/maquila/maquila-card-6.png"
-                    classImage="2xl:-translate-y-36 2xl:-translate-x-4 3xl:-translate-y-44 3xl:-translate-x-2 w-[108px] 2xl:w-[170px] 3xl:w-[190px] opacity-95 2xl:opacity-80" />
+                    classImage="2xl:-translate-y-36 3xl:-translate-y-44 w-[108px] 2xl:w-[170px] 3xl:w-[190px] opacity-95 2xl:opacity-80" />
             </div>
 
             <div className="container m-auto pt-14 pb-20">
                 <h1 className="text-5xl text-[#E71567] text-center font-light mb-28">Servicios</h1>
                 <div className="flex flex-col 2xl:flex-row justify-center gap-14">
                     <OrderList setIndex={ setCurrentIndex } />
-                    <ListContent index={ currentIndex } />
+                    <div className="hidden 2xl:block">
+                        <ListContent index={ currentIndex } />
+                    </div>
                 </div>
             </div>
 
-            <div className="w-full p-6 text-center bg-[#E71567] text-[#E0A5FF] text-5xl font-light">
+            <div className="w-full p-2 2xl:p-6 text-center bg-[#E71567] text-[#E0A5FF] text-lg 2xl:text-5xl font-light">
                 <h1>Proceso de maquila</h1>
             </div>
 
-            <div className="container m-auto pb-20 pt-10 flex items-center flex-col">
-                <h1 className="text-[#E71567] text-[28px] font-semibold flex items-center justify-center gap-2">
-                    <TriangleIcon />
+            <div className="container m-auto pb-20 pt-10 px-10 2xl:px-0 flex items-center flex-col">
+                <h1 className="text-[#E71567] relative text-lg 2xl:text-[28px] font-semibold flex 2xl:items-center justify-center text-center 2xl:text-left 2xl:gap-2">
+                    <TriangleIcon className="absolute -translate-x-[130px]" width="12" />
                     <span>
                         Desarrollo de producto desde cero
                     </span>
                 </h1>
 
-                <div className="mt-36">
+                <div className="2xl:mt-36">
                     <TimeLine data={ desarrolloData } />
                 </div>
 

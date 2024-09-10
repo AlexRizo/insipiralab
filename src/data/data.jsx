@@ -90,7 +90,7 @@ export const GridData = [
 export const newsData = [
     {
         id: 1,
-        title: 'Embellecen a la mujer con cosméticos sustentables',
+        title: <>Embellecen a la mujer con<br/> cosméticos sustentables</>,
         author: 'El Informador',
         content: (<>
             En medio de mucha<br className='hidden 2xl:block'/> necesidad <br className='hidden 2xl:block'/>
@@ -107,7 +107,7 @@ export const newsData = [
     },
     {
         id: 2,
-        title: 'Acné y pandemia la llevan al éxito',
+        title: <>Acné y pandemia<br/> la llevan al éxito</>,
         author: 'Mural',
         content: (<>
             La necesidad de aportar dinero <br className='hidden 2xl:block'/> 
@@ -123,7 +123,7 @@ export const newsData = [
     },
     {
         id: 3,
-        title: 'Gana Premio Emprendedor Coparmex laboratorio de cosméticos',
+        title: <>Gana Premio<br/> Emprendedor<br/> Coparmex laboratorio<br/> de cosméticos</>,
         content: (<>
             La llegada a la luna fue el tema <br className='hidden 2xl:block'/> 
             en la edición 18 del Premio <br className='hidden 2xl:block'/> 
@@ -134,50 +134,46 @@ export const newsData = [
         img: 'bg-[url("/img/home/news-slider-imagen-3.jpg")]',
         url: '/#'
     },
-    {
+];
+
+export const orderListData = [
+    { id: 0, text: 'Invitación y expertise' },
+    { id: 1, text: 'Los mejores envases en México' },
+    { id: 2, text: 'Tiempos de entrega' },
+    { id: 3, text: 'Minimos de compra' },
+    { id: 4, text: 'Desarrollo desde cero' },
+    { id: 5, text: 'Calidad, excelencia y transparencia' }
+];
+
+export const listContentData = [
+    { 
+        id: 0,
+        text: 'Introducimos en México las más avanzadas innovaciones y tendencias globales, respaldadas por nuestra continua investigación y desarrollo.',
+        img: '/img/maquila/orderlist-image-content-1.jpg'
+    },
+    { 
+        id: 1,
+        text: 'Somos pioneros en ofrecer a los mexicanos envases con los diseños más destacados del mundo, disponibles de inmediato.',
+        img: '/img/maquila/orderlist-image-content-2.jpg'
+    },
+    { 
+        id: 2,
+        text: 'Garantizamos los tiempos de entrega más rápidos en el sector maquilador, con la posibilidad de recibir tu producto en tan solo una semana.',
+        img: '/img/maquila/orderlist-image-content-3.jpg'
+    },
+    { 
+        id: 3,
+        text: 'Ofrecemos mínimos de compra a partir de 100 o 500 piezas, según el envase que elijas.',
+        img: '/img/maquila/orderlist-image-content-4.jpg'
+    },
+    { 
         id: 4,
-        title: 'Embellecen a la mujer con cosméticos sustentables',
-        author: 'El Informador',
-        content: (<>
-            En medio de mucha<br className='hidden 2xl:block'/> necesidad <br className='hidden 2xl:block'/>
-            económica y desesperación<br className='hidden 2xl:block'/> por 
-            la pandemia del<br className='hidden 2xl:block'/> COVID-19, <br className='hidden 2xl:block'/>
-            Denisse Reynoso comenzó<br className='hidden 2xl:block'/> a 
-            elaborar pomadas y<br className='hidden 2xl:block'/> cremas en 
-            el patio de la<br className='hidden 2xl:block'/> casa de sus 
-            papás. Así<br className='hidden 2xl:block'/> nació Gardenia 
-            Naturals.
-        </>),
-        img: 'bg-[url("/img/home/news-slider-imagen-1.jpg")]',
-        url: '/#'
+        text: 'Nuestro equipo de científicos, altamente capacitados, desarrolla tu cosmético personalizado desde cero, siendo reconocidos como los mejores formuladores del país.',
+        img: '/img/maquila/orderlist-image-content-5.jpg'
     },
-    {
+    { 
         id: 5,
-        title: 'Acné y pandemia la llevan al éxito',
-        author: 'Mural',
-        content: (<>
-            La necesidad de aportar dinero <br className='hidden 2xl:block'/> 
-            a la economía de su<br className='hidden 2xl:block'/> casa, combinada 
-            con las<br className='hidden 2xl:block'/> ganas de tener una piel <br className='hidden 2xl:block'/> 
-            bonita, hicieron que Denisse<br className='hidden 2xl:block'/> Reynoso 
-            Barragán creara<br className='hidden 2xl:block'/> Laboratorio, 
-            Formulación y<br className='hidden 2xl:block'/> Desarrollos Gardenia <br className='hidden 2xl:block'/> 
-            Naturals, Cosmética Natural<br className='hidden 2xl:block'/> e Insumos.
-        </>),
-        img: 'bg-[url("/img/home/news-slider-imagen-2.jpg")]',
-        url: '/#'
-    },
-    {
-        id: 6,
-        title: 'Gana Premio Emprendedor Coparmex laboratorio de cosméticos',
-        content: (<>
-            La llegada a la luna fue el tema <br className='hidden 2xl:block'/> 
-            en la edición 18 del Premio <br className='hidden 2xl:block'/> 
-            Emprendedor Coparmex, <br className='hidden 2xl:block'/> 
-            debido a los sueños que <br className='hidden 2xl:block'/> 
-            representan.
-        </>),
-        img: 'bg-[url("/img/home/news-slider-imagen-3.jpg")]',
-        url: '/#'
-    },
+        text: 'Introducimos en México las más avanzadas innovaciones y tendencias globales, respaldadas por nuestra continua investigación y desarrollo.',
+        img: '/img/maquila/orderlist-image-content-6.jpg'
+    }
 ];

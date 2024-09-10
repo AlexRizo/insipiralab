@@ -14,7 +14,7 @@ export const NewsSlide = ({ isActive = false, title = '', author = '', img = '',
                     <Button 
                         className={`ml-auto 2xl:opacity-0 3xl:text-[13px] 2xl:text-[11px] text-xs ${ isActive && '2xl:animate-button_fade' } animation-delay-2000 relative py-4 px-[3.75rem] 2xl:px-16 3xl:px-[4.5rem]`}
                         text="LEER MÁS"
-                        button={ 1 }
+                        button={ 0 }
                         iconClass='absolute right-4'
                     />
                 </div>
