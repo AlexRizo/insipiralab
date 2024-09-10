@@ -2,13 +2,13 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { useState } from 'react';
 
 export const WeInspireBeauty = () => {
-    const [loop, setLoop] = useState(false);
+    const [loop, setLoop] = useState(true);
     const [frames, setFrames] = useState([]);
 
-    setTimeout(() => {
-        setLoop(true);
-        setFrames([100, 1000]);
-    }, 7000);
+    // setTimeout(() => {
+    //     setLoop(true);
+    //     setFrames([100, 1000]);
+    // }, 7000);
     
     return (
         <DotLottieReact

@@ -76,7 +76,7 @@ export const NosotrosPage = () => {
 
             <div className="w-full flex flex-col items-center justify-center relative">
                 <div className="w-full h-auto max-h-[600px] overflow-hidden relative">
-                    <video autoPlay muted loop playsInline className="object-cover min-h-full">
+                    <video autoPlay muted loop playsInline className="object-cover w-full h-full">
                         <source src="/videos/nosotros-animacion.mp4" />
                     </video>
                 </div>

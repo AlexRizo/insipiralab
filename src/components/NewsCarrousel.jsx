@@ -64,7 +64,7 @@ export const NewsCarrousel = () => {
                 slidesPerGroup={ 1 }
                 breakpoints={{
                     1500: {
-                        slidesPerView: 3.5,  
+                        slidesPerView: 3,  
                         spaceBetween: 10,
                     },
                     0: {

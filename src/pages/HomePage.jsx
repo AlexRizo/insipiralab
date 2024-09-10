@@ -2,6 +2,7 @@ import { Button, EnvasesSlider, NewsCarrousel, Video } from "../components"
 import { BubbleIcon, ByGardeniaNaturalsIcon, WeInspireBeautyIcon } from "../icons"
 import { ProcessCard } from "../components/ProcessCard"
 import { InspiraLabArt, WeInspireBeautyCircle } from "../art"
+import { WeInspiraLabNegro } from "../lottie"
 
 export const HomePage = () => {
     return (
@@ -59,16 +60,17 @@ export const HomePage = () => {
                 </ProcessCard>
             </div>
 
-            <div className="w-full h-10 overflow-hidden whitespace-nowrap box-border relative">
-                <div className="marquee-animation h-full flex items-center gap-14 relative">
+            <div className="w-full h-10 relative">
+                {/* <div className="marquee-animation h-full flex items-center gap-14 relative">
                     <InspiraLabArt />
                     <InspiraLabArt />
                     <InspiraLabArt />
-                    {/* <InspiraLabArt /> */}
-                    {/* <InspiraLabArt /> */}
-                    {/* <InspiraLabArt /> */}
-                    {/* <InspiraLabArt /> */}
-                </div>
+                    <InspiraLabArt />
+                    <InspiraLabArt />
+                    <InspiraLabArt />
+                    <InspiraLabArt />
+                </div> */}
+                <WeInspiraLabNegro />
             </div>
             
             <div className="relative h-[910px] 2xl:h-[900px] 3xl:h-[1000px] bg-white flex flex-col overflow-hidden">
@@ -129,7 +131,7 @@ export const HomePage = () => {
                     </video> */}
                     <iframe
                         width="100%"
-                        height="200"
+                        height="500"
                         src="https://www.youtube.com/embed/cR3RraFyEes"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
