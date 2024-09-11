@@ -1,35 +1,55 @@
 import { ClientIcon, DesarrolloIcon, EnvaseIcon, IdeaIcon, LegalIcon, ManufacturaIcon, SeleccionIcon } from "../icons"
 
+
+
 export const desarrolloData = [
     { 
         id: 1,
         text: 'CLIENTE',
-        icon: <ClientIcon />,
+        icon: <>
+            <ClientIcon className="hidden 2xl:block" />
+            <ClientIcon className="2xl:hidden" width="50" />
+        </>,
     },
     {
         id: 2,
         text: 'Idea',
-        icon: <IdeaIcon />,
+        icon: <>
+            <IdeaIcon className="hidden 2xl:block" />
+            <IdeaIcon className="2xl:hidden" width="58" />
+        </>,
     },
     {
         id: 3,
         text: 'Legal',
-        icon: <LegalIcon />,
+        icon: <>
+            <LegalIcon className="hidden 2xl:block" />
+            <LegalIcon className="2xl:hidden" width="51" />
+        </>,
     },
     {
         id: 4,
         text: 'Desarrollo personalizado',
-        icon: <DesarrolloIcon />,
+        icon: <>
+            <DesarrolloIcon className="hidden 2xl:block" />
+            <DesarrolloIcon className="2xl:hidden" width="49" />
+        </>,
     },
     {
         id: 5,
         text: 'Selección de empaque',
-        icon: <SeleccionIcon />,
+        icon: <>
+            <SeleccionIcon className="hidden 2xl:block" />
+            <SeleccionIcon className="2xl:hidden" width="62" />
+        </>,
     },
     {
         id: 6,
         text: 'Manufactura',
-        icon: <ManufacturaIcon />,
+        icon: <>
+            <ManufacturaIcon className="hidden 2xl:block" />
+            <ManufacturaIcon className="2xl:hidden" width="62" />
+        </>,
     },
 ];
 
@@ -37,22 +57,34 @@ export const envasesListosData = [
     { 
         id: 1,
         text: 'CLIENTE',
-        icon: <ClientIcon />,
+        icon: <>
+            <ClientIcon className="hidden 2xl:block" />
+            <ClientIcon className="2xl:hidden" width="50" />
+        </>,
     },
     {
         id: 2,
         text: 'Selección de productos a envasar',
-        icon: <SeleccionIcon />,
+        icon: <>
+            <SeleccionIcon className="hidden 2xl:block" />
+            <SeleccionIcon className="2xl:hidden" width="49" />
+        </>,
     },
     {
         id: 3,
         text: 'Selección de envase',
-        icon: <EnvaseIcon />,
+        icon: <>
+            <EnvaseIcon className="hidden 2xl:block" />
+            <EnvaseIcon className="2xl:hidden" width="38" />
+        </>,
     },
     {
         id: 4,
         text: 'Manufactura',
-        icon: <ManufacturaIcon />,
+        icon: <>
+            <ManufacturaIcon className="hidden 2xl:block" />
+            <ManufacturaIcon className="2xl:hidden" width="62" />
+        </>,
     },
 ];
 

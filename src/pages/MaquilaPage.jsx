@@ -74,8 +74,8 @@ export const MaquilaPage = () => {
                     classImage="2xl:-translate-y-36 3xl:-translate-y-44 w-[108px] 2xl:w-[170px] 3xl:w-[190px] opacity-95 2xl:opacity-80" />
             </div>
 
-            <div className="container m-auto pt-14 pb-20">
-                <h1 className="text-5xl text-[#E71567] text-center font-light mb-28">Servicios</h1>
+            <div className="container m-auto py-4 2xl:pt-14 2xl:pb-20">
+                <h1 className="text-5xl text-[#E71567] hidden 2xl:block text-center font-light mb-28">Servicios</h1>
                 <div className="flex flex-col 2xl:flex-row justify-center gap-14">
                     <OrderList setIndex={ setCurrentIndex } />
                     <div className="hidden 2xl:block">
@@ -88,11 +88,12 @@ export const MaquilaPage = () => {
                 <h1>Proceso de maquila</h1>
             </div>
 
-            <div className="container m-auto pb-20 pt-10 px-10 2xl:px-0 flex items-center flex-col">
+            <div className="container m-auto pb-20 pt-10 px-0 2xl:px-10 flex items-center flex-col">
                 <h1 className="text-[#E71567] relative text-lg 2xl:text-[28px] font-semibold flex 2xl:items-center justify-center text-center 2xl:text-left 2xl:gap-2">
-                    <TriangleIcon className="absolute -translate-x-[130px]" width="12" />
+                    <TriangleIcon className="absolute -translate-x-[130px] hidden 2xl:block" />
+                    <TriangleIcon className="absolute -translate-x-[130px] 2xl:hidden" width="12" />
                     <span>
-                        Desarrollo de producto desde cero
+                        Desarrollo de producto<br className="2xl:hidden"/> desde cero
                     </span>
                 </h1>
 
@@ -100,35 +101,38 @@ export const MaquilaPage = () => {
                     <TimeLine data={ desarrolloData } />
                 </div>
 
-                <h1 className="text-[#E71567] text-[28px] font-semibold mt-36">
+                <h1 className="text-[#E71567] text-lg text-[28px] font-semibold mt-6 2xl:mt-36">
                     <span>
                         Desde 100 pzas.
                     </span>
                 </h1>
 
-                <div className="my-16">
-                    <img src="/img/maquila/maquila-100-piezas.jpg" alt="" />
+                <div className="my-6 2xl:my-16">
+                    <img src="/img/maquila/maquila-100-piezas.jpg" loading="lazy" className="hidden 2x:block" />
+                    <img src="/img/maquila/maquila-100-piezas-mobile.jpg" loading="lazy" className="2x:hidden rounded-2xl" />
                 </div>
 
-                <h1 className="text-[#E71567] text-[28px] font-semibold flex items-start justify-center gap-2 text-center">
-                    <TriangleIcon className="mt-2" />
+                <h1 className="text-[#E71567] text-lg 2xl:text-[28px] leading-5 2xl:leading-normal font-semibold flex items-start justify-center gap-2 text-center">
+                <TriangleIcon className="hidden 2xl:block" />
+                <TriangleIcon className=" 2xl:hidden" width="12" />
                     <span>
-                        Cosméticos terminados listos para envasar<br /> en el envase que selecciones
+                        Cosméticos terminados<br className="2xl:hidden" /> listos para envasar<br className="hidden 2xl:block" /> en el<br className="2xl:hidden" /> envase que selecciones
                     </span>
                 </h1>
 
-                <div className="mt-28">
+                <div className="mt-1 2xl:mt-28">
                     <TimeLine data={ envasesListosData } />
                 </div>
 
-                <h1 className="text-[#E71567] text-[28px] font-semibold mt-36">
+                <h1 className="text-[#E71567] hidden 2xl:block text-lg 2xl:text-[28px] font-semibold mt-36">
                     <span>
                         Desde 100 pzas.
                     </span>
                 </h1>
 
                 <div className="mt-16">
-                    <img src="/img/maquila/maquila-100-piezas-2.jpg" alt="" />
+                    <img src="/img/maquila/maquila-100-piezas-2.jpg" loading="lazy" className="hidden 2x:block" />
+                    <img src="/img/maquila/maquila-100-piezas-2-mobile.jpg" loading="lazy" className="2x:hidden rounded-2xl" />
                 </div>
             </div>
         </section>
