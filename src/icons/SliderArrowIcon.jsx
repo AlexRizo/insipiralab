@@ -8,7 +8,7 @@ export const SliderArrowIcon = (props) => {
           width={50}
           height={50}
           viewBox="0 0 50 50"
-          className={`hidden 2xl:block ${props?.className && props.className}`}
+          className={`hidden xl:block ${props?.className && props.className}`}
         >
           <g data-name="Grupo 188" fill="none">
             <g data-name="Pol\xEDgono 1">
@@ -39,7 +39,7 @@ export const SliderArrowIcon = (props) => {
           width={20.873}
           height={20.873}
           viewBox="0 0 20.873 20.873"
-          className={`2xl:hidden ${props?.className && props.className}`}
+          className={`xl:hidden ${props?.className && props.className}`}
         >
           <g data-name="Pol\xEDgono 1" fill="none">
             <path d="M6.235 0l6.235 10.62H0z" transform="rotate(-30 14.35 .557)" />

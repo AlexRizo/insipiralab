@@ -51,7 +51,7 @@ export const NewsCarrousel = () => {
     
     return (
         <>
-            <div className='absolute 3xl:w-[1600px] w-[1490px] top-1/2 justify-between hidden 2xl:flex'>
+            <div className='absolute 3xl:w-[1600px] w-[1490px] top-1/2 justify-between hidden xl:flex'>
                 <button className='rotate-180' onClick={ prevSlide }>
                     <SliderArrowIcon />
                 </button>
@@ -73,12 +73,12 @@ export const NewsCarrousel = () => {
                         allowTouchMove: true,
                     },
                 }}
-                className="mySwiper 2xl:!h-[600px] !h-[520px] 3xl:!w-[1410px] 2xl:!w-[1280px] z-20 px-5 2xl:p-0"
+                className="mySwiper xl:!h-[600px] !h-[520px] 3xl:!w-[1410px] xl:!w-[1280px] z-20 px-5 xl:p-0"
                 modules={[ Navigation ]}
             >
                 {
                     newsData.map((news, index) => (
-                        <SwiperSlide key={ news.id } className={`${ isActive(index) } rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent max-w-[320px] 2xl:max-w-[unset]`}>
+                        <SwiperSlide key={ news.id } className={`${ isActive(index) } rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent max-w-[320px] xl:max-w-[unset]`}>
                             <NewsSlide 
                                 isActive={ slideActive === index }
                                 title={ news.title }
@@ -86,7 +86,7 @@ export const NewsCarrousel = () => {
                                 img={ news.img }
                                 url={ news.url }
                             >
-                                <p className="3xl:text-lg 2xl:text-base text-[13px] 2xl:leading-6 leading-4 2xl:w-auto w-[220px]">
+                                <p className="3xl:text-lg xl:text-base text-[13px] xl:leading-6 leading-4 xl:w-auto w-[220px]">
                                     { news.content }
                                 </p>
                             </NewsSlide>

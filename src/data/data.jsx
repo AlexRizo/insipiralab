@@ -7,48 +7,48 @@ export const desarrolloData = [
         id: 1,
         text: 'CLIENTE',
         icon: <>
-            <ClientIcon className="hidden 2xl:block" />
-            <ClientIcon className="2xl:hidden" width="50" />
+            <ClientIcon className="hidden xl:block" />
+            <ClientIcon className="xl:hidden" width="50" />
         </>,
     },
     {
         id: 2,
         text: 'Idea',
         icon: <>
-            <IdeaIcon className="hidden 2xl:block" />
-            <IdeaIcon className="2xl:hidden" width="58" />
+            <IdeaIcon className="hidden xl:block" />
+            <IdeaIcon className="xl:hidden" width="58" />
         </>,
     },
     {
         id: 3,
         text: 'Legal',
         icon: <>
-            <LegalIcon className="hidden 2xl:block" />
-            <LegalIcon className="2xl:hidden" width="51" />
+            <LegalIcon className="hidden xl:block" />
+            <LegalIcon className="xl:hidden" width="51" />
         </>,
     },
     {
         id: 4,
         text: 'Desarrollo personalizado',
         icon: <>
-            <DesarrolloIcon className="hidden 2xl:block" />
-            <DesarrolloIcon className="2xl:hidden" width="49" />
+            <DesarrolloIcon className="hidden xl:block" />
+            <DesarrolloIcon className="xl:hidden" width="49" />
         </>,
     },
     {
         id: 5,
         text: 'Selección de empaque',
         icon: <>
-            <SeleccionIcon className="hidden 2xl:block" />
-            <SeleccionIcon className="2xl:hidden" width="62" />
+            <SeleccionIcon className="hidden xl:block" />
+            <SeleccionIcon className="xl:hidden" width="62" />
         </>,
     },
     {
         id: 6,
         text: 'Manufactura',
         icon: <>
-            <ManufacturaIcon className="hidden 2xl:block" />
-            <ManufacturaIcon className="2xl:hidden" width="62" />
+            <ManufacturaIcon className="hidden xl:block" />
+            <ManufacturaIcon className="xl:hidden" width="62" />
         </>,
     },
 ];
@@ -58,32 +58,32 @@ export const envasesListosData = [
         id: 1,
         text: 'CLIENTE',
         icon: <>
-            <ClientIcon className="hidden 2xl:block" />
-            <ClientIcon className="2xl:hidden" width="50" />
+            <ClientIcon className="hidden xl:block" />
+            <ClientIcon className="xl:hidden" width="50" />
         </>,
     },
     {
         id: 2,
         text: 'Selección de productos a envasar',
         icon: <>
-            <SeleccionIcon className="hidden 2xl:block" />
-            <SeleccionIcon className="2xl:hidden" width="49" />
+            <SeleccionIcon className="hidden xl:block" />
+            <SeleccionIcon className="xl:hidden" width="49" />
         </>,
     },
     {
         id: 3,
         text: 'Selección de envase',
         icon: <>
-            <EnvaseIcon className="hidden 2xl:block" />
-            <EnvaseIcon className="2xl:hidden" width="38" />
+            <EnvaseIcon className="hidden xl:block" />
+            <EnvaseIcon className="xl:hidden" width="38" />
         </>,
     },
     {
         id: 4,
         text: 'Manufactura',
         icon: <>
-            <ManufacturaIcon className="hidden 2xl:block" />
-            <ManufacturaIcon className="2xl:hidden" width="62" />
+            <ManufacturaIcon className="hidden xl:block" />
+            <ManufacturaIcon className="xl:hidden" width="62" />
         </>,
     },
 ];
@@ -125,13 +125,13 @@ export const newsData = [
         title: <>Embellecen a la mujer con<br/> cosméticos sustentables</>,
         author: 'El Informador',
         content: (<>
-            En medio de mucha<br className='hidden 2xl:block'/> necesidad <br className='hidden 2xl:block'/>
-            económica y desesperación<br className='hidden 2xl:block'/> por 
-            la pandemia del<br className='hidden 2xl:block'/> COVID-19, <br className='hidden 2xl:block'/>
-            Denisse Reynoso comenzó<br className='hidden 2xl:block'/> a 
-            elaborar pomadas y<br className='hidden 2xl:block'/> cremas en 
-            el patio de la<br className='hidden 2xl:block'/> casa de sus 
-            papás. Así<br className='hidden 2xl:block'/> nació Gardenia 
+            En medio de mucha<br className='hidden xl:block'/> necesidad <br className='hidden xl:block'/>
+            económica y desesperación<br className='hidden xl:block'/> por 
+            la pandemia del<br className='hidden xl:block'/> COVID-19, <br className='hidden xl:block'/>
+            Denisse Reynoso comenzó<br className='hidden xl:block'/> a 
+            elaborar pomadas y<br className='hidden xl:block'/> cremas en 
+            el patio de la<br className='hidden xl:block'/> casa de sus 
+            papás. Así<br className='hidden xl:block'/> nació Gardenia 
             Naturals.
         </>),
         img: 'bg-[url("/img/home/news-slider-imagen-1.jpg")]',
@@ -142,13 +142,13 @@ export const newsData = [
         title: <>Acné y pandemia<br/> la llevan al éxito</>,
         author: 'Mural',
         content: (<>
-            La necesidad de aportar dinero <br className='hidden 2xl:block'/> 
-            a la economía de su<br className='hidden 2xl:block'/> casa, combinada 
-            con las<br className='hidden 2xl:block'/> ganas de tener una piel <br className='hidden 2xl:block'/> 
-            bonita, hicieron que Denisse<br className='hidden 2xl:block'/> Reynoso 
-            Barragán creara<br className='hidden 2xl:block'/> Laboratorio, 
-            Formulación y<br className='hidden 2xl:block'/> Desarrollos Gardenia <br className='hidden 2xl:block'/> 
-            Naturals, Cosmética Natural<br className='hidden 2xl:block'/> e Insumos.
+            La necesidad de aportar dinero <br className='hidden xl:block'/> 
+            a la economía de su<br className='hidden xl:block'/> casa, combinada 
+            con las<br className='hidden xl:block'/> ganas de tener una piel <br className='hidden xl:block'/> 
+            bonita, hicieron que Denisse<br className='hidden xl:block'/> Reynoso 
+            Barragán creara<br className='hidden xl:block'/> Laboratorio, 
+            Formulación y<br className='hidden xl:block'/> Desarrollos Gardenia <br className='hidden xl:block'/> 
+            Naturals, Cosmética Natural<br className='hidden xl:block'/> e Insumos.
         </>),
         img: 'bg-[url("/img/home/news-slider-imagen-2.jpg")]',
         url: '/#'
@@ -157,10 +157,10 @@ export const newsData = [
         id: 3,
         title: <>Gana Premio<br/> Emprendedor<br/> Coparmex laboratorio<br/> de cosméticos</>,
         content: (<>
-            La llegada a la luna fue el tema <br className='hidden 2xl:block'/> 
-            en la edición 18 del Premio <br className='hidden 2xl:block'/> 
-            Emprendedor Coparmex, <br className='hidden 2xl:block'/> 
-            debido a los sueños que <br className='hidden 2xl:block'/> 
+            La llegada a la luna fue el tema <br className='hidden xl:block'/> 
+            en la edición 18 del Premio <br className='hidden xl:block'/> 
+            Emprendedor Coparmex, <br className='hidden xl:block'/> 
+            debido a los sueños que <br className='hidden xl:block'/> 
             representan.
         </>),
         img: 'bg-[url("/img/home/news-slider-imagen-3.jpg")]',

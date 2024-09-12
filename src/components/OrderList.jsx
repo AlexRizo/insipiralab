@@ -43,16 +43,16 @@ export const OrderList = ({ setIndex }) => {
         );
     } else {
         return (
-            <ul className="text-black font-light text-lg 2xl:text-[23.5px] 3xl:text-2xl px-6 2xl:p-0 w-full 2xl:w-max leading-8">
+            <ul className="text-black font-light text-lg xl:text-[23.5px] 3xl:text-2xl px-6 xl:p-0 w-full xl:w-max leading-8">
                 {
                     orderListData.map(item => (
                         <li 
                             key={ item.id }
-                            className={`2xl:w-[600px] w-full flex justify-between items-center relative gap-5 border-b 2xl:h-28 border-[#707070] ${ item.id === active && 'bg-[#E71567] order-list rounded-2xl 2xl:rounded-[2rem] border-transparent font-bold' } p-5 2xl:p-10 cursor-pointer`}
+                            className={`xl:w-[600px] w-full flex justify-between items-center relative gap-5 border-b xl:h-28 border-[#707070] ${ item.id === active && 'bg-[#E71567] order-list rounded-2xl xl:rounded-[2rem] border-transparent font-bold' } p-5 xl:p-10 cursor-pointer`}
                             onClick={ () => setActive(item.id) }
                         >
-                            <p className="w-[230px] 2xl:w-auto">{ item.text }</p>
-                            <div className="w-[42px] 2xl:w-[49px] flex items-center justify-center">
+                            <p className="w-[230px] xl:w-auto">{ item.text }</p>
+                            <div className="w-[42px] xl:w-[49px] flex items-center justify-center">
                                 <OpenIcon className={`absolute ${ item.id === active && 'animate-button' }`} width="40" />
                                 <OpenedIcon className={`absolute opacity-0 ${ item.id === active && '!opacity-100 display-transition' }`} width="40" />
                             </div>
