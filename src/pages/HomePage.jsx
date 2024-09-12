@@ -1,7 +1,6 @@
-import { Button, EnvasesSlider, LabialComponent, NewsCarrousel, Video } from "../components"
+import { Button, EnvasesSlider, LabialComponent, NewsCarrousel } from "../components"
 import { BubbleIcon, ByGardeniaNaturalsIcon, WeInspireBeautyIcon } from "../icons"
 import { ProcessCard } from "../components/ProcessCard"
-import { InspiraLabArt, WeInspireBeautyCircle } from "../art"
 import { WeInspiraLabNegro, WeInspireCircle } from "../lottie"
 
 export const HomePage = () => {

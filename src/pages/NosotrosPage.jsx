@@ -1,20 +1,12 @@
-import { useMediaQuery } from "react-responsive"
 import { Art1, Art2 } from "../art"
 import { Button, GridCol, Spam, ValuesListComponent } from "../components"
 import { GridData } from "../data/data"
 import { ArrowIcon, BubbleIcon, InspiralabHeaderIcon } from "../icons"
-import { useEffect, useState } from "react"
+import { useScreen } from "../hooks/useScreen"
 
 export const NosotrosPage = () => {
-    const isMobile = useMediaQuery({ query: '(min-width: 0px)' });
-    const isLaptop = useMediaQuery({ query: '(min-width: 1280px)' });
-    const isDesktop = useMediaQuery({ query: '(min-width: 1760px)' });
-
-    const [screen, setScreen] = useState(isMobile + isLaptop + isDesktop);
-
-    useEffect(() => {
-        setScreen(isMobile + isLaptop + isDesktop);
-    }, [isMobile, isLaptop, isDesktop]);
+    const { screen } = useScreen();
+    
     return (
         <section>
             <div className="container relative m-auto flex flex-col items-center justify-center h-screen gap-16 xl:gap-36">

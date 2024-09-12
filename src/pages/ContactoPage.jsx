@@ -1,19 +1,10 @@
 import { Button } from '../components';
 import { FacebookIcon, InstagramIcon, TiktokIcon, YoutubeIcon, LocationIcon } from '../icons';
 import { WeInspireBeauty, WeInspireCircle } from '../lottie';
-import { useMediaQuery } from 'react-responsive';
-import { useEffect, useState } from 'react';
+import { useScreen } from '../hooks/useScreen';
 
 export const ContactoPage = () => {
-    const isMobile = useMediaQuery({ query: '(min-width: 0px)' });
-    const isLaptop = useMediaQuery({ query: '(min-width: 1280px)' });
-    const isDesktop = useMediaQuery({ query: '(min-width: 1760px)' });
-
-    const [screen, setScreen] = useState(isMobile + isLaptop + isDesktop);
-
-    useEffect(() => {
-        setScreen(isMobile + isLaptop + isDesktop);
-    }, [isMobile, isLaptop, isDesktop]);
+    const { screen } = useScreen();
 
     return (
         <section className='xl:h-screen w-full flex flex-col xl:flex-row items-center justify-center gap-10 relative overflow-hidden'>

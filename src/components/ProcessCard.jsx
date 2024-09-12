@@ -11,7 +11,8 @@ export const ProcessCard = ({ children, img = '', url = '/#' }) => {
                 { children }
             </div>
             <div className="h-full absolute right-3 top-2 xl:static xl:top-[unset] xl:right-[unset]">
-                <OpenLinkIcon className="xl:mt-5 cursor-pointer"  /> 
+                <OpenLinkIcon className="xl:mt-5 cursor-pointer"  />
+                
             </div>
         </div>
     )

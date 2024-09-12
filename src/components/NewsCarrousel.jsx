@@ -7,13 +7,8 @@ import { newsData } from '../data/data';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { SliderArrowIcon } from '../icons';
-import { useMediaQuery } from 'react-responsive';
 
 export const NewsCarrousel = () => {
-    const screen = useMediaQuery({ query: '(max-width: 1000px)' });
-
-    console.log(screen ? 'mobile' : 'desktop');
-    
     const swiperRef = useRef(null);
     const [slideActive, setSlideActive] = useState(0);
 
