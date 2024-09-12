@@ -1,7 +1,5 @@
 import { ClientIcon, DesarrolloIcon, EnvaseIcon, IdeaIcon, LegalIcon, ManufacturaIcon, SeleccionIcon } from "../icons"
 
-
-
 export const desarrolloData = [
     { 
         id: 1,
@@ -52,6 +50,30 @@ export const desarrolloData = [
         </>,
     },
 ];
+
+export const LabialesData = [
+    {
+        path: 'img/home/labios-1.png',
+    },
+    {
+        path: 'img/home/labios-2.png',
+    },
+    {
+        path: 'img/home/labios-3.png',
+    },
+    {
+        path: 'img/home/labios-4.png',
+    },
+    {
+        path: 'img/home/labios-5.png',
+    },
+    {
+        path: 'img/home/labios-6.png',
+    },
+    {
+        path: 'img/home/labios-7.png',
+    }
+]
 
 export const envasesListosData = [
     { 

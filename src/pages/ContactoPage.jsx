@@ -1,7 +1,6 @@
 import { Button } from '../components';
 import { FacebookIcon, InstagramIcon, TiktokIcon, YoutubeIcon, LocationIcon } from '../icons';
 import { WeInspireBeauty, WeInspireCircle } from '../lottie';
-import { WeInspireBeautyCircle } from '../art';
 import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState } from 'react';
 
