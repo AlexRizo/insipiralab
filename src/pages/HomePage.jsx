@@ -124,7 +124,7 @@ export const HomePage = () => {
             </div>
 
             <div className="py-16 px-7 2xl:py-36 3xl:py-40">
-                <div className="m-auto 2xl:max-w-[800px] relative">
+                <div className="m-auto 2xl:max-w-[800px] relative custom-class">
                     {/* <WeInspireBeautyCircle className="absolute hidden 2xl:block animation-spin -left-24 -top-24" /> */}
                     <WeInspireCircle className="absolute size-40 -left-20 -top-20" />
                     {/* <video autoPlay muted loop playsInline className="object-cover min-w-full">
@@ -133,7 +133,7 @@ export const HomePage = () => {
                     <iframe
                         width="100%"
                         height="500"
-                        src="https://www.youtube.com/embed/cR3RraFyEes"
+                        src="https://www.youtube.com/embed/cR3RraFyEes?controls=0&color=white&modestbranding=0&rel=0&showinfo=0&autoplay=1&loop=1&playlist=cR3RraFyEes"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                     ></iframe>
