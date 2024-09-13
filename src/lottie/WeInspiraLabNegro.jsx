@@ -1,11 +1,12 @@
-import { DotLottieReact } from "@lottiefiles/dotlottie-react"
+import { Player } from "@lottiefiles/react-lottie-player"
 
 export const WeInspiraLabNegro = () => {
     return (
-        <DotLottieReact
-            src="/lottie/03-Barra-negra-inspiralab.lottie"
-            loop={ true } // El loop solo se activa cuando isLooping es true
+        <Player
+            src="/lottie/03-Barra-negra-inspiralab.json"
+            loop={ true }
             autoplay
+            animationId="we-inspira"
         />
     )
 }

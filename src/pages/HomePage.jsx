@@ -61,7 +61,7 @@ export const HomePage = () => {
                 </ProcessCard>
             </div>
 
-            <div className="w-full h-10 relative">
+            <div className="w-full relative">
                 {/* <div className="marquee-animation h-full flex items-center gap-14 relative">
                     <InspiraLabArt />
                     <InspiraLabArt />
