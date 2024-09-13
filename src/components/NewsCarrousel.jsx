@@ -19,7 +19,7 @@ export const NewsCarrousel = () => {
     };
 
     const nextSlide = () => {
-        if (slideActive === 3) return;
+        if (slideActive === 4) return;
         setSlideActive(slideActive + 1);
         setTimeout(() => {
             swiperRef.current.swiper.slideNext();
@@ -46,7 +46,7 @@ export const NewsCarrousel = () => {
     
     return (
         <>
-            <div className='absolute 3xl:w-[1600px] w-[1490px] top-1/2 justify-between hidden xl:flex'>
+            <div className='absolute 3xl:w-[1600px] w-full max-w-[1500px] 3xl:max-w-[1600px] top-1/2 justify-between hidden xl:flex'>
                 <button className='rotate-180' onClick={ prevSlide }>
                     <SliderArrowIcon />
                 </button>
@@ -57,8 +57,9 @@ export const NewsCarrousel = () => {
             <Swiper
                 ref={ swiperRef }
                 slidesPerGroup={ 1 }
+                allowTouchMove={ false }
                 breakpoints={{
-                    1500: {
+                    1280: {
                         slidesPerView: 3,  
                         spaceBetween: 10,
                     },

@@ -1,14 +1,34 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MaquilaCard } from "../components/MaquilaCard"
 import { OrderList } from "../components/OrderList"
 import { ArrowIcon, TriangleIcon } from "../icons"
 import { ListContent, TimeLine } from "../components";
 import { desarrolloData, envasesListosData } from "../data/data";
 import { useMediaQuery } from "react-responsive";
+import { useLocation } from "react-router-dom";
 
 export const MaquilaPage = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const isMobile = useMediaQuery({ query: '(max-width: 1000px)' });
+
+    const { hash } = useLocation();
+
+    const desarrolloRef = useRef(null), 
+          cosmeticosRef = useRef(null);
+
+    useEffect(() => {
+        if(hash === "#desarrollo") {
+            desarrolloRef.current.scrollIntoView({ behavior: "smooth" });
+        } else if (hash === '#cosmeticos' ) {
+
+            const elPos = cosmeticosRef.current.getBoundingClientRect().top + window.scrollY;
+
+            window.scrollTo({
+                top: elPos - 100,
+                behavior: 'smooth'
+            });
+        }
+    }, []);
     
     return (
         <section className="bg-white">
@@ -84,7 +104,7 @@ export const MaquilaPage = () => {
                 </div>
             </div>
 
-            <div className="w-full p-2 xl:p-6 text-center bg-[#E71567] text-[#E0A5FF] text-lg xl:text-5xl font-light">
+            <div className="w-full p-2 xl:p-6 text-center bg-[#E71567] text-[#E0A5FF] text-lg xl:text-5xl font-light" ref={ desarrolloRef }>
                 <h1>Proceso de maquila</h1>
             </div>
 
@@ -92,7 +112,7 @@ export const MaquilaPage = () => {
                 <h1 className="text-[#E71567] relative text-lg xl:text-[28px] font-semibold flex xl:items-center justify-center text-center xl:text-left xl:gap-2">
                     <TriangleIcon className="hidden xl:block" />
                     <TriangleIcon className="absolute -translate-x-[130px] xl:hidden" width="12" />
-                    <span id="desarrollo">
+                    <span>
                         Desarrollo de producto<br className="xl:hidden"/> desde cero
                     </span>
                 </h1>
@@ -112,8 +132,8 @@ export const MaquilaPage = () => {
                     <img src="/img/maquila/maquila-100-piezas-mobile.jpg" loading="lazy" className="xl:hidden rounded-2xl" />
                 </div>
 
-                <h1 className="text-[#E71567] text-lg xl:text-[28px] leading-5 xl:leading-normal font-semibold flex items-start justify-center gap-2 text-center">
-                <TriangleIcon className="hidden xl:block" />
+                <h1 className="text-[#E71567] text-lg xl:text-[28px] leading-5 xl:leading-normal font-semibold flex items-start justify-center gap-2 text-center" ref={ cosmeticosRef }>
+                <TriangleIcon className="hidden xl:block mt-2" />
                 <TriangleIcon className=" xl:hidden" width="12" />
                     <span id="cosmeticos">
                         Cosméticos terminados<br className="xl:hidden" /> listos para envasar<br className="hidden xl:block" /> en el<br className="xl:hidden" /> envase que selecciones

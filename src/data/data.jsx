@@ -188,6 +188,27 @@ export const newsData = [
         img: 'bg-[url("/img/home/news-slider-imagen-3.jpg")]',
         url: '/#'
     },
+    {
+        id: 4,
+        title: <>Denisse Reynoso, triunfadora por decreto</>,
+        content: (<>
+            Denisse Reynoso, fundadora y directora de Gardenia Naturals, ha tomado impulso y 
+            no se ha detenido en hacer crecer su empresa.
+        </>),
+        img: 'bg-[url("/img/home/news-slider-imagen-4.jpg")]',
+        url: '/#'
+    },
+    {
+        id: 5,
+        title: <>Celebran a finalistas del Premio Emprendedor Coparmex</>,
+        content: (<>
+            Con el objetivo de conocer de cerca sus proyectos, el rector de la Universidad 
+            Panamericana, el Dr. José Antonio Esquivias Romero, sostuvo una reunión con 
+            los Alumnos finalistas
+        </>),
+        img: 'bg-[url("/img/home/news-slider-imagen-5.jpg")]',
+        url: '/#'
+    },
 ];
 
 export const orderListData = [

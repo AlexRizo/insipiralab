@@ -5,7 +5,7 @@ export const NavItem = ({ text = 'Inicio', path = '/#', custom = '' }) => {
         <NavLink 
             to={ path }
             className={
-                ({ isActive }) => `w-[110px] text-[10px] xl:text-sm py-1 rounded-full ${ isActive && 'border' } inline-block text-center align-middle ${ custom }`
+                ({ isActive }) => `w-[120px] text-[10px] xl:text-sm py-1 rounded-full ${ isActive && 'border' } inline-block text-center align-middle ${ custom }`
             }
         >
             { text }

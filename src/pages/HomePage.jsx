@@ -93,13 +93,10 @@ export const HomePage = () => {
 
             <div className="py-16 px-7 xl:py-36 3xl:py-40">
                 <div className="m-auto xl:max-w-[800px] relative custom-class">
-                    <WeInspireCircle className="absolute size-40 -left-20 -top-20 hidden xl:block" />
-                    {/* <iframe
-                        src="https://www.youtube.com/embed/cR3RraFyEes"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="w-full h-[250px] xl:h-[400px]"
-                    ></iframe> */}
+                    <WeInspireCircle className="absolute size-40 -left-20 -top-14 hidden xl:block" />
+                    <video controls className="h-[500px] w-full">
+                        <source type="video/mp4" src="https://res.cloudinary.com/dzcassy7b/video/upload/v1726261288/Inspiralab/movil-INSP-REEL-HOR_b3spgu.mp4" />
+                    </video>
                 </div>
             </div>
 
