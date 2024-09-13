@@ -1,19 +1,21 @@
-import { Button, EnvasesSlider, LabialComponent, NewsCarrousel } from "../components"
+import { Button, EnvasesSlider, LabialComponent, NewsCarrousel, Video, Video1 } from "../components"
 import { BubbleIcon, ByGardeniaNaturalsIcon, WeInspireBeautyIcon } from "../icons"
 import { ProcessCard } from "../components/ProcessCard"
 import { WeInspiraLabNegro, WeInspireCircle } from "../lottie"
+import { useScreen } from "../hooks/useScreen"
 
 export const HomePage = () => {
+    const { screen } = useScreen()
+
+    console.log(screen);
+    
     return (
         <section>
             <div className="relative flex flex-col items-center justify-center h-screen">
                 <div className="w-full h-full overflow-hidden">
-                    <video autoPlay muted loop playsInline className="object-cover object-center w-full h-full hidden xl:block">
-                        <source src="/videos/home-cosmetic.mp4" />
-                    </video>
-                    <video autoPlay muted loop playsInline className="object-cover object-center w-full h-full xl:hidden">
-                        <source src="/videos/home-cosmetic-movil.mp4" />
-                    </video>
+                    {
+                        screen === 1 ? (<Video1 /> ) : ( <Video/> )
+                    }
                 </div>
                 <div className="absolute flex flex-col items-center text-center">
                     <h1 className="text-3xl xl:text-6xl leading-7 font-medium">Eleva tu <br className="hidden xl:block"/>marca cosmética</h1>
@@ -21,7 +23,7 @@ export const HomePage = () => {
                         con nuestras fórmulas<br/> innovadoras 
                         y envases<br/> sin igual
                     </p>
-                    <Button text="MÁS INFORMACIÓN" className="mt-6 xl:mt-9 xl:gap-9" button={ 0 } HIcon="16" WIcon="16" />
+                    <Button text="MÁS INFORMACIÓN" className="mt-6 xl:mt-9 xl:gap-9" button={ 0 } HIcon="16" WIcon="16" path="/contacto" />
                 </div>
                 <div className="absolute bottom-10 hidden xl:block">
                     <ByGardeniaNaturalsIcon />
@@ -51,10 +53,10 @@ export const HomePage = () => {
                         <source src="/videos/home-textura.mp4" />
                     </video>
                 </div>
-                <ProcessCard img="/img/home/proceso-empaque-1.png" >
+                <ProcessCard img="/img/home/proceso-empaque-1.png" url="/maquila#desarrollo" >
                     <span>Desarrollo de<br/> producto desde cero</span>
                 </ProcessCard>
-                <ProcessCard img="/img/home/proceso-empaque-2.png" >
+                <ProcessCard img="/img/home/proceso-empaque-2.png" url="/maquila#cosmeticos" >
                     <span>Cosméticos terminados listos para envasar en el envase que selecciones</span>
                 </ProcessCard>
             </div>
@@ -91,17 +93,12 @@ export const HomePage = () => {
 
             <div className="py-16 px-7 xl:py-36 3xl:py-40">
                 <div className="m-auto xl:max-w-[800px] relative custom-class">
-                    {/* <WeInspireBeautyCircle className="absolute hidden xl:block animation-spin -left-24 -top-24" /> */}
-                    <WeInspireCircle className="absolute size-40 -left-20 -top-20" />
-                    {/* <video autoPlay muted loop playsInline className="object-cover min-w-full">
-                        <source src="https://youtu.be/cR3RraFyEes" />
-                    </video> */}
+                    <WeInspireCircle className="absolute size-40 -left-20 -top-20 hidden xl:block" />
                     {/* <iframe
-                        width="100%"
-                        height="500"
-                        src="https://www.youtube.com/embed/cR3RraFyEes?controls=0&color=white&modestbranding=0&rel=0&showinfo=0&autoplay=1&loop=1&playlist=cR3RraFyEes"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        src="https://www.youtube.com/embed/cR3RraFyEes"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
+                        className="w-full h-[250px] xl:h-[400px]"
                     ></iframe> */}
                 </div>
             </div>

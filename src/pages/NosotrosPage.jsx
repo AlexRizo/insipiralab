@@ -40,7 +40,7 @@ export const NosotrosPage = () => {
             <div className="w-full relative flex items-center justify-center bg-[#E0A5FF] overflow-hidden py-40 xl:py-36">
 
                 { 
-                    screen === 1 ? <Art1 className="absolute -left-20 -bottom-8" color="#e71567" width={283} height={283} /> :
+                    screen === 1 ? <Art1 className="absolute -left-20 -bottom-8" color="#e71567" width={283} height={180} /> :
                     screen === 2 ? <Art1 className="absolute -left-24 -top-13" color="#e71567" width={550} /> :
                                    <Art1 className="absolute -left-28 -top-1" color="#e71567" />
                 }
@@ -85,10 +85,10 @@ export const NosotrosPage = () => {
                         dado para llegar hasta aquí.
                     </p>
                 </div>
-                <BubbleIcon size="size-9" backdrop="backdrop-blur" custom="" x="left-10" y="bottom-3" />
+                <BubbleIcon size="size-9" backdrop="backdrop-blur-[5px]" custom="size-16" x="left-10" y="bottom-4" />
             </div>
 
-            <div className="w-full flex flex-col items-center justify-center relative">
+            <div className="w-full flex flex-col items-center justify-center relative bg-white">
                 <div className="w-full h-auto xl:max-h-[600px] overflow-hidden relative">
                     {
                         screen === 1 
@@ -114,7 +114,7 @@ export const NosotrosPage = () => {
             <div className="w-full bg-white flex flex-col items-center pt-14 xl:pb-28">
                 <h1 className="text-3xl xl:text-5xl text-[#E71567] font-light mb-5 xl:mb-20">Nuestros Valores</h1>
                 {
-                    screen ? <ValuesListComponent /> : <GridCol data={ GridData } />
+                    screen === 1 ? <ValuesListComponent /> : <GridCol data={ GridData } />
                 }
             </div>
 

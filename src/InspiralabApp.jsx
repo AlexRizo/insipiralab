@@ -6,9 +6,9 @@ export const InspiralabApp = () => {
 
     const location = useLocation()
 
-    useEffect(() => {
-        setTimeout(() => window.scrollTo(0, 0), 150);
-    }), [location]
+    // useEffect(() => {
+    //     setTimeout(() => window.scrollTo(0, 0), 150);
+    // }), [location]
     
     return (
         <>

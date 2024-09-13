@@ -90,9 +90,9 @@ export const MaquilaPage = () => {
 
             <div className="container m-auto pb-20 pt-10 px-0 xl:px-10 flex items-center flex-col">
                 <h1 className="text-[#E71567] relative text-lg xl:text-[28px] font-semibold flex xl:items-center justify-center text-center xl:text-left xl:gap-2">
-                    <TriangleIcon className="absolute -translate-x-[130px] hidden xl:block" />
+                    <TriangleIcon className="hidden xl:block" />
                     <TriangleIcon className="absolute -translate-x-[130px] xl:hidden" width="12" />
-                    <span>
+                    <span id="desarrollo">
                         Desarrollo de producto<br className="xl:hidden"/> desde cero
                     </span>
                 </h1>
@@ -108,14 +108,14 @@ export const MaquilaPage = () => {
                 </h1>
 
                 <div className="my-6 xl:my-16">
-                    <img src="/img/maquila/maquila-100-piezas.jpg" loading="lazy" className="hidden 2x:block" />
-                    <img src="/img/maquila/maquila-100-piezas-mobile.jpg" loading="lazy" className="2x:hidden rounded-2xl" />
+                    <img src="/img/maquila/maquila-100-piezas.jpg" loading="lazy" className="hidden xl:block" />
+                    <img src="/img/maquila/maquila-100-piezas-mobile.jpg" loading="lazy" className="xl:hidden rounded-2xl" />
                 </div>
 
                 <h1 className="text-[#E71567] text-lg xl:text-[28px] leading-5 xl:leading-normal font-semibold flex items-start justify-center gap-2 text-center">
                 <TriangleIcon className="hidden xl:block" />
                 <TriangleIcon className=" xl:hidden" width="12" />
-                    <span>
+                    <span id="cosmeticos">
                         Cosméticos terminados<br className="xl:hidden" /> listos para envasar<br className="hidden xl:block" /> en el<br className="xl:hidden" /> envase que selecciones
                     </span>
                 </h1>
@@ -131,8 +131,8 @@ export const MaquilaPage = () => {
                 </h1>
 
                 <div className="mt-16">
-                    <img src="/img/maquila/maquila-100-piezas-2.jpg" loading="lazy" className="hidden 2x:block" />
-                    <img src="/img/maquila/maquila-100-piezas-2-mobile.jpg" loading="lazy" className="2x:hidden rounded-2xl" />
+                    <img src="/img/maquila/maquila-100-piezas-2.jpg" loading="lazy" className="hidden xl:block" />
+                    <img src="/img/maquila/maquila-100-piezas-2-mobile.jpg" loading="lazy" className="xl:hidden rounded-2xl" />
                 </div>
             </div>
         </section>

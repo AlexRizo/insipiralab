@@ -11,7 +11,7 @@ export const LabialComponent = () => {
         <div className="relative mt-auto xl:m-auto xl:w-3/4 h-[90%] xl:h-full flex items-center justify-center">
             <img 
                 src={ labial }
-                className="absolute w-72 xl:w-[420px] 3xl:w-auto translate-y-5"
+                className="absolute w-72 xl:w-[420px] 3xl:w-[480px] translate-y-5"
             />
             <img 
                 onClick={ () => handleLabial(0) }

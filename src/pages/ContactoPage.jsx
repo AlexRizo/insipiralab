@@ -24,7 +24,7 @@ export const ContactoPage = () => {
                     <p className='inline-flex uppercase text-[10px] xl:text-base'>
                         <span className='mr-1 xl:mr-3 mt-1'>
                             {
-                                screen ? <LocationIcon className='size-[14px]' /> : <LocationIcon />
+                                screen === 1 ? <LocationIcon className='size-[14px]' /> : <LocationIcon />
                             }
                         </span>
                         Carlos Cabanillas 1021,<br/>
@@ -34,22 +34,22 @@ export const ContactoPage = () => {
                     <div className='flex gap-5'>
                         <span className='bg-[#E0A5FF] size-10 xl:size-[63px] rounded-full flex items-center justify-center'>
                             {
-                                screen ? <InstagramIcon color="#E71567" width="22" height="22" /> : <InstagramIcon color="#E71567" />
+                                screen === 1 ? <InstagramIcon color="#E71567" width="22" height="22" /> : <InstagramIcon color="#E71567" />
                             }
                         </span>
                         <span className='bg-[#E0A5FF] size-10 xl:size-[63px] rounded-full flex items-center justify-center'>
                             {
-                                screen ? <FacebookIcon color="#E71567" width="12" height="24" /> : <FacebookIcon color="#E71567" />
+                                screen === 1 ? <FacebookIcon color="#E71567" width="12" height="24" /> : <FacebookIcon color="#E71567" />
                             }
                         </span>
                         <span className='bg-[#E0A5FF] size-10 xl:size-[63px] rounded-full flex items-center justify-center'>
                             {
-                                screen ? <TiktokIcon color="#E71567" width="20" height="23" /> : <TiktokIcon color="#E71567" />
+                                screen === 1 ? <TiktokIcon color="#E71567" width="20" height="23" /> : <TiktokIcon color="#E71567" />
                             }
                         </span>
                         <span className='bg-[#E0A5FF] size-10 xl:size-[63px] rounded-full flex items-center justify-center'>
                             {
-                                screen ? <YoutubeIcon color="#E71567" width="23" height="16" /> : <YoutubeIcon color="#E71567" />
+                                screen === 1 ? <YoutubeIcon color="#E71567" width="23" height="16" /> : <YoutubeIcon color="#E71567" />
                             }
                         </span>
                     </div>
