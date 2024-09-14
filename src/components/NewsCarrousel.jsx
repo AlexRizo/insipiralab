@@ -6,11 +6,14 @@ import { newsData } from '../data/data';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+
 import { SliderArrowIcon } from '../icons';
+import { useScreen } from '../hooks/useScreen';
 
 export const NewsCarrousel = () => {
     const swiperRef = useRef(null);
     const [slideActive, setSlideActive] = useState(0);
+    const { screen } = useScreen();
 
     const handleSlideChange = () => {
         const swiperInstance = swiperRef.current.swiper;
@@ -89,8 +92,14 @@ export const NewsCarrousel = () => {
                         </SwiperSlide>
                     ))
                 }
-                <SwiperSlide></SwiperSlide>
-                <SwiperSlide></SwiperSlide>
+                {
+                    screen !== 1 && (
+                        <>
+                            <SwiperSlide></SwiperSlide>
+                            <SwiperSlide></SwiperSlide>
+                        </>
+                    )
+                }
             </Swiper>
         </>
     )

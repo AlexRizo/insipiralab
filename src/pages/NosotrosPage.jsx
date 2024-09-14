@@ -1,5 +1,5 @@
 import { Art1, Art2 } from "../art"
-import { Button, GridCol, Spam, ValuesListComponent } from "../components"
+import { Button, GridCol, InspiralabVideoGraphic, InspiralabVideoGraphicMobile, Spam, ValuesListComponent } from "../components"
 import { GridData } from "../data/data"
 import { ArrowIcon, BubbleIcon, InspiralabHeaderIcon } from "../icons"
 import { useScreen } from "../hooks/useScreen"
@@ -91,23 +91,15 @@ export const NosotrosPage = () => {
             <div className="w-full flex flex-col items-center justify-center relative bg-white">
                 <div className="w-full h-auto xl:max-h-[600px] overflow-hidden relative">
                     {
-                        screen === 1 
-                            ? 
-                            <video autoPlay muted loop playsInline preload="none" className="object-cover w-full h-full">
-                                <source src="/videos/nosotros-animacion-movil.mp4" />
-                            </video>
-                            :
-                            <video autoPlay muted loop playsInline preload="none" className="object-cover w-full h-full">
-                                <source src="/videos/nosotros-animacion.mp4" />
-                            </video>
+                        screen === 1 ? <InspiralabVideoGraphicMobile/> : <InspiralabVideoGraphic />
                     }
                 </div>
                 <div className="flex flex-col items-center gap-8 absolute">
-                    <h1 className="text-3xl xl:text-5xl font-light xl:font-thin text-center w-[300px] xl:w-auto leading-7 xl:leading-normal" >
+                    <h1 className="text-3xl xl:text-5xl font-light xl:font-thin text-center w-[300px] xl:w-auto leading-7 " >
                         Conoce más sobre nuestros <br className="hidden xl:block"/>
                         productos y proceso de maquila
                     </h1>
-                    <Button text="MÁS INFORMACIÓN" className="text-sm gap-11 pr-8" button={ 0 } />
+                    <Button text="MÁS INFORMACIÓN" className="text-sm gap-11 pr-8" button={ 0 } path="/maquila#desarrollo" />
                 </div>
             </div>
 
@@ -119,8 +111,8 @@ export const NosotrosPage = () => {
             </div>
 
             <div className="w-full bg-[#E71567] flex justify-center relative py-40 xl:py-16 3xl:py-20 overflow-hidden">
-                <img src="/img/home/formulacion-y-maquila-2.png" className="absolute rotate-[30deg] left-0 xl:left-10 3xl:left-5 top-8 xl:top-[unset] xl:-bottom-16 3xl:-bottom-24 w-[200px] xl:w-[400px] 3xl:w-auto"/>
-                <p className="text-center text-black text-[25px] xl:text-[46px] 3xl:text-5xl leading-6 xl:leading-[3rem] font-thin w-[300px]">
+                <img src="/img/home/formulacion-y-maquila-2.png" className="absolute rotate-[30deg] left-0 xl:-left-10 3xl:left-5 top-8 xl:top-[unset] xl:-bottom-16 3xl:-bottom-24 w-[200px] xl:w-[400px] 3xl:w-auto"/>
+                <p className="text-center text-black text-[25px] xl:text-[34px] 3xl:text-[38px] leading-6 xl:leading-[3rem] font-thin w-[300px] xl:w-auto">
                     ¡Gracias por ser parte de<br className="hidden xl:block"/> nuestra historia <br />
                     y permitirnos <span className="font-bold">inspirar<br className="hidden xl:block"/> belleza!</span>
                 </p>

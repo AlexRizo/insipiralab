@@ -1,40 +1,38 @@
 import { useState } from "react";
 import { NavItem } from "../components"
-import { useNavigateTo, useScreen, useScroll } from "../hooks";
+import { useNavigateTo, useScreen } from "../hooks";
 import { BurguerMenuIcon, InspiralabHeaderIcon } from "../icons"
 import { NavbarMenu } from "./NavbarMenu";
 
-export const Header = () => {
+export const NewsHeader = () => {
     const { onNavigate } = useNavigateTo();
-    const { scrolled } = useScroll();
     const { screen } = useScreen()
 
     const [isOpen, setIsOpen] = useState(false);
     
     return (
         <>
-            <header className={`w-full xl:px-20 fixed z-[9998] ${ scrolled && 'bg-black text-[#E71567] shadow-md' } transition-all`}>
+            <header className={`w-full xl:px-20 bg-black`}>
                 <nav className="py-3 xl:py-8 flex flex-row items-center justify-center xl:justify-between relative">
                     <div className="hidden xl:block">
-                        <NavItem text="INICIO" path="/" custom={`${ scrolled && 'border-[#E71567]' }`} />
+                        <NavItem text="INICIO" path="/" />
                     </div>
                     <div className="hidden xl:block">
-                        <NavItem text="MAQUILA" path="/maquila" custom={`${ scrolled && 'border-[#E71567]' }`} />
+                        <NavItem text="MAQUILA" path="/maquila" />
                     </div>
                     <div onClick={ onNavigate }>
                         {
-                            screen === 1 ? <InspiralabHeaderIcon width={170} />
-                                         : <InspiralabHeaderIcon fill={`${ scrolled ? '#E71567' : 'white' }`} />
+                            screen === 1 ? <InspiralabHeaderIcon width={170} /> : <InspiralabHeaderIcon />
                         }
                     </div>
                     <div className="hidden xl:block">
-                        <NavItem text="NOSOTROS" path="/nosotros" custom={`${ scrolled && 'border-[#E71567]' }`} />
+                        <NavItem text="NOSOTROS" path="/nosotros" />
                     </div>
                     <div className="hidden xl:block">
-                        <NavItem text="CONTACTO" path="/contacto" custom={`${ scrolled && 'border-[#E71567]' }`} />
+                        <NavItem text="CONTACTO" path="/contacto" />
                     </div>
                     <div className="xl:hidden absolute right-7">
-                        <BurguerMenuIcon onClick={ () => setIsOpen(true) } />
+                        <BurguerMenuIcon />
                     </div>
                 </nav>
             </header>

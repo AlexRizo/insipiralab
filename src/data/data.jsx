@@ -119,7 +119,7 @@ export const GridData = [
     },
     {
         id: 2,
-        title: (<>Creatividad<br/> e innovación</>),
+        title: (<>Creatividad<br/> e Innovación</>),
         text: 'Creemos en el poder de la creatividad y la innovación para transformar el mundo de la cosmética. Cada formulación es una obra de arte, cada producto es una expresión de nuestra pasión por la belleza y la ciencia.',
         customWidth: 'w-[235px]',
         img: '/img/nosotros/nosotros-grid-2.jpg',
@@ -157,7 +157,7 @@ export const newsData = [
             Naturals.
         </>),
         img: 'bg-[url("/img/home/news-slider-imagen-1.jpg")]',
-        url: '/#'
+        url: '/noticias'
     },
     {
         id: 2,
@@ -173,11 +173,12 @@ export const newsData = [
             Naturals, Cosmética Natural<br className='hidden xl:block'/> e Insumos.
         </>),
         img: 'bg-[url("/img/home/news-slider-imagen-2.jpg")]',
-        url: '/#'
+        url: 'https://www.mural.com.mx/acne-y-pandemia-la-llevan-al-exito/ar2760754'
     },
     {
         id: 3,
         title: <>Gana Premio<br/> Emprendedor<br/> Coparmex laboratorio<br/> de cosméticos</>,
+        author: 'Mural',
         content: (<>
             La llegada a la luna fue el tema <br className='hidden xl:block'/> 
             en la edición 18 del Premio <br className='hidden xl:block'/> 
@@ -186,28 +187,30 @@ export const newsData = [
             representan.
         </>),
         img: 'bg-[url("/img/home/news-slider-imagen-3.jpg")]',
-        url: '/#'
+        url: 'https://www.mural.com.mx/gana-premio-emprendedor-coparmex-laboratorio-de-cosmeticos/ar2715180'
     },
     {
         id: 4,
-        title: <>Denisse Reynoso, triunfadora por decreto</>,
+        title: <>Denisse Reynoso,<br/> triunfadora por decreto</>,
+        author: 'PLAYERS',
         content: (<>
-            Denisse Reynoso, fundadora y directora de Gardenia Naturals, ha tomado impulso y 
-            no se ha detenido en hacer crecer su empresa.
+            Denisse Reynoso, fundadora y <br className='hidden xl:block'/> directora de Gardenia Naturals,<br className='hidden xl:block'/> ha tomado impulso y 
+            no se ha<br className='hidden xl:block'/> detenido en hacer crecer su<br className='hidden xl:block'/> empresa.
         </>),
         img: 'bg-[url("/img/home/news-slider-imagen-4.jpg")]',
-        url: '/#'
+        url: 'https://playersoflife.com/guadalajara/denisse-reynoso-triunfadora-por-decreto/'
     },
     {
         id: 5,
-        title: <>Celebran a finalistas del Premio Emprendedor Coparmex</>,
+        title: <>Celebran a finalistas<br/> del Premio Emprendedor<br/> Coparmex</>,
+        author: <>UNIVERSIDAD<br/> PANAMERICANA</>,
         content: (<>
-            Con el objetivo de conocer de cerca sus proyectos, el rector de la Universidad 
-            Panamericana, el Dr. José Antonio Esquivias Romero, sostuvo una reunión con 
-            los Alumnos finalistas
+            Con el objetivo de conocer de<br className='hidden xl:block'/> cerca sus proyectos, el rector<br className='hidden xl:block'/> de la Universidad<br className='hidden xl:block'/> 
+            Panamericana, el Dr. José<br className='hidden xl:block'/> Antonio Esquivias Romero,<br className='hidden xl:block'/> sostuvo una reunión con 
+            los<br className='hidden xl:block'/> Alumnos finalistas
         </>),
         img: 'bg-[url("/img/home/news-slider-imagen-5.jpg")]',
-        url: '/#'
+        url: 'https://www.up.edu.mx/noticias/innovacion-y-emprendimiento/celebran-a-finalistas-del-premio-emprendedor-coparmex/'
     },
 ];
 

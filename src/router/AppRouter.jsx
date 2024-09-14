@@ -1,5 +1,5 @@
 import { InspiralabApp } from "../InspiralabApp";
-import { ContactoPage, HomePage, MaquilaPage, NosotrosPage } from "../pages";
+import { ContactoPage, HomePage, MaquilaPage, NosotrosPage, NoticiaPage } from "../pages";
 
 export const AppRouter = [
     {
@@ -21,7 +21,11 @@ export const AppRouter = [
             {
                 path: '/contacto',
                 element: <ContactoPage />
-            }
+            },
         ]
+    },
+    {
+        path: '/noticias',
+        element: <NoticiaPage />
     }
 ];

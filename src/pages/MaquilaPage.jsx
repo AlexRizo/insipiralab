@@ -4,12 +4,12 @@ import { OrderList } from "../components/OrderList"
 import { ArrowIcon, TriangleIcon } from "../icons"
 import { ListContent, TimeLine } from "../components";
 import { desarrolloData, envasesListosData } from "../data/data";
-import { useMediaQuery } from "react-responsive";
 import { useLocation } from "react-router-dom";
+import { useScreen } from "../hooks";
 
 export const MaquilaPage = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const isMobile = useMediaQuery({ query: '(max-width: 1000px)' });
+    const { screen } = useScreen();
 
     const { hash } = useLocation();
 
@@ -64,34 +64,34 @@ export const MaquilaPage = () => {
             <div className="bg-[#F5F5F5] w-full 3xl:h-[890px] py-32 flex justify-center flex-wrap items-center gap-3 xl:gap-5 relative">
                 <MaquilaCard 
                     text="Skin care"
-                    bgColor="bg-[#FFE9BA]"
-                    img={ isMobile ? '/img/maquila/maquila-card-1-mobile.png' : '/img/maquila/maquila-card-1.jpg' }
-                    classImage="w-[50px] xl:w-full"/>
+                    bgColor="bg-[#FFE9BA] hover:bg-[url('/img/maquila/maquila-card-bg-1.jpg')] bg-cover"
+                    img="/img/maquila/maquila-card-1.png"
+                    classImage="w-[50px] xl:w-auto"/>
                 <MaquilaCard 
                     text="Cuidado Capilar"
-                    bgColor=" bg-[#FABADB]"
-                    img={ isMobile ? '/img/maquila/maquila-card-2-mobile.png' : '/img/maquila/maquila-card-2.png' }
-                    classImage="translate-x-2.5 xl:-translate-y-20 3xl:-translate-y-32 w-[124px] xl:w-auto" />
+                    bgColor="bg-[#FABADB] hover:bg-[url('/img/maquila/maquila-card-bg-2.jpg')] bg-cover"
+                    img={ screen === 1 ? '/img/maquila/maquila-card-2-mobile.png' : '/img/maquila/maquila-card-2.png' }
+                    classImage="w-[124px] xl:w-auto" />
                 <MaquilaCard 
                     text="Maquillaje"
-                    bgColor="bg-[#E0A5FF]"
+                    bgColor="bg-[#E0A5FF] hover:bg-[url('/img/maquila/maquila-card-bg-3.jpg')] bg-cover"
                     img="/img/maquila/maquila-card-3.png"
-                    classImage="xl:-translate-y-20 3xl:-translate-y-32 w-[105px] xl:w-[180px]" />
+                    classImage="w-[105px] xl:w-[180px]" />
                 <MaquilaCard 
                     text="Protección Solar"
-                    bgColor="bg-[#BDE7FF]"
+                    bgColor="bg-[#BDE7FF] hover:bg-[url('/img/maquila/maquila-card-bg-4.jpg')] bg-cover"
                     img="/img/maquila/maquila-card-4.png"
-                    classImage="3xl:-translate-y-32 xl:-translate-y-20 w-[70px] xl:w-auto" />
+                    classImage="w-[70px] xl:w-auto" />
                 <MaquilaCard 
                     text="Cuidado Corporal"
-                    bgColor="bg-[#B9DBAA]"
+                    bgColor="bg-[#B9DBAA] hover:bg-[url('/img/maquila/maquila-card-bg-5.jpg')] bg-cover"
                     img="/img/maquila/maquila-card-5.png"
-                    classImage="3xl:-translate-y-28 xl:-translate-y-16 w-[60px] xl:w-auto" />
+                    classImage="w-[60px] xl:w-auto" />
                 <MaquilaCard 
                     text="Innovaciones"
-                    bgColor="bg-[#CECECE]"
+                    bgColor="bg-[#CECECE] hover:bg-[url('/img/maquila/maquila-card-bg-6.jpg')] bg-cover"
                     img="/img/maquila/maquila-card-6.png"
-                    classImage="xl:-translate-y-36 3xl:-translate-y-44 w-[108px] xl:w-[170px] 3xl:w-[190px] opacity-95 xl:opacity-80" />
+                    classImage="w-[108px] xl:w-[170px] 3xl:w-[190px] opacity-95 xl:opacity-80" />
             </div>
 
             <div className="container m-auto py-4 xl:pt-14 xl:pb-20">

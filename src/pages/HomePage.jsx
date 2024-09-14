@@ -1,4 +1,4 @@
-import { Button, EnvasesSlider, LabialComponent, NewsCarrousel, Video, Video1 } from "../components"
+import { Button, EnvasesSlider, InspiralabVideoCosmetic, InspiralabVideoCosmeticMobile, LabialComponent, NewsCarrousel } from "../components"
 import { BubbleIcon, ByGardeniaNaturalsIcon, WeInspireBeautyIcon } from "../icons"
 import { ProcessCard } from "../components/ProcessCard"
 import { WeInspiraLabNegro, WeInspireCircle } from "../lottie"
@@ -7,14 +7,12 @@ import { useScreen } from "../hooks/useScreen"
 export const HomePage = () => {
     const { screen } = useScreen()
 
-    console.log(screen);
-    
     return (
         <section>
             <div className="relative flex flex-col items-center justify-center h-screen">
                 <div className="w-full h-full overflow-hidden">
                     {
-                        screen === 1 ? (<Video1 /> ) : ( <Video/> )
+                        screen === 1 ? (<InspiralabVideoCosmeticMobile /> ) : ( <InspiralabVideoCosmetic/> )
                     }
                 </div>
                 <div className="absolute flex flex-col items-center text-center">
@@ -62,15 +60,6 @@ export const HomePage = () => {
             </div>
 
             <div className="w-full relative">
-                {/* <div className="marquee-animation h-full flex items-center gap-14 relative">
-                    <InspiraLabArt />
-                    <InspiraLabArt />
-                    <InspiraLabArt />
-                    <InspiraLabArt />
-                    <InspiraLabArt />
-                    <InspiraLabArt />
-                    <InspiraLabArt />
-                </div> */}
                 <WeInspiraLabNegro />
             </div>
             
