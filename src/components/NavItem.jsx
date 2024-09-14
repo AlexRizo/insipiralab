@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 
-export const NavItem = ({ text = 'Inicio', path = '/#', custom = '' }) => {
+export const NavItem = ({ text = 'Inicio', path, custom = '' }) => {
     return (
         <NavLink 
             to={ path }
