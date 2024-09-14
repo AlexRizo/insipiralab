@@ -20,10 +20,18 @@ export const Footer = () => {
                 </div>
                 <div className='flex justify-end xl:w-1/3 order-3 xl:order-none'>
                     <nav className='flex xl:flex-col items-center gap-4'>
-                        <InstagramIcon color="#fff" />
-                        <FacebookIcon color="#fff" />
-                        <TiktokIcon color="#fff" />
-                        <YoutubeIcon color="#fff" />
+                        <a href='https://www.instagram.com/inspiralabcosmetics' target='_blank'>
+                            <InstagramIcon color="#fff" />
+                        </a>
+                        <a href='https://www.facebook.com/inspiralabcosmetics' target='_blank'>
+                            <FacebookIcon color="#fff" />
+                        </a>
+                        <a>
+                            <TiktokIcon color="#fff" />
+                        </a>
+                        <a>
+                            <YoutubeIcon color="#fff" />
+                        </a>
                     </nav>
                 </div>
             </footer>

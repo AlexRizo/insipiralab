@@ -32,16 +32,16 @@ export const ContactoPage = () => {
                         44960 Guadalajara, Jal.
                     </p>
                     <div className='flex gap-5'>
-                        <span className='bg-[#E0A5FF] size-10 xl:size-[63px] rounded-full flex items-center justify-center'>
+                        <a href='https://www.instagram.com/inspiralabcosmetics' target='_blank' className='bg-[#E0A5FF] size-10 xl:size-[63px] rounded-full flex items-center justify-center'>
                             {
                                 screen === 1 ? <InstagramIcon color="#E71567" width="22" height="22" /> : <InstagramIcon color="#E71567" />
                             }
-                        </span>
-                        <span className='bg-[#E0A5FF] size-10 xl:size-[63px] rounded-full flex items-center justify-center'>
+                        </a>
+                        <a href='https://www.facebook.com/inspiralabcosmetics' target='_blank' className='bg-[#E0A5FF] size-10 xl:size-[63px] rounded-full flex items-center justify-center'>
                             {
                                 screen === 1 ? <FacebookIcon color="#E71567" width="12" height="24" /> : <FacebookIcon color="#E71567" />
                             }
-                        </span>
+                        </a>
                         <span className='bg-[#E0A5FF] size-10 xl:size-[63px] rounded-full flex items-center justify-center'>
                             {
                                 screen === 1 ? <TiktokIcon color="#E71567" width="20" height="23" /> : <TiktokIcon color="#E71567" />
