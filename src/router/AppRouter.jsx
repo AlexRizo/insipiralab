@@ -1,3 +1,4 @@
+import { Navigate } from "react-router-dom";
 import { InspiralabApp } from "../InspiralabApp";
 import { ContactoPage, HomePage, MaquilaPage, NosotrosPage, NoticiaPage } from "../pages";
 
@@ -27,5 +28,9 @@ export const AppRouter = [
     {
         path: '/noticias',
         element: <NoticiaPage />
+    },
+    {
+        path: '*',
+        element: <Navigate to="/" />
     }
 ];
