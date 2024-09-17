@@ -1,3 +1,5 @@
+import { Player } from "@lottiefiles/react-lottie-player"
+
 export const BubbleIcon = ({ size = 'size-16', x = 'left-0', y = 'top-0', backdrop = 'backdrop-blur-lg', custom = '', hidden = false }) => {
     return (
         <div className={`absolute flex items-center justify-center ${ x } ${ y } ${ hidden && 'hidden' }`}>

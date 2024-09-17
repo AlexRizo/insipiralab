@@ -1,8 +1,9 @@
 import { Art1, Art2 } from "../art"
-import { Button, GridCol, InspiralabVideoGraphic, InspiralabVideoGraphicMobile, Spam, ValuesListComponent } from "../components"
+import { Button, ExplosionVideo, ExplosionVideoMobile, GridCol, InspiralabVideoGraphic, InspiralabVideoGraphicMobile, Spam, ValuesListComponent } from "../components"
 import { GridData } from "../data/data"
 import { ArrowIcon, BubbleIcon, InspiralabHeaderIcon } from "../icons"
 import { useScreen } from "../hooks/useScreen"
+import { WeInspireBeautyAnim } from "../lottie"
 
 export const NosotrosPage = () => {
     const { screen } = useScreen();
@@ -10,7 +11,10 @@ export const NosotrosPage = () => {
     return (
         <section>
             <div className="container relative m-auto flex flex-col items-center justify-center h-screen gap-16 xl:gap-36">
-                <article className="flex flex-col items-center font-thin gap-4">
+                {
+                    screen === 1 ? (<ExplosionVideoMobile />) : (<ExplosionVideo />)
+                }
+                <article className="flex flex-col items-center font-thin gap-4 z-20">
                     <h1 className="text-3xl xl:text-5xl">Manifiesto</h1>
                     <p className="text-lg xl:text-xl leading-5 xl:leading-10 w-[280px] xl:w-auto text-center xl:text-start">
                         <span className="font-medium">INSPIRA LAB</span> es un universo donde 
@@ -24,7 +28,7 @@ export const NosotrosPage = () => {
                     </p>
                 </article>
 
-                <article className="flex flex-col items-center font-thin gap-4">
+                <article className="flex flex-col items-center font-thin gap-4 z-20">
                     <InspiralabHeaderIcon className="hidden xl:block" />
                     <InspiralabHeaderIcon className="xl:hidden" width="205" />
                     <p className="text-lg xl:text-xl leading-5 xl:leading-10 w-[200px] xl:w-auto text-center xl:text-start">
@@ -37,9 +41,9 @@ export const NosotrosPage = () => {
                 <ArrowIcon className="absolute bottom-24 hidden xl:block" />
             </div>
 
-            <div className="w-full relative flex items-center justify-center bg-[#E0A5FF] overflow-hidden py-40 xl:py-36">
-
-                { 
+            <div className="w-full h-[500px] relative flex items-center justify-center bg-[#E0A5FF] overflow-hidden py-40 xl:py-36">
+                <WeInspireBeautyAnim />
+                {/* { 
                     screen === 1 ? <Art1 className="absolute -left-20 -bottom-8" color="#e71567" width={283} height={180} /> :
                     screen === 2 ? <Art1 className="absolute -left-24 -top-13" color="#e71567" width={550} /> :
                                    <Art1 className="absolute -left-28 -top-1" color="#e71567" />
@@ -49,7 +53,7 @@ export const NosotrosPage = () => {
                     screen === 1 ? <Art2 className="absolute -right-6 top-0 -rotate-[25deg]" width={169} height={169} /> :
                     screen === 2 ? <Art2 className="absolute -right-24 top-8" width={400} /> :
                                    <Art2 className="absolute -right-28 top-8" />
-                }
+                } */}
             </div>
 
             <div className="relative overflow-hidden flex flex-col xl:flex-row justify-center gap-8 xl:gap-16 font-light w-full bg-[#F5F5F5] text-black px-8 xl:px-0 py-16 xl:py-32">

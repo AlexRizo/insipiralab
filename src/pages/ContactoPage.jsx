@@ -54,8 +54,8 @@ export const ContactoPage = () => {
                         </span>
                     </div>
                 </div>
-                <div className='mt-14 mb-5'>
-                    <div className='relative xl:-top-32 xl:left-5'>
+                <div className='mt-14 mb-5 relative'>
+                    <div className='relative xl:-top-32 xl:left-5 max-w-72'>
                         <WeInspireCircle />
                     </div>
                 </div>

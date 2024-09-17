@@ -1,7 +1,7 @@
 import { Button, EnvasesSlider, InspiralabVideoCosmetic, InspiralabVideoCosmeticMobile, LabialComponent, NewsCarrousel } from "../components"
 import { BubbleIcon, ByGardeniaNaturalsIcon, WeInspireBeautyIcon } from "../icons"
 import { ProcessCard } from "../components/ProcessCard"
-import { WeInspiraLabNegro, WeInspireCircle } from "../lottie"
+import { WeInspiraLabNegro, WeInspiraLabRosa, WeInspireCircle } from "../lottie"
 import { useScreen } from "../hooks/useScreen"
 
 export const HomePage = () => {
@@ -70,14 +70,8 @@ export const HomePage = () => {
                 <LabialComponent />
             </div>
 
-            <div className="w-full h-10 bg-[#E0A5FF] py-6 overflow-hidden whitespace-nowrap box-border">
-                <div className="marquee-animation h-full flex items-center gap-14 relative">
-                    <p className="text-xs xl:text-xl 3xl:text-2xl font-light text-[#E71567]">WE INSPIRE BEAUTY</p>
-                    <p className="text-xs xl:text-xl 3xl:text-2xl font-light text-[#E71567]">WE INSPIRE BEAUTY</p>
-                    <p className="text-xs xl:text-xl 3xl:text-2xl font-light text-[#E71567]">WE INSPIRE BEAUTY</p>
-                    <p className="text-xs xl:text-xl 3xl:text-2xl font-light text-[#E71567]">WE INSPIRE BEAUTY</p>
-                    <p className="text-xs xl:text-xl 3xl:text-2xl font-light text-[#E71567]">WE INSPIRE BEAUTY</p>
-                </div>
+            <div className="w-full bg-[#E0A5FF] overflow-hidden whitespace-nowrap box-border">
+                <WeInspiraLabRosa/>
             </div>
 
             <div className="py-16 px-7 xl:py-36 3xl:py-40">
