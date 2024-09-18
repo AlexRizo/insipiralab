@@ -10,7 +10,7 @@ const paths = {
 
 export const usePath = () => {
     const location = useLocation();
-    const [path, setPath] = useState(1);
+    const [path, setPath] = useState(paths[location.pathname]);
     
     useEffect(() => {
         setPath(paths[location.pathname]);

@@ -29,8 +29,8 @@ export const HomePage = () => {
             </div>
 
             <div className="w-screen bg-[#E0A5FF] 3xl:py-36 py-32 relative overflow-hidden" >
-                <img src="/img/home/formulacion-y-maquila-2.png" className="absolute rotate-[120deg] xl:rotate-[-24deg] -left-16 xl:left-[250px] 3xl:left-[335px] top-4 xl:top-[unset] xl:-bottom-[6px] 3xl:bottom-[28px] w-[175px] xl:w-[453px] 3xl:w-auto" />
-                <img src="/img/home/formulacion-y-maquila-1.png" className="hidden xl:block absolute 3xl:-left-32 -left-28 rotate-6 3xl:-bottom-44 -bottom-28 3xl:w-[600px] w-[450px]" />
+                <img src="/img/home/formulacion-y-maquila-2.png" className="absolute rotate-[120deg] xl:rotate-[-24deg] -left-16 xl:left-32 2xl:left-[250px] 3xl:left-[335px] top-4 xl:top-[unset] xl:-bottom-[6px] 3xl:bottom-[28px] w-[175px] xl:w-[453px] 3xl:w-auto" />
+                <img src="/img/home/formulacion-y-maquila-1.png" className="hidden xl:block absolute xl:-left-44 2xl:-left-32 -left-28 rotate-6 3xl:-bottom-44 -bottom-28 xl:w-[400px] 2xl:w-[450px] 3xl:w-[600px] w-[450px]" />
                 <p className="m-auto xl:w-[585px] text-base xl:text-xl 3xl:text-2xl text-black text-center">
                     Ofrecemos la formulación<br className="xl:hidden"/> y/o maquila de<br className="hidden xl:block"/> productos 
                     de<br className="xl:hidden"/> <span className="text-[#D80196] font-bold">alta calidad</span> y cumplimos<br/> con todas 
@@ -38,7 +38,7 @@ export const HomePage = () => {
                     productos que<br className="xl:hidden"/> complementan su<br/>
                     <span className="text-[#D80196] font-bold">propuesta de valor.</span>
                 </p>
-                <img src="/img/home/formulacion-y-maquila-1.png" className="absolute rotate-[60deg] xl:rotate-[30deg] -right-3 xl:right-40 xl:bottom-10 3xl:bottom-1 w-[175px] xl:w-[520px] 3xl:w-[600px]" />
+                <img src="/img/home/formulacion-y-maquila-1.png" className="absolute rotate-[60deg] xl:rotate-[30deg] -right-3 xl:right-28 2xl:right-40 xl:bottom-10 3xl:bottom-1 w-[175px] xl:w-[520px] 3xl:w-[600px]" />
             </div>
 
             <div className="w-screen bg-[#E71567]">
@@ -83,7 +83,7 @@ export const HomePage = () => {
                 </div>
             </div>
 
-            <div className="w-full bg-[#E0A5FF] py-14 3xl:py-16 xl:px-28 3xl:px-40 flex items-center justify-center">
+            <div className="w-full bg-[#E0A5FF] py-14 3xl:py-16 xl:px-28 2xl:px-28 3xl:px-40 flex items-center justify-center">
                 <EnvasesSlider />
             </div>
 

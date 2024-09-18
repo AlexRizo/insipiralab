@@ -27,15 +27,17 @@ export const EnvasesSlider = () => {
             <Swiper
                 ref={ swiperRef }
                 breakpoints={{
-                    1500: {
+                    1280: {
                         slidesPerView: 5,  // 5 slides cuando la ventana es >= 1500px
-                        spaceBetween: 10,  // 20px de espacio entre slides en pantallas grandes
+                        spaceBetween: 5,  // 20px de espacio entre slides en pantallas grandes
                     },
                     0: {
                         slidesPerView: 1,  // 2 slides cuando la ventana es >= 1000px
                         spaceBetween: 0,  // 20px de espacio entre slides en pantallas grandes
                     },
                 }}
+                loop={ true }
+                slidesPerGroup={1}
                 navigation={{
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',

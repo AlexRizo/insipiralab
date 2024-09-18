@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavItem } from "../components"
-import { useNavigateTo, useScreen, useScroll } from "../hooks";
+import { useNavigateTo, usePath, useScreen, useScroll } from "../hooks";
 import { BurguerMenuIcon, InspiralabHeaderIcon } from "../icons"
 import { NavbarMenu } from "./NavbarMenu";
 
@@ -8,9 +8,10 @@ export const Header = () => {
     const { onNavigate } = useNavigateTo();
     const { scrolled } = useScroll();
     const { screen } = useScreen()
+    const { path } = usePath();
 
     const [isOpen, setIsOpen] = useState(false);
-    const [isHover, setIsHover] = useState(1);
+    const [isHover, setIsHover] = useState(path);
     
     return (
         <>
