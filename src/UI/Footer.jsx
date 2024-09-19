@@ -26,12 +26,12 @@ export const Footer = () => {
                         <a href='https://www.facebook.com/inspiralabcosmetics' target='_blank'>
                             <FacebookIcon color="#fff" />
                         </a>
-                        <a>
+                        {/* <a>
                             <TiktokIcon color="#fff" />
                         </a>
                         <a>
                             <YoutubeIcon color="#fff" />
-                        </a>
+                        </a> */}
                     </nav>
                 </div>
             </footer>

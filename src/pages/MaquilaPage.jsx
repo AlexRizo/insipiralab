@@ -34,8 +34,8 @@ export const MaquilaPage = () => {
         <section className="bg-white">
             <div className="w-full h-screen bg-[url('/img/maquila/maquila-bg-mobile.jpg')] xl:bg-[url('/img/maquila/maquila-bg.jpg')] bg-center bg-no-repeat bg-cover flex items-center justify-center">
                 <div className="text-center">
-                    <h1 className="text-[30px] xl:text-[50px] font-medium xl:font-thin leading-6 xl:leading-tight mb-2 xl:mb-0">Exclusividad<br className="xl:hidden"/> y calidad</h1>
-                    <p className="text-lg xl:text-[28px] font-light leading-5 xl:leading-7">
+                    <h1 className="text-[30px] xl:text-[45px] 2xl:text-[50px] font-medium xl:font-thin leading-6 xl:leading-tight mb-2 xl:mb-0">Exclusividad<br className="xl:hidden"/> y calidad</h1>
+                    <p className="text-lg xl:text-[24px] 2xl:text-[28px] font-light leading-5 xl:leading-7">
                         que no encontrarás en ningún<br/> otro lugar de México.
                     </p>
                 </div>
@@ -65,31 +65,37 @@ export const MaquilaPage = () => {
                 <MaquilaCard 
                     text="Skin care"
                     bgColor="bg-[#FFE9BA] hover:bg-[url('/img/maquila/maquila-card-bg-1.jpg')] bg-cover"
+                    preload="bg-[url('/img/maquila/maquila-card-bg-1.jpg')]"
                     img="/img/maquila/maquila-card-1.png"
                     classImage="w-[50px] xl:w-auto"/>
                 <MaquilaCard 
                     text="Cuidado Capilar"
                     bgColor="bg-[#FABADB] hover:bg-[url('/img/maquila/maquila-card-bg-2.jpg')] bg-cover"
+                    preload="bg-[url('/img/maquila/maquila-card-bg-2.jpg')]"
                     img={ screen === 1 ? '/img/maquila/maquila-card-2-mobile.png' : '/img/maquila/maquila-card-2.png' }
                     classImage="w-[124px] xl:w-auto" />
                 <MaquilaCard 
                     text="Maquillaje"
                     bgColor="bg-[#E0A5FF] hover:bg-[url('/img/maquila/maquila-card-bg-3.jpg')] bg-cover"
+                    preload="bg-[url('/img/maquila/maquila-card-bg-3.jpg')]"
                     img="/img/maquila/maquila-card-3.png"
                     classImage="w-[105px] xl:w-[180px]" />
                 <MaquilaCard 
                     text="Protección Solar"
                     bgColor="bg-[#BDE7FF] hover:bg-[url('/img/maquila/maquila-card-bg-4.jpg')] bg-cover"
+                    preload="bg-[url('/img/maquila/maquila-card-bg-4.jpg')]"
                     img="/img/maquila/maquila-card-4.png"
                     classImage="w-[70px] xl:w-auto" />
                 <MaquilaCard 
                     text="Cuidado Corporal"
                     bgColor="bg-[#B9DBAA] hover:bg-[url('/img/maquila/maquila-card-bg-5.jpg')] bg-cover"
+                    preload="bg-[url('/img/maquila/maquila-card-bg-5.jpg')]"
                     img="/img/maquila/maquila-card-5.png"
                     classImage="w-[60px] xl:w-auto" />
                 <MaquilaCard 
                     text="Innovaciones"
                     bgColor="bg-[#CECECE] hover:bg-[url('/img/maquila/maquila-card-bg-6.jpg')] bg-cover"
+                    preload="bg-[url('/img/maquila/maquila-card-bg-6.jpg')]"
                     img="/img/maquila/maquila-card-6.png"
                     classImage="w-[108px] xl:w-[170px] 3xl:w-[190px] opacity-95 xl:opacity-80" />
             </div>
@@ -121,7 +127,7 @@ export const MaquilaPage = () => {
                     <TimeLine data={ desarrolloData } />
                 </div>
 
-                <h1 className="text-[#E71567] text-lg text-[28px] font-semibold mt-6 xl:mt-36">
+                <h1 className="text-[#E71567] text-lg xl:text-[28px] font-semibold mt-6 xl:mt-36">
                     <span>
                         Desde 100 pzas.
                     </span>

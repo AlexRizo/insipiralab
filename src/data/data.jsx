@@ -3,50 +3,50 @@ import { ClientIcon, DesarrolloIcon, EnvaseIcon, IdeaIcon, LegalIcon, Manufactur
 export const desarrolloData = [
     { 
         id: 1,
-        text: 'CLIENTE',
+        text: 'Cliente',
         icon: <>
-            <ClientIcon className="hidden xl:block" />
-            <ClientIcon className="xl:hidden" width="50" />
+            <ClientIcon className="hidden 2xl:block" />
+            <ClientIcon className="2xl:hidden" width="50" />
         </>,
     },
     {
         id: 2,
         text: 'Idea',
         icon: <>
-            <IdeaIcon className="hidden xl:block" />
-            <IdeaIcon className="xl:hidden" width="58" />
+            <IdeaIcon className="hidden 2xl:block" />
+            <IdeaIcon className="2xl:hidden" width="58" />
         </>,
     },
     {
         id: 3,
         text: 'Legal',
         icon: <>
-            <LegalIcon className="hidden xl:block" />
-            <LegalIcon className="xl:hidden" width="51" />
+            <LegalIcon className="hidden 2xl:block" />
+            <LegalIcon className="2xl:hidden" width="51" />
         </>,
     },
     {
         id: 4,
         text: 'Desarrollo personalizado',
         icon: <>
-            <DesarrolloIcon className="hidden xl:block" />
-            <DesarrolloIcon className="xl:hidden" width="49" />
+            <DesarrolloIcon className="hidden 2xl:block" />
+            <DesarrolloIcon className="2xl:hidden" width="49" />
         </>,
     },
     {
         id: 5,
         text: 'Selección de empaque',
         icon: <>
-            <SeleccionIcon className="hidden xl:block" />
-            <SeleccionIcon className="xl:hidden" width="62" />
+            <SeleccionIcon className="hidden 2xl:block" />
+            <SeleccionIcon className="2xl:hidden" width="62" />
         </>,
     },
     {
         id: 6,
         text: 'Manufactura',
         icon: <>
-            <ManufacturaIcon className="hidden xl:block" />
-            <ManufacturaIcon className="xl:hidden" width="62" />
+            <ManufacturaIcon className="hidden 2xl:block" />
+            <ManufacturaIcon className="2xl:hidden" width="62" />
         </>,
     },
 ];
@@ -78,7 +78,7 @@ export const LabialesData = [
 export const envasesListosData = [
     { 
         id: 1,
-        text: 'CLIENTE',
+        text: 'Cliente',
         icon: <>
             <ClientIcon className="hidden xl:block" />
             <ClientIcon className="xl:hidden" width="50" />
@@ -144,7 +144,7 @@ export const GridData = [
 export const newsData = [
     {
         id: 1,
-        title: <>Embellecen a la mujer con<br/> cosméticos sustentables</>,
+        title: <>Embellecen a la mujer <br/>con cosméticos <br/>sustentables</>,
         author: 'El Informador',
         content: (<>
             En medio de mucha<br className='hidden xl:block'/> necesidad <br className='hidden xl:block'/>

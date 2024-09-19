@@ -18,11 +18,11 @@ export const NewsCarrousel = () => {
     const handleSlideChange = () => {
         const swiperInstance = swiperRef.current.swiper;
         const activeIndex = swiperInstance.activeIndex; // Índice del slide activo
-        setSlideActive(activeIndex);
+        setSlideActive(swiperInstance.realIndex);
     };
 
     const nextSlide = () => {
-        if (slideActive === 4) return;
+        // if (slideActive === 4) return;
         setSlideActive(slideActive + 1);
         setTimeout(() => {
             swiperRef.current.swiper.slideNext();
@@ -31,7 +31,7 @@ export const NewsCarrousel = () => {
     };
 
     const prevSlide = () => {
-        if (slideActive === 0) return;
+        // if (slideActive === 0) return;
         setSlideActive(slideActive - 1);
         setTimeout(() => {
             swiperRef.current.swiper.slidePrev();
@@ -49,11 +49,11 @@ export const NewsCarrousel = () => {
     
     return (
         <>
-            <div className='absolute 3xl:w-[1600px] w-full max-w-[1500px] 3xl:max-w-[1600px] top-1/2 justify-between hidden xl:flex'>
+            <div className='absolute 3xl:w-[1600px] w-[95%] 3xl:max-w-[1600px] top-1/2 justify-between hidden xl:flex'>
                 <button className='rotate-180' onClick={ prevSlide }>
                     <SliderArrowIcon />
                 </button>
-                <button className='' onClick={ nextSlide }>
+                <button onClick={ nextSlide }>
                     <SliderArrowIcon />
                 </button>
             </div>
@@ -72,7 +72,8 @@ export const NewsCarrousel = () => {
                         allowTouchMove: true,
                     },
                 }}
-                className="mySwiper xl:!h-[600px] !h-[520px] 3xl:!w-[1410px] xl:!w-[1280px] z-20 px-5 xl:p-0"
+                loop={ true }
+                className="mySwiper xl:!h-[600px] !h-[520px] 3xl:!w-[1410px] xl:!w-[1080px] z-20 px-5 xl:p-0"
                 modules={[ Navigation ]}
             >
                 {
@@ -91,14 +92,6 @@ export const NewsCarrousel = () => {
                             </NewsSlide>
                         </SwiperSlide>
                     ))
-                }
-                {
-                    screen !== 1 && (
-                        <>
-                            <SwiperSlide></SwiperSlide>
-                            <SwiperSlide></SwiperSlide>
-                        </>
-                    )
                 }
             </Swiper>
         </>

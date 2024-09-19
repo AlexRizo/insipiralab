@@ -5,6 +5,7 @@ export const InspiralabHeaderIcon = (props) => {
         width={props.width || 279.295}
         height={props.height || 22.839}
         viewBox="0 0 279.295 22.839"
+        className={ props.className }
       >
         <defs>
           <clipPath id="ah">

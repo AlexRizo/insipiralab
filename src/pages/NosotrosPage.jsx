@@ -43,17 +43,6 @@ export const NosotrosPage = () => {
 
             <div className="w-full h-[500px] relative flex items-center justify-center bg-[#E0A5FF] overflow-hidden py-40 xl:py-36">
                 <WeInspireBeautyAnim />
-                {/* { 
-                    screen === 1 ? <Art1 className="absolute -left-20 -bottom-8" color="#e71567" width={283} height={180} /> :
-                    screen === 2 ? <Art1 className="absolute -left-24 -top-13" color="#e71567" width={550} /> :
-                                   <Art1 className="absolute -left-28 -top-1" color="#e71567" />
-                }
-                <Spam text='We inspire beauty' />
-                {
-                    screen === 1 ? <Art2 className="absolute -right-6 top-0 -rotate-[25deg]" width={169} height={169} /> :
-                    screen === 2 ? <Art2 className="absolute -right-24 top-8" width={400} /> :
-                                   <Art2 className="absolute -right-28 top-8" />
-                } */}
             </div>
 
             <div className="relative overflow-hidden flex flex-col xl:flex-row justify-center gap-8 xl:gap-16 font-light w-full bg-[#F5F5F5] text-black px-8 xl:px-0 py-16 xl:py-32">
@@ -103,7 +92,7 @@ export const NosotrosPage = () => {
                         Conoce más sobre nuestros <br className="hidden xl:block"/>
                         productos y proceso de maquila
                     </h1>
-                    <Button text="MÁS INFORMACIÓN" className="text-sm gap-11 pr-8" button={ 0 } path="/maquila#desarrollo" />
+                    <Button text="MÁS INFORMACIÓN" className="text-sm gap-11 pr-8" button={ 0 } path="/maquila" />
                 </div>
             </div>
 

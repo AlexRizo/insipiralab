@@ -1,4 +1,4 @@
-import { Button, EnvasesSlider, InspiralabVideoCosmetic, InspiralabVideoCosmeticMobile, LabialComponent, NewsCarrousel } from "../components"
+import { Button, EnvasesSlider, InspiralabVideoCosmetic, InspiralabVideoCosmeticMobile, LabialComponent, NewsCarrousel, TestComponent } from "../components"
 import { BubbleIcon, ByGardeniaNaturalsIcon, WeInspireBeautyIcon } from "../icons"
 import { ProcessCard } from "../components/ProcessCard"
 import { WeInspiraLabNegro, WeInspiraLabRosa, WeInspireCircle } from "../lottie"
