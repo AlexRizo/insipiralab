@@ -1,12 +1,11 @@
 import { Player } from "@lottiefiles/react-lottie-player"
 
-export const WeInspiraLabNegro = () => {
+export const Circulo3 = () => {
     return (
         <Player
-            src="/lottie/07-barranegrasimple.json"
+            src="/lottie/circulo03.json"
             loop={ true }
             autoplay
-            animationId="we-inspira"
         />
     )
 }

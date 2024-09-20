@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import { NewsSlide } from './NewsSlide';
 import { newsData } from '../data/data';
 
@@ -8,21 +8,17 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { SliderArrowIcon } from '../icons';
-import { useScreen } from '../hooks/useScreen';
 
 export const NewsCarrousel = () => {
     const swiperRef = useRef(null);
     const [slideActive, setSlideActive] = useState(0);
-    const { screen } = useScreen();
 
     const handleSlideChange = () => {
         const swiperInstance = swiperRef.current.swiper;
-        const activeIndex = swiperInstance.activeIndex; // Índice del slide activo
         setSlideActive(swiperInstance.realIndex);
     };
 
     const nextSlide = () => {
-        // if (slideActive === 4) return;
         setSlideActive(slideActive + 1);
         setTimeout(() => {
             swiperRef.current.swiper.slideNext();
@@ -31,7 +27,6 @@ export const NewsCarrousel = () => {
     };
 
     const prevSlide = () => {
-        // if (slideActive === 0) return;
         setSlideActive(slideActive - 1);
         setTimeout(() => {
             swiperRef.current.swiper.slidePrev();
@@ -49,7 +44,7 @@ export const NewsCarrousel = () => {
     
     return (
         <>
-            <div className='absolute 3xl:w-[1600px] w-[95%] 3xl:max-w-[1600px] top-1/2 justify-between hidden xl:flex'>
+            <div className='absolute w-[95%] 3xl:w-[1600px] 3xl:max-w-[1600px] top-1/2 justify-between flex'>
                 <button className='rotate-180' onClick={ prevSlide }>
                     <SliderArrowIcon />
                 </button>
@@ -61,24 +56,21 @@ export const NewsCarrousel = () => {
                 ref={ swiperRef }
                 slidesPerGroup={ 1 }
                 allowTouchMove={ false }
+                onSlideChange={ handleSlideChange }
                 breakpoints={{
                     1280: {
-                        slidesPerView: 3,  
+                        slidesPerView: 3,
                         spaceBetween: 10,
-                    },
-                    0: {
-                        slidesPerView: 1.3,  
-                        spaceBetween: 10,
-                        allowTouchMove: true,
                     },
                 }}
                 loop={ true }
-                className="mySwiper xl:!h-[600px] !h-[520px] 3xl:!w-[1410px] xl:!w-[1080px] z-20 px-5 xl:p-0"
-                modules={[ Navigation ]}
+                autoplay={{ delay: 5000 }}
+                className="mySwiper !h-[600px] 3xl:!w-[1410px] !w-[1080px] z-20 p-0"
+                modules={[ Navigation, Autoplay ]}
             >
                 {
                     newsData.map((news, index) => (
-                        <SwiperSlide key={ news.id } className={`${ isActive(index) } rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent max-w-[320px] xl:max-w-[unset]`}>
+                        <SwiperSlide key={ news.id } className={`${ isActive(index) } rounded-3xl !items-start !justify-between overflow-hidden !bg-transparent max-w-[unset]`}>
                             <NewsSlide 
                                 isActive={ slideActive === index }
                                 title={ news.title }
@@ -86,7 +78,7 @@ export const NewsCarrousel = () => {
                                 img={ news.img }
                                 url={ news.url }
                             >
-                                <p className="3xl:text-lg xl:text-base text-[13px] xl:leading-6 leading-4 xl:w-auto w-[220px]">
+                                <p className="3xl:text-lg text-base xl:leading-6 w-auto">
                                     { news.content }
                                 </p>
                             </NewsSlide>

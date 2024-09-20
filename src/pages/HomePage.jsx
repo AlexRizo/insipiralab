@@ -1,8 +1,9 @@
 import { Button, EnvasesSlider, InspiralabVideoCosmetic, InspiralabVideoCosmeticMobile, LabialComponent, NewsCarrousel, TestComponent } from "../components"
 import { BubbleIcon, ByGardeniaNaturalsIcon, WeInspireBeautyIcon } from "../icons"
 import { ProcessCard } from "../components/ProcessCard"
-import { WeInspiraLabNegro, WeInspiraLabRosa, WeInspireCircle } from "../lottie"
+import { Circulo1, Circulo2, Circulo3, WeInspiraLabNegro, WeInspiraLabRosa, WeInspireCircle } from "../lottie"
 import { useScreen } from "../hooks/useScreen"
+import { NewsCarrouselMobile } from "../components/NewsCarrouselMobile"
 
 export const HomePage = () => {
     const { screen } = useScreen()
@@ -87,12 +88,14 @@ export const HomePage = () => {
                 <EnvasesSlider />
             </div>
 
-            <div className="w-full m-auto 3xl:pt-20 pt-16 3xl:pb-56 pb-48 bg-white relative flex flex-col items-center justify-center overflow-hidden">
-                <BubbleIcon size="xl:size-28 size-12" backdrop="backdrop-blur-md" x="xl:right-16 right-24" y="xl:top-9 top-12"/>
-                <BubbleIcon size="size-20" x="left-[29rem]" y="top-[9rem]" hidden={ true } />
+            <div className="w-full m-auto 3xl:pt-20 pt-16 3xl:pb-56 pb-48 bg-white relative flex flex-col items-center justify-center">
+                <BubbleIcon x="left-[20%]" y="top-40" size="size-13" size2="size-20" delay="floating-delay" />
+                <BubbleIcon x="right-16" y="top-5" size="size-32" />
                 <h1 className="text-[#D80196] text-5xl font-thin text-center mb-36 hidden xl:block">Prensa y reconocimiento</h1>
-                <NewsCarrousel />
-                <BubbleIcon size="xl:size-36 size-28" x="xl:left-52 left-10" y="xl:bottom-32 bottom-24" backdrop="backdrop-blur-md" />
+                {
+                    screen === 1 ? ( <div className="pl-4 w-full"> <NewsCarrouselMobile /> </div> ) : ( <NewsCarrousel /> )
+                }
+                <BubbleIcon x="left-[10%]" y="bottom-32" delay='floating-delay-2500' />
             </div>
         </section>
     )

@@ -5,7 +5,7 @@ export const useScroll = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 50) { // Ajusta el valor según tus necesidades
+            if (window.scrollY > 100) { // Ajusta el valor según tus necesidades
                 setScrolled(true);
             } else {
                 setScrolled(false);

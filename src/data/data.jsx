@@ -205,7 +205,7 @@ export const newsData = [
         title: <>Celebran a finalistas<br/> del Premio Emprendedor<br/> Coparmex</>,
         author: <>UNIVERSIDAD<br/> PANAMERICANA</>,
         content: (<>
-            Con el objetivo de conocer de<br className='hidden xl:block'/> cerca sus proyectos, el rector<br className='hidden xl:block'/> de la Universidad<br className='hidden xl:block'/> 
+            Con el objetivo de conocer de<br className='hidden xl:block'/> cerca sus proyectos, el rector<br className='hidden xl:block'/> de la Universidad <br className='hidden xl:block'/> 
             Panamericana, el Dr. José<br className='hidden xl:block'/> Antonio Esquivias Romero,<br className='hidden xl:block'/> sostuvo una reunión con 
             los<br className='hidden xl:block'/> Alumnos finalistas
         </>),

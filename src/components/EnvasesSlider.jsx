@@ -9,7 +9,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 // import required modules
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 
 export const EnvasesSlider = () => {
     const swiperRef = useRef(null);
@@ -42,7 +42,11 @@ export const EnvasesSlider = () => {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 }}
-                modules={[ Navigation ]}
+                modules={[ Navigation, Autoplay ]}
+                autoplay={{
+                    delay: 4000,
+                    disableOnInteraction: false,
+                }}
                 className="mySwiper"
             >
                 <SwiperSlide className="!bg-transparent w-min">
@@ -61,19 +65,19 @@ export const EnvasesSlider = () => {
                     <EnvaseSlide img='/img/home/envase-5.png' name='envase 5' />
                 </SwiperSlide>
                 <SwiperSlide className="!bg-transparent w-min">
-                    <EnvaseSlide img='/img/home/envase-1.png' name='envase 1' />
+                    <EnvaseSlide img='/img/home/envase-6.png' name='envase 6' />
                 </SwiperSlide>
                 <SwiperSlide className="!bg-transparent w-min">
-                    <EnvaseSlide img='/img/home/envase-2.png' name='envase 2' />
+                    <EnvaseSlide img='/img/home/envase-7.png' name='envase 7' />
                 </SwiperSlide>
                 <SwiperSlide className="!bg-transparent w-min">
-                    <EnvaseSlide img='/img/home/envase-3.png' name='envase 3' />
+                    <EnvaseSlide img='/img/home/envase-8.png' name='envase 8' />
                 </SwiperSlide>
                 <SwiperSlide className="!bg-transparent w-min">
-                    <EnvaseSlide img='/img/home/envase-4.png' name='envase 4' />
+                    <EnvaseSlide img='/img/home/envase-9.png' name='envase 9' />
                 </SwiperSlide>
                 <SwiperSlide className="!bg-transparent w-min">
-                    <EnvaseSlide img='/img/home/envase-5.png' name='envase 5' />
+                    <EnvaseSlide img='/img/home/envase-10.png' name='envase 10' />
                 </SwiperSlide>
             </Swiper>
             <div className="absolute 3xl:w-[85%] w-[90%] -translate-y-8 flex justify-between z-10">

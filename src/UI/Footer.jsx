@@ -35,10 +35,6 @@ export const Footer = () => {
                     </nav>
                 </div>
             </footer>
-
-            <div className='bg-[#E71567] w-full text-center text-sm py-2'>
-                <span>AVISO DE PRIVACIDAD</span>
-            </div>
         </>
     )
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavItem } from "../components"
 import { useNavigateTo, usePath, useScreen, useScroll } from "../hooks";
 import { BurguerMenuIcon, InspiralabHeaderIcon } from "../icons"
@@ -12,16 +12,28 @@ export const Header = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const [isHover, setIsHover] = useState(path);
+
+    const [borderColor, setBorderColor] = useState('');
+    const [hoverColor, setHoverColor] = useState('');
+
+    useEffect(() => {
+        setBorderColor(scrolled ? 'border-[#E71567]' : 'border-white');
+        setHoverColor(scrolled ? 'hover:border-[#E71567]' : 'hover:border-white');
+    }, [scrolled]);
+
+    useEffect(() => {
+        setIsHover(path);
+    }, [path]);
     
     return (
         <>
-            <header className={`w-full xl:px-20 fixed z-[9998] ${ scrolled && 'bg-black text-[#E71567] shadow-md' } transition-all`}>
+            <header className={`w-full xl:px-20 top-0 fixed z-[100] ${ scrolled && 'bg-black text-[#E71567] shadow-md' } transition-colors`}>
                 <nav className="py-3 xl:py-8 flex flex-row items-center justify-center xl:justify-between relative">
                     <div className="hidden xl:block">
-                        <NavItem text="INICIO" path="/" setHover={setIsHover} index={1} custom={`${ scrolled && 'border-[#E71567]' } ${ isHover === 1 ? 'border-white' : 'border-transparent' }`} />
+                        <NavItem text="INICIO" path="/" isHover={ isHover } setIsHover={ setIsHover } cPath={ path } borderColor={ borderColor } hoverColor={ hoverColor } />
                     </div>
                     <div className="hidden xl:block">
-                        <NavItem text="MAQUILA" path="/maquila" setHover={setIsHover} index={2} custom={`${ scrolled && 'border-[#E71567]' } ${ isHover === 2 ? 'border-white' : 'border-transparent' }`} />
+                        <NavItem text="MAQUILA" path="/maquila" isHover={ isHover } setIsHover={ setIsHover } cPath={ path } borderColor={ borderColor } hoverColor={ hoverColor } />
                     </div>
                     <div onClick={ onNavigate }>
                         {
@@ -30,10 +42,10 @@ export const Header = () => {
                         }
                     </div>
                     <div className="hidden xl:block">
-                        <NavItem text="NOSOTROS" path="/nosotros" setHover={setIsHover} index={3} custom={`${ scrolled && 'border-[#E71567]' } ${ isHover === 3 ? 'border-white' : 'border-transparent' }`} />
+                        <NavItem text="NOSOTROS" path="/nosotros" isHover={ isHover } setIsHover={ setIsHover } cPath={ path } borderColor={ borderColor } hoverColor={ hoverColor } />
                     </div>
                     <div className="hidden xl:block">
-                        <NavItem text="CONTACTO" path="/contacto" setHover={setIsHover} index={4} custom={`${ scrolled && 'border-[#E71567]' } ${ isHover === 4 ? 'border-white' : 'border-transparent' }`} />
+                        <NavItem text="CONTACTO" path="/contacto" isHover={ isHover } setIsHover={ setIsHover } cPath={ path } borderColor={ borderColor } hoverColor={ hoverColor } />
                     </div>
                     <div className="xl:hidden absolute right-7">
                         <BurguerMenuIcon onClick={ () => setIsOpen(true) } />
