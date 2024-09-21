@@ -16,11 +16,11 @@ export const ListContent = ({ index }) => {
 
     return (
         <ul className={`flex flex-col gap-10 list-content ${ animation }`}>
-            <li className="flex overflow-hidden relative h-[324px] w-[600px] rounded-3xl">
+            <li className="flex overflow-hidden relative h-[290px] w-[500px] rounded-3xl">
                 <img src={ currentIndex.img } alt="image" className="absolute" />
             </li>
             <li className="relative pl-12 before:-translate-x-3.5 before:-translate-y-1.5 before:content-['•'] before:text-3xl before:absolute before:text-black">
-                <p className="text-xl font-light text-black w-[445px]">{ currentIndex.text }</p>
+                <p className="text-lg 2xl:text-xl font-light text-black w-[445px]">{ currentIndex.text }</p>
             </li>
         </ul>
     )

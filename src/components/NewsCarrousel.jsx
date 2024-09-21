@@ -59,7 +59,7 @@ export const NewsCarrousel = () => {
                 onSlideChange={ handleSlideChange }
                 breakpoints={{
                     1280: {
-                        slidesPerView: 3,
+                        slidesPerView: 3.3,
                         spaceBetween: 10,
                     },
                 }}

@@ -6,3 +6,6 @@ export * from './WeInspireBeautyAnim';
 export * from './Circulo1.jsx';
 export * from './Circulo2.jsx';
 export * from './Circulo3.jsx';
+export * from './WeInspireBlackBarMobile';
+export * from './WeInspirePinkBarMobile';
+export * from './WeInspireBlockMobile';

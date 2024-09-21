@@ -115,13 +115,14 @@ export const GridData = [
         id: 1,
         title: 'Integridad Personal',
         text: 'En INSPIRA LAB, la integridad es el pilar de todo lo que hacemos. Nos comprometemos a actuar con honestidad y ética, asegurándonos de que cada producto que creamos cumpla con los más altos estándares de calidad y transparencia.',
+        customWidth: 'w-[208px] 2xl:w-auto',
         img: '/img/nosotros/nosotros-grid-1.jpg',
     },
     {
         id: 2,
         title: (<>Creatividad<br/> e Innovación</>),
         text: 'Creemos en el poder de la creatividad y la innovación para transformar el mundo de la cosmética. Cada formulación es una obra de arte, cada producto es una expresión de nuestra pasión por la belleza y la ciencia.',
-        customWidth: 'w-[235px]',
+        customWidth: 'w-[215px] 2xl:w-[235px]',
         img: '/img/nosotros/nosotros-grid-2.jpg',
         reverse: true
     },
@@ -129,13 +130,14 @@ export const GridData = [
         id: 3,
         title: 'Productividad',
         text: 'La eficiencia y la eficacia son claves en nuestro proceso de producción. Nos esforzamos por ser altamente productivos, optimizando recursos y tiempos para ofrecer productos de excelencia sin comprometer la calidad.',
+        customWidth: 'w-[210px] 2xl:w-auto',
         img: '/img/nosotros/nosotros-grid-3.jpg',
     },
     {
         id: 4,
         title: 'Conciencia',
         text: 'Somos conscientes del impacto de nuestras acciones y decisiones. Nos dedicamos a crear cosméticos que no solo realzan la belleza, sino que también respeten y protejan el medio ambiente. Cada ingrediente es cuidadosamente seleccionado, y nuestras prácticas de producción son sostenibles y responsables.',
-        customWidth: 'w-[255px] leading-6',
+        customWidth: 'w-[226px] 2xl:w-[255px]',
         img: '/img/nosotros/nosotros-grid-4.jpg',
         reverse: true
     }

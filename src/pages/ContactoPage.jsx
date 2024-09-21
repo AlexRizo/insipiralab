@@ -10,8 +10,8 @@ export const ContactoPage = () => {
 
     return (
         <section className='xl:h-screen w-full flex flex-col xl:flex-row items-center justify-center gap-10 relative overflow-hidden'>
-            <div className='xl:w-[40%] h-full relative'>
-                <div className="mt-10 size-full xl:p-20" >
+            <div className='xl:w-[40%] h-[160px] xl:h-full relative flex xl:block items-center justify-center'>
+                <div className="mt-40 2xl:mt-10 size-72 absolute xl:static xl:size-full xl:p-20 -translate-x-10" >
                     <WeInspireBeauty />
                 </div>
             </div>

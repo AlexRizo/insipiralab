@@ -1,15 +1,15 @@
-import { Art1, Art2 } from "../art"
+import { Art1 } from "../art"
 import { Button, ExplosionVideo, ExplosionVideoMobile, GridCol, InspiralabVideoGraphic, InspiralabVideoGraphicMobile, Spam, ValuesListComponent } from "../components"
 import { GridData } from "../data/data"
 import { ArrowIcon, BubbleIcon, InspiralabHeaderIcon } from "../icons"
 import { useScreen } from "../hooks/useScreen"
-import { WeInspireBeautyAnim } from "../lottie"
+import { WeInspireBeautyAnim, WeInspireBlockMobile } from "../lottie"
 
 export const NosotrosPage = () => {
     const { screen } = useScreen();
     
     return (
-        <section>
+        <section className="overflow-hidden">
             <div className="container relative m-auto flex flex-col items-center justify-center h-screen gap-16 xl:gap-36">
                 {
                     screen === 1 ? (<ExplosionVideoMobile />) : (<ExplosionVideo />)
@@ -42,17 +42,22 @@ export const NosotrosPage = () => {
             </div>
 
             <div className="w-full h-[500px] relative flex items-center justify-center bg-[#E0A5FF] overflow-hidden py-40 xl:py-36">
-                <WeInspireBeautyAnim />
+                {
+                    screen === 1 ? <WeInspireBlockMobile/> : <WeInspireBeautyAnim />
+                }
             </div>
 
             <div className="relative overflow-hidden flex flex-col xl:flex-row justify-center gap-8 xl:gap-16 font-light w-full bg-[#F5F5F5] text-black px-8 xl:px-0 py-16 xl:py-32">
-                <BubbleIcon size="size-14" backdrop="backdrop-blur" x="right-[25%]" y="top-9" />
-                <BubbleIcon size="size-7" backdrop="backdrop-blur" x="right-[10%]" y="top-28" />
-                <h1 className="w-min text-[#E71567] text-3xl xl:text-[42px] leading-[1]">
-                    By
-                    Gardenia
-                    Naturals
-                </h1>
+                <BubbleIcon x="right-7 xl:right-[10%] 2xl:right-[20%]" y="top-32 xl:top-20" size="size-8 xl:size-14" size2="xl:size-20" delay="floating-animation-2" blur="blur" />
+                <BubbleIcon x="right-24" y=" top-10" size="size-14 xl:hidden" size2="" delay="float-animation-mobile-2" blur="blur" />
+                <div className="relative">
+                    <h1 className="w-min text-[#E71567] text-3xl xl:text-[42px] leading-[1]">
+                        By
+                        Gardenia
+                        Naturals
+                    </h1>
+                    <BubbleIcon x="left-10" y=" bottom-10" size="size-32 hidden xl:block" />
+                </div>
                 <div className="leading-5 xl:leading-8 text-[15px] xl:text-base pr-2.5 xl:p-0 z-20 relative">
                     <p>
                         Hace cuatro años, un grupo de científicos 
@@ -78,7 +83,7 @@ export const NosotrosPage = () => {
                         dado para llegar hasta aquí.
                     </p>
                 </div>
-                <BubbleIcon size="size-9" backdrop="backdrop-blur-[5px]" custom="size-16" x="left-10" y="bottom-4" />
+                <BubbleIcon x="left-10" y="bottom-1" size="size-8 xl:hidden" size2="" delay="floating-animation-2" blur="blur z-20" />
             </div>
 
             <div className="w-full flex flex-col items-center justify-center relative bg-white">
@@ -96,7 +101,10 @@ export const NosotrosPage = () => {
                 </div>
             </div>
 
-            <div className="w-full bg-white flex flex-col items-center pt-14 xl:pb-28">
+            <div className="w-full bg-white flex flex-col items-center pt-14 xl:pb-28 relative">
+                <BubbleIcon x="right-5 2xl:right-14" y="top-16" size="size-28 2xl:size-32 hidden xl:block" />
+                <BubbleIcon x="left-10 2xl:left-28" y="bottom-40" size="size-13" size2="size-20 hidden xl:block" delay="floating-delay-1000" />
+                <BubbleIcon x="right-28 2xl:right-52" y="bottom-44" size="size-13" size2="size-20 hidden xl:block" delay="floating-animation-2" />
                 <h1 className="text-3xl xl:text-5xl text-[#E71567] font-light mb-5 xl:mb-20">Nuestros Valores</h1>
                 {
                     screen === 1 ? <ValuesListComponent /> : <GridCol data={ GridData } />

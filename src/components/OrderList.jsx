@@ -5,7 +5,7 @@ import { useMediaQuery } from "react-responsive";
 
 export const OrderList = ({ setIndex }) => {
 
-    const isMobile = useMediaQuery({ query: '(max-width: 1300px)' });
+    const isMobile = useMediaQuery({ query: '(max-width: 1280px)' });
     const [active, setActive] = useState(0);
 
     useEffect(() => setIndex(active), [active]);
@@ -43,12 +43,12 @@ export const OrderList = ({ setIndex }) => {
         );
     } else {
         return (
-            <ul className="text-black font-light text-lg xl:text-[23.5px] 3xl:text-2xl px-6 xl:p-0 w-full xl:w-max leading-8">
+            <ul className="text-black font-light text-lg xl:text-[22px] 3xl:text-2xl px-6 xl:p-0 w-full xl:w-max leading-8">
                 {
-                    orderListData.map(item => (
+                    orderListData.map((item, index) => (
                         <li 
                             key={ item.id }
-                            className={`xl:w-[600px] w-full flex justify-between items-center relative gap-5 border-b xl:h-28 border-[#707070] ${ item.id === active && 'bg-[#E71567] order-list rounded-2xl xl:rounded-[2rem] border-transparent font-bold' } p-5 xl:p-10 cursor-pointer`}
+                            className={`xl:w-[550px] 2xl:xl:w-[600px] w-full flex justify-between items-center relative gap-5 border-b xl:h-24 ${ index === active - 1 ? 'border-transparent' : 'border-[#707070]' } ${ item.id === active && 'bg-[#E71567] order-list xl:rounded-xl 2xl:rounded-2xl border-transparent font-bold' } p-5 xl:p-10 cursor-pointer`}
                             onClick={ () => setActive(item.id) }
                         >
                             <p className="w-[230px] xl:w-auto">{ item.text }</p>

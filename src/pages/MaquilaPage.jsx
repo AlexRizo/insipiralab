@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { MaquilaCard } from "../components/MaquilaCard"
 import { OrderList } from "../components/OrderList"
-import { ArrowIcon, TriangleIcon } from "../icons"
+import { ArrowIcon, BubbleIcon, TriangleIcon } from "../icons"
 import { ListContent, TimeLine } from "../components";
 import { desarrolloData, envasesListosData } from "../data/data";
 import { useLocation } from "react-router-dom";
@@ -31,7 +31,7 @@ export const MaquilaPage = () => {
     }, []);
     
     return (
-        <section className="bg-white">
+        <section className="bg-white overflow-hidden">
             <div className="w-full h-screen bg-[url('/img/maquila/maquila-bg-mobile.jpg')] xl:bg-[url('/img/maquila/maquila-bg.jpg')] bg-center bg-no-repeat bg-cover flex items-center justify-center">
                 <div className="text-center">
                     <h1 className="text-[30px] xl:text-[45px] 2xl:text-[50px] font-medium xl:font-thin leading-6 xl:leading-tight mb-2 xl:mb-0">Exclusividad<br className="xl:hidden"/> y calidad</h1>
@@ -61,7 +61,7 @@ export const MaquilaPage = () => {
                 </p>
             </div>
 
-            <div className="bg-[#F5F5F5] w-full 3xl:h-[890px] py-32 flex justify-center flex-wrap items-center gap-3 xl:gap-5 relative">
+            <div className="bg-[#F5F5F5] w-full 3xl:h-[890px] py-14 2xl:py-32 flex justify-center flex-wrap items-center gap-3 xl:gap-5 relative">
                 <MaquilaCard 
                     text="Skin care"
                     bgColor="bg-[#FFE9BA] hover:bg-[url('/img/maquila/maquila-card-bg-1.jpg')] bg-cover"
@@ -100,7 +100,9 @@ export const MaquilaPage = () => {
                     classImage="w-[108px] xl:w-[170px] 3xl:w-[190px] opacity-95 xl:opacity-80" />
             </div>
 
-            <div className="container m-auto py-4 xl:pt-14 xl:pb-20">
+            <div className="container m-auto py-4 xl:pt-14 xl:pb-20 relative">
+                <BubbleIcon x="right-20 2xl:right-52" y="top-32" size="size-13 hidden xl:block" size2="size-20" delay="floating-delay-1000" />
+                <BubbleIcon x="right-10 2xl:right-44" y="bottom-20" size="size-32 hidden xl:block" />
                 <h1 className="text-5xl text-[#E71567] hidden xl:block text-center font-light mb-28">Servicios</h1>
                 <div className="flex flex-col xl:flex-row justify-center gap-14">
                     <OrderList setIndex={ setCurrentIndex } />
@@ -114,7 +116,10 @@ export const MaquilaPage = () => {
                 <h1>Proceso de maquila</h1>
             </div>
 
-            <div className="container m-auto pb-20 pt-10 px-0 xl:px-10 flex items-center flex-col">
+            <div className="container m-auto pb-20 pt-10 px-0 xl:px-10 flex items-center flex-col relative">
+            <BubbleIcon x="xl:right-48 2xl:right-[20%]" y="top-20" size="size-13" size2="size-20 hidden xl:block" delay="floating-delay-1000" />
+            <BubbleIcon x="-left-2 2xl:left-3" y="top-[18%]" size="size-28 2xl:size-32 hidden xl:block" />
+            <BubbleIcon x="-right-20" y="top-[24%]" size="size-28 2xl:size-32 hidden xl:block" delay="floating-animation-2" />
                 <h1 className="text-[#E71567] relative text-lg xl:text-[28px] font-semibold flex xl:items-center justify-center text-center xl:text-left xl:gap-2">
                     <TriangleIcon className="hidden xl:block" />
                     <TriangleIcon className="absolute -translate-x-[130px] xl:hidden" width="12" />
@@ -137,6 +142,10 @@ export const MaquilaPage = () => {
                     <img src="/img/maquila/maquila-100-piezas.jpg" loading="lazy" className="hidden xl:block" />
                     <img src="/img/maquila/maquila-100-piezas-mobile.jpg" loading="lazy" className="xl:hidden rounded-2xl" />
                 </div>
+
+                <BubbleIcon x="right-12 2xl:right-[10%]" y="top-[52%]" size="size-13" size2="size-20 hidden xl:block" delay="floating-animation-2" />
+                <BubbleIcon x="right-32 2xl:right-[17%]" y="top-[75%]" size="size-13" size2="size-20 hidden xl:block" delay="floating-delay-1000" />
+                <BubbleIcon x="left-3" y="top-[68%]" size="size-28 2xl:size-32 hidden xl:block" />
 
                 <h1 className="text-[#E71567] text-lg xl:text-[28px] leading-5 xl:leading-normal font-semibold flex items-start justify-center gap-2 text-center" ref={ cosmeticosRef }>
                 <TriangleIcon className="hidden xl:block mt-2" />

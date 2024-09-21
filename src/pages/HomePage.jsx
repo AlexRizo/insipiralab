@@ -1,7 +1,7 @@
 import { Button, EnvasesSlider, InspiralabVideoCosmetic, InspiralabVideoCosmeticMobile, LabialComponent, NewsCarrousel, TestComponent } from "../components"
 import { BubbleIcon, ByGardeniaNaturalsIcon, WeInspireBeautyIcon } from "../icons"
 import { ProcessCard } from "../components/ProcessCard"
-import { Circulo1, Circulo2, Circulo3, WeInspiraLabNegro, WeInspiraLabRosa, WeInspireCircle } from "../lottie"
+import { Circulo1, Circulo2, Circulo3, WeInspiraLabNegro, WeInspiraLabRosa, WeInspireBlackBarMobile, WeInspireCircle, WeInspirePinkBarMobile } from "../lottie"
 import { useScreen } from "../hooks/useScreen"
 import { NewsCarrouselMobile } from "../components/NewsCarrouselMobile"
 
@@ -61,24 +61,31 @@ export const HomePage = () => {
             </div>
 
             <div className="w-full relative">
-                <WeInspiraLabNegro />
+                {
+                    screen === 1 ? <WeInspireBlackBarMobile /> : <WeInspiraLabNegro />
+                }
             </div>
             
             <div className="relative h-[910px] xl:h-[900px] 3xl:h-[1000px] bg-white flex flex-col overflow-hidden">
-                <WeInspireBeautyIcon className=" hidden xl:block absolute left-20 top-10"/>
-                <WeInspireBeautyIcon className="absolute right-[35%] -top-5 xl:hidden" width="154" />
+                {
+                    screen === 1 ? <WeInspireBeautyIcon className="absolute right-[35%] -top-5" width="154" />
+                    : screen === 2 ? <WeInspireBeautyIcon className="absolute left-20 top-10" width="250" />
+                    : <WeInspireBeautyIcon className="absolute left-20 top-10"/>
+                }
 
                 <LabialComponent />
             </div>
 
             <div className="w-full bg-[#E0A5FF] overflow-hidden whitespace-nowrap box-border">
-                <WeInspiraLabRosa/>
+                {
+                    screen === 1 ? <WeInspirePinkBarMobile /> : <WeInspiraLabRosa/>
+                }
             </div>
 
             <div className="py-16 px-7 xl:py-36 3xl:py-40">
                 <div className="m-auto xl:max-w-[800px] relative custom-class">
                     <WeInspireCircle className="absolute size-40 -left-20 -top-14 hidden xl:block" />
-                    <video controls className="h-[500px] w-full">
+                    <video controls className="xl:h-[500px] w-full" >
                         <source type="video/mp4" src="https://res.cloudinary.com/dzcassy7b/video/upload/v1726261288/Inspiralab/movil-INSP-REEL-HOR_b3spgu.mp4" />
                     </video>
                 </div>
@@ -89,13 +96,13 @@ export const HomePage = () => {
             </div>
 
             <div className="w-full m-auto 3xl:pt-20 pt-16 3xl:pb-56 pb-48 bg-white relative flex flex-col items-center justify-center">
-                <BubbleIcon x="left-[20%]" y="top-40" size="size-13" size2="size-20" delay="floating-delay" />
+                <BubbleIcon x="xl:left-52 2xl:left-[20%]" y="top-40" size="size-13" size2="size-20" delay="floating-delay-1000" />
                 <BubbleIcon x="right-16" y="top-5" size="size-32" />
                 <h1 className="text-[#D80196] text-5xl font-thin text-center mb-36 hidden xl:block">Prensa y reconocimiento</h1>
                 {
                     screen === 1 ? ( <div className="pl-4 w-full"> <NewsCarrouselMobile /> </div> ) : ( <NewsCarrousel /> )
                 }
-                <BubbleIcon x="left-[10%]" y="bottom-32" delay='floating-delay-2500' />
+                <BubbleIcon x="left-[10%]" y="bottom-32" delay='floating-animation-2' />
             </div>
         </section>
     )

@@ -80,9 +80,16 @@
         animation-delay: 1s;
     }
 
-    .floating-delay-2500 {
-        animation-delay: 2.5s;
-        animation-direction: reverse;
+    .floating-animation-2 {
+        animation: floating-2 3s ease-in-out infinite;
+    }
+
+    .float-animation-mobile {
+        animation: floating-mobile 3s ease-in-out infinite;
+    }
+
+    .float-animation-mobile-2 {
+        animation: floating-mobile-2 2.5s ease-in-out infinite;
     }
 }
 
@@ -91,7 +98,43 @@
       transform: translateY(0) scale(1);
     }
     50% {
+      transform: translateY(20px) scale(.9);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes floating-2 {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
       transform: translateY(-20px) scale(1.1);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes floating-mobile {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-20px) scale(1.1);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes floating-mobile-2 {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(20px) scale(.9);
     }
     100% {
       transform: translateY(0) scale(1);
