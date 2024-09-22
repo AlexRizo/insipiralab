@@ -85,7 +85,7 @@ export const HomePage = () => {
             <div className="py-16 px-7 xl:py-36 3xl:py-40">
                 <div className="m-auto xl:max-w-[800px] relative custom-class">
                     <WeInspireCircle className="absolute size-40 -left-20 -top-14 hidden xl:block" />
-                    <video controls playsInline className="xl:h-[500px] w-full" >
+                    <video controls playsInline preload="none" poster="/img/home/poster.JPG" className="xl:h-[500px] w-full" >
                         <source type="video/mp4" src="https://res.cloudinary.com/dzcassy7b/video/upload/v1726261288/Inspiralab/movil-INSP-REEL-HOR_b3spgu.mp4" />
                     </video>
                 </div>

@@ -1,3 +1,4 @@
+import { XMarkIcon } from "@heroicons/react/24/outline"
 import { NavItem } from "../components"
 
 const navItems = [
@@ -35,8 +36,8 @@ export const NavbarMenu = ({ isOpen, setIsOpen }) => {
                         )
                         :
                         (
-                            <span key={ index } onClick={ () => setIsOpen(false) } className="text-[10px] cursor-pointer">
-                                { text }
+                            <span key={ index } onClick={ () => setIsOpen(false) } className="cursor-pointer">
+                                <XMarkIcon className="h-10" />
                             </span>
                         )
                 ))

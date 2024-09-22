@@ -5,7 +5,13 @@ export const Button = ({ text = '', className = '', button = 1, iconClass = '', 
     const navigate = useNavigate();
     
     const handleNavigate = () => {
-        if (path) return navigate(path);
+        if (path.includes('http')) {
+            return window.open(path, '_blank');
+        } else if (path.includes('mailto')) {
+            return window.location.href = path;
+        } else {
+            return navigate(path);
+        }
     };
     
     return (
