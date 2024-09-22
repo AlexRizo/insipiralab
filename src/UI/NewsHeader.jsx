@@ -32,7 +32,7 @@ export const NewsHeader = () => {
                         <NavItem text="CONTACTO" path="/contacto" />
                     </div>
                     <div className="xl:hidden absolute right-7">
-                        <BurguerMenuIcon />
+                        <BurguerMenuIcon onClick={ () => setIsOpen(true) } />
                     </div>
                 </nav>
             </header>
