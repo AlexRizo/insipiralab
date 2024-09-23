@@ -91,6 +91,18 @@
     .float-animation-mobile-2 {
         animation: floating-mobile-2 2.5s ease-in-out infinite;
     }
+
+    .circle {
+        height: 24px;
+        width: 24px;
+        border-radius: 24px;
+        background-color: #E71567;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        pointer-events: none;
+    }
 }
 
 @keyframes floating {

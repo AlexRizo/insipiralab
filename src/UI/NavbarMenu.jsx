@@ -31,7 +31,7 @@ export const NavbarMenu = ({ isOpen, setIsOpen }) => {
                     path ? 
                         (
                             <span key={ index } onClick={ () => setIsOpen(false) } >
-                                <NavItem text={ text } path={ path } custom="border-0" />
+                                <NavItem text={ text } path={ path } custom="border-0 text-lg" />
                             </span>
                         )
                         :

@@ -60,7 +60,7 @@ export const NosotrosPage = () => {
                 </div>
                 <div className="leading-5 xl:leading-8 text-[15px] xl:text-base pr-2.5 xl:p-0 z-20 relative">
                     <p>
-                        Hace cuatro años, un grupo de científicos 
+                        En 2020, un grupo de científicos 
                         visionarios se unieron con un sueño<br className="hidden xl:block"/> en 
                         común: crear cosméticos naturales de alta 
                         calidad que inspiren belleza y<br className="hidden xl:block"/> creatividad. 

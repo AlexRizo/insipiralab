@@ -10,6 +10,7 @@ import { useScreen } from "../hooks";
 export const MaquilaPage = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const { screen } = useScreen();
+    const [position, setPosition] = useState(screen === 1 ? 50 : 100);
 
     const { hash } = useLocation();
 
@@ -20,13 +21,14 @@ export const MaquilaPage = () => {
         if(hash === "#desarrollo") {
             desarrolloRef.current.scrollIntoView({ behavior: "smooth" });
         } else if (hash === '#cosmeticos' ) {
+            setTimeout(() => {
+                const elPos = cosmeticosRef.current.getBoundingClientRect().top + window.scrollY;
 
-            const elPos = cosmeticosRef.current.getBoundingClientRect().top + window.scrollY;
-
-            window.scrollTo({
-                top: elPos - 100,
-                behavior: 'smooth'
-            });
+                window.scrollTo({
+                    top: elPos - position,
+                    behavior: 'smooth'
+                });
+            }, 100);
         }
     }, []);
     
@@ -34,7 +36,7 @@ export const MaquilaPage = () => {
         <section className="bg-white overflow-hidden">
             <div className="w-full h-screen bg-[url('/img/maquila/maquila-bg-mobile.jpg')] xl:bg-[url('/img/maquila/maquila-bg.jpg')] bg-center bg-no-repeat bg-cover flex items-center justify-center">
                 <div className="text-center">
-                    <h1 className="text-[30px] xl:text-[45px] 2xl:text-[50px] font-medium xl:font-thin leading-6 xl:leading-tight mb-2 xl:mb-0">Exclusividad<br className="xl:hidden"/> y calidad</h1>
+                    <h1 className="text-[30px] xl:text-[45px] 2xl:text-[50px] font-medium leading-6 xl:leading-tight mb-2 xl:mb-0">Exclusividad<br className="xl:hidden"/> y calidad</h1>
                     <p className="text-lg xl:text-[24px] 2xl:text-[28px] font-light leading-5 xl:leading-7">
                         que no encontrarás en ningún<br/> otro lugar de México.
                     </p>

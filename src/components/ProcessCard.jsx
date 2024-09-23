@@ -30,5 +30,3 @@ export const ProcessCard = ({ children, img = '', url = '/#' }) => {
         </div>
     )
 }
-
-// width={13}

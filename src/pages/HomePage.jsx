@@ -1,7 +1,7 @@
-import { Button, EnvasesSlider, InspiralabVideoCosmetic, InspiralabVideoCosmeticMobile, LabialComponent, NewsCarrousel, TestComponent } from "../components"
+import { Button, EnvasesSlider, InspiralabVideoCosmetic, InspiralabVideoCosmeticMobile, LabialComponent, NewsCarrousel } from "../components"
 import { BubbleIcon, ByGardeniaNaturalsIcon, WeInspireBeautyIcon } from "../icons"
 import { ProcessCard } from "../components/ProcessCard"
-import { Circulo1, Circulo2, Circulo3, WeInspiraLabNegro, WeInspiraLabRosa, WeInspireBlackBarMobile, WeInspireCircle, WeInspirePinkBarMobile } from "../lottie"
+import { WeInspiraLabNegro, WeInspiraLabRosa, WeInspireBlackBarMobile, WeInspireCircle, WeInspirePinkBarMobile } from "../lottie"
 import { useScreen } from "../hooks/useScreen"
 import { NewsCarrouselMobile } from "../components/NewsCarrouselMobile"
 

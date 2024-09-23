@@ -17,9 +17,9 @@ export const OrderList = ({ setIndex }) => {
                     orderListData.map(item => (
                         <li 
                             key={ item.id }
-                            className={`flex flex-col gap-5 px-6 cursor-pointer h-transition ${ active === item.id ? 'h-[490px]' : 'h-[100px]' }`}
+                            className={`flex flex-col gap-5 px-6 cursor-pointer h-transition ${ active === item.id ? 'h-[510px]' : 'h-[100px]' }`}
                         >
-                            <div className={`flex items-center justify-between w-full min-h-[100px] border-t border-[#707070] text-black ${ active === item.id && 'bg-[#E71567] border-none rounded-2xl font-bold mt-5 px-3' }`} onClick={ () => setActive(item.id) }>
+                            <div className={`flex items-center justify-between w-full min-h-[100px] border-t border-[#707070] text-black ${ active === item.id && 'bg-[#E71567] border-none rounded-2xl font-bold px-3' }`} onClick={ () => setActive(item.id) }>
                                 <p className="w-[230px] text-lg">{ item.text }</p>
                                 <div className="w-[42px] flex items-center justify-center">
                                     <OpenIcon className={`absolute ${ item.id === active && 'animate-button' }`} width="40" />

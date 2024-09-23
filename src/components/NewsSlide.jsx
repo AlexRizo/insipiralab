@@ -11,14 +11,13 @@ export const NewsSlide = ({ isActive = false, title = '', author = '', img = '',
                 </div>
                 <div className='w-full'>
                     { children }
-                    <div onClick={ () => window.open(url, '_BLANK') } className='w-min ml-auto'>
                         <Button 
-                            className={`xl:opacity-0 3xl:text-[13px] xl:!text-[11px] text-xs ${ isActive && 'xl:animate-button_fade' } animation-delay-2000 relative py-4 px-[3.75rem] xl:px-16 3xl:px-[4.5rem] mt-10 xl:mt-0`}
+                            className={`ml-auto xl:opacity-0 3xl:text-[13px] xl:!text-[11px] text-xs ${ isActive && 'xl:animate-button_fade' } animation-delay-2000 relative py-4 px-[3.75rem] xl:px-16 3xl:px-[4.5rem] mt-10 xl:mt-0`}
                             text="LEER MÁS"
                             button={ 0 }
                             iconClass='absolute right-4'
+                            path={ url }
                         />
-                    </div>
                 </div>
             </div>
         </>

@@ -11,13 +11,13 @@ export const ContactoPage = () => {
     return (
         <section className='xl:h-screen w-full flex flex-col xl:flex-row items-center justify-center gap-10 relative overflow-hidden'>
             <div className='xl:w-[40%] h-[160px] xl:h-full relative flex xl:block items-center justify-center'>
-                <div className="mt-40 2xl:mt-10 size-72 absolute xl:static xl:size-full xl:p-20 -translate-x-10" >
+                <div className="mt-40 xl:mt-0 size-72 absolute xl:static xl:size-full xl:p-20 -translate-x-10" >
                     <WeInspireBeauty />
                 </div>
             </div>
-            <div className='w-[1px] bg-[#E71667] h-[620px] hidden xl:block mr-20'></div>
+            <div className='w-[1px] bg-[#E71667] h-[520px] hidden xl:block mr-20'></div>
             <div className='flex flex-col xl:flex-row mt-10 xl:m-0'>
-                <div className='flex flex-col items-center gap-10'>
+                <div className='flex flex-col items-center xl:items-start gap-10'>
                     <h1 className='text-[#F5F5F5] text-3xl 2xl:text-5xl'>Contáctanos</h1>
                     <div className='flex flex-col gap-5 w-full max-w-[310px] xl:max-w-[unset]'>
                         <Button text='WhatsApp' path={`https://wa.me/${ phoneNumber }?text=Hola,%20estoy%20interesado/a%20en%20conocer%20más%20sobre%20sus%20productos%20de%20belleza.%20¿Podrían%20brindarme%20más%20información?`} className='!w-full 2xl:!w-[448px] flex justify-center border-[#E71667] text-[#E71567] !text-lg 2xl:!text-3xl' button={0} iconColor='#E71567' />

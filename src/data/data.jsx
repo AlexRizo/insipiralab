@@ -159,7 +159,7 @@ export const newsData = [
             Naturals.
         </>),
         img: 'bg-[url("/img/home/news-slider-imagen-1.jpg")]',
-        url: '/noticias'
+        url: 'https://inspiralab.devalowee.com/noticias'
     },
     {
         id: 2,
