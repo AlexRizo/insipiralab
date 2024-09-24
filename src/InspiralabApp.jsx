@@ -2,8 +2,11 @@ import { Outlet, useLocation } from "react-router-dom"
 import { Footer, Header } from "./UI"
 import { useEffect } from "react"
 import { CursorTrail } from "./components"
+import { useScreen } from "./hooks"
 
 export const InspiralabApp = () => {
+
+    const { screen } = useScreen()
 
     const location = useLocation()
 
@@ -20,7 +23,9 @@ export const InspiralabApp = () => {
     
     return (
         <>
-            <CursorTrail />
+            {
+                screen !== 1 && <CursorTrail />
+            }
         
             <Header />
         

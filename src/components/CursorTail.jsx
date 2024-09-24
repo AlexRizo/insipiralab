@@ -45,7 +45,8 @@ export const CursorTrail = () => {
         };
     }, []);
 
-    return <>
+    return (
+    <div className="cirsor">
         <div className="circle"></div>
         <div className="circle"></div>
         <div className="circle"></div>
@@ -66,5 +67,5 @@ export const CursorTrail = () => {
         <div className="circle"></div>
         <div className="circle"></div>
         <div className="circle"></div>
-    </>;
+    </div>);
 };
