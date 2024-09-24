@@ -45,10 +45,10 @@ export const NewsCarrousel = () => {
     return (
         <>
             <div className='absolute w-[95%] 3xl:w-[1600px] 3xl:max-w-[1600px] top-1/2 justify-between flex'>
-                <button className='rotate-180' onClick={ prevSlide }>
+                <button className='rotate-180 cursor-none' onClick={ prevSlide }>
                     <SliderArrowIcon />
                 </button>
-                <button onClick={ nextSlide }>
+                <button  className='cursor-none' onClick={ nextSlide }>
                     <SliderArrowIcon />
                 </button>
             </div>

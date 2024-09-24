@@ -16,7 +16,7 @@ export const Button = ({ text = '', className = '', button = 1, iconClass = '', 
     
     return (
         <button 
-            className={ `py-2.5 xl:py-4 px-6 xl:px-12 w-max border rounded-full text-xs xl:text-[22px] font-light flex items-center gap-6 ${ className }` }
+            className={ `py-2.5 xl:py-4 px-6 xl:px-12 w-max border rounded-full text-xs xl:text-[22px] font-light flex items-center gap-6 ${ className } cursor-none` }
             onClick={ handleNavigate }    
         >
             <span>{ text }</span>

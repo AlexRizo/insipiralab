@@ -5,7 +5,7 @@ import { BurguerMenuIcon, InspiralabHeaderIcon } from "../icons"
 import { NavbarMenu } from "./NavbarMenu";
 
 export const Header = () => {
-    const { onNavigate } = useNavigateTo();
+    const onNavigate = useNavigateTo();
     const { scrolled } = useScroll();
     const { screen } = useScreen()
     const { path } = usePath();

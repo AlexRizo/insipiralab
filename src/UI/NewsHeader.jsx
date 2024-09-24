@@ -5,7 +5,7 @@ import { BurguerMenuIcon, InspiralabHeaderIcon } from "../icons"
 import { NavbarMenu } from "./NavbarMenu";
 
 export const NewsHeader = () => {
-    const { onNavigate } = useNavigateTo();
+    const onNavigate = useNavigateTo();
     const { screen } = useScreen()
 
     const [isOpen, setIsOpen] = useState(false);

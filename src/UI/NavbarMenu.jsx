@@ -36,7 +36,7 @@ export const NavbarMenu = ({ isOpen, setIsOpen }) => {
                         )
                         :
                         (
-                            <span key={ index } onClick={ () => setIsOpen(false) } className="cursor-pointer">
+                            <span key={ index } onClick={ () => setIsOpen(false) } className="cursor-none">
                                 <XMarkIcon className="h-10" />
                             </span>
                         )

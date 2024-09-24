@@ -17,7 +17,7 @@ export const OrderList = ({ setIndex }) => {
                     orderListData.map(item => (
                         <li 
                             key={ item.id }
-                            className={`flex flex-col gap-5 px-6 cursor-pointer h-transition ${ active === item.id ? 'h-[510px]' : 'h-[100px]' }`}
+                            className={`flex flex-col gap-5 px-6 cursor-none h-transition ${ active === item.id ? 'h-[510px]' : 'h-[100px]' }`}
                         >
                             <div className={`flex items-center justify-between w-full min-h-[100px] border-t border-[#707070] text-black ${ active === item.id && 'bg-[#E71567] border-none rounded-2xl font-bold px-3' }`} onClick={ () => setActive(item.id) }>
                                 <p className="w-[230px] text-lg">{ item.text }</p>
@@ -48,7 +48,7 @@ export const OrderList = ({ setIndex }) => {
                     orderListData.map((item, index) => (
                         <li 
                             key={ item.id }
-                            className={`xl:w-[550px] 2xl:xl:w-[600px] w-full flex justify-between items-center relative gap-5 border-b xl:h-24 ${ index === active - 1 ? 'border-transparent' : 'border-[#707070]' } ${ item.id === active && 'bg-[#E71567] order-list xl:rounded-xl 2xl:rounded-2xl border-transparent font-bold' } p-5 xl:p-10 cursor-pointer`}
+                            className={`xl:w-[550px] 2xl:xl:w-[600px] w-full flex justify-between items-center relative gap-5 border-b xl:h-24 ${ index === active - 1 ? 'border-transparent' : 'border-[#707070]' } ${ item.id === active && 'bg-[#E71567] order-list xl:rounded-xl 2xl:rounded-2xl border-transparent font-bold' } p-5 xl:p-10 cursor-none`}
                             onClick={ () => setActive(item.id) }
                         >
                             <p className="w-[230px] xl:w-auto">{ item.text }</p>

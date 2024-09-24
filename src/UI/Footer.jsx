@@ -3,7 +3,7 @@ import { useNavigateTo } from '../hooks/useNavigateTo'
 import { FacebookIcon, InspiralabFooterIcon, InstagramIcon, TiktokIcon, YoutubeIcon } from '../icons'
 
 export const Footer = () => {
-    const { onNavigate } = useNavigateTo()
+    const onNavigate = useNavigateTo()
     
     return (
         <>
@@ -20,10 +20,10 @@ export const Footer = () => {
                 </div>
                 <div className='flex justify-end xl:w-1/3 order-3 xl:order-none'>
                     <nav className='flex xl:flex-col items-center gap-4'>
-                        <a href='https://www.instagram.com/inspiralabcosmetics' target='_blank'>
+                        <a href='https://www.instagram.com/inspiralabcosmetics' className='cursor-none' target='_blank'>
                             <InstagramIcon color="#fff" />
                         </a>
-                        <a href='https://www.facebook.com/inspiralabcosmetics' target='_blank'>
+                        <a href='https://www.facebook.com/inspiralabcosmetics' className='cursor-none' target='_blank'>
                             <FacebookIcon color="#fff" />
                         </a>
                         {/* <a>

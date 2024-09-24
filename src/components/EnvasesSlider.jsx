@@ -81,10 +81,10 @@ export const EnvasesSlider = () => {
                 </SwiperSlide>
             </Swiper>
             <div className="absolute 3xl:w-[85%] w-[90%] -translate-y-8 flex justify-between z-10">
-                <div onClick={ onNavigate } className="rotate-180 cursor-pointer">
+                <div onClick={ onNavigate } className="rotate-180 cursor-none">
                     <SliderArrowIcon/>
                 </div>
-                <div onClick={ () => onNavigate('next') } className="cursor-pointer" >
+                <div onClick={ () => onNavigate('next') } className="cursor-none" >
                     <SliderArrowIcon/>
                 </div>
             </div>
