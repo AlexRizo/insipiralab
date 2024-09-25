@@ -1,6 +1,7 @@
 import { Navigate } from "react-router-dom";
 import { InspiralabApp } from "../InspiralabApp";
 import { ContactoPage, HomePage, MaquilaPage, NosotrosPage, NoticiaPage } from "../pages";
+import { Admin, Login } from "../admin";
 
 export const AppRouter = [
     {
@@ -23,6 +24,14 @@ export const AppRouter = [
                 path: '/contacto',
                 element: <ContactoPage />
             },
+            {
+                path: '/login',
+                element: <Login />
+            },
+            {
+                path: 'Admin',
+                element: <Admin />
+            }
         ]
     },
     {
