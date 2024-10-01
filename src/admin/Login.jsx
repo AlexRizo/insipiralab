@@ -1,19 +1,22 @@
 import { useForm } from "react-hook-form";
 import { useSelector } from "react-redux";
 import { useAuthStore } from "../hooks";
+import { useMemo } from "react";
 
 export const Login = () => {
-    const { user } = useSelector(state => state.auth);
+    const { status, message } = useSelector(state => state.auth);
 
-    if (user) return <Navigate to="/admin" />
-
+    if (status === 'authenticated') return <Navigate to="/admin" />;
+    
     const { firebaseLogin } = useAuthStore();
     
     const { register, handleSubmit, formState: { errors } } = useForm();
+
+    const checking = useMemo(() => status === 'checking', [status]);
     
     const onSubmit = handleSubmit((data) => {
         firebaseLogin(data);
-    })
+    });
     
     return (
         <section className="w-full flex items-center justify-center h-[600px]">
@@ -48,7 +51,10 @@ export const Login = () => {
                     />
                     <span className={`text-red-500 text-sm mt-2 transition-[max-height_opacity] duration-300 max-h-0 opacity-0 ${ errors.password && 'max-h-5 opacity-100' }`}>* { errors.password?.message }</span>
                 </div>
-                <button type="submit" className="bg-[#E71567] text-white py-2 rounded">Iniciar Sesión</button>
+                { message && <span className="text-red-500 text-sm mt-2">{ message }</span> }
+                <button type="submit" disabled={ checking } className="bg-[#E71567] text-white py-2 rounded disabled:opacity-80">
+                    { checking ? 'Iniciando sesión...' : 'Iniciar sesión' }
+                </button>
             </form>
         </section>
     )

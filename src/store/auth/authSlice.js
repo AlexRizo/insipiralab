@@ -17,13 +17,16 @@ export const authSlice = createSlice({
             state.email = payload.email;
             state.message = null;
         },
-        onLogout: (state) => {
+        onLogout: (state, { payload }) => {
             state.status = 'unauthenticated';
             state.uid = null;
             state.email = null;
             state.message = payload?.error;
         },
+        onCheck: (state) => {
+            state.status = 'checking';
+        }
     },
 });
 
-export const { onLogin, onLogout } = authSlice.actions;
+export const { onLogin, onLogout, onCheck } = authSlice.actions;

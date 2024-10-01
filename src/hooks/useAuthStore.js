@@ -1,11 +1,13 @@
 import { useDispatch } from "react-redux";
 import { login, logout } from "../firebase/providers";
-import { onLogin, onLogout } from "../store/auth/authSlice";
+import { onCheck, onLogin, onLogout } from "../store/auth/authSlice";
 
 export const useAuthStore = () => {
     const dispatch = useDispatch();
     
     const firebaseLogin = async ({email, password}) => {
+        dispatch(onCheck());
+        
         const data = await login(email, password);
 
         if (data.ok) {
@@ -13,8 +15,6 @@ export const useAuthStore = () => {
         } else {
             dispatch(onLogout(data));
         }
-        
-        return data;
     };
 
     const firebaseLogout = async () => {

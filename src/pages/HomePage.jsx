@@ -4,12 +4,17 @@ import { ProcessCard } from "../components/ProcessCard"
 import { WeInspiraLabNegro, WeInspiraLabRosa, WeInspireBlackBarMobile, WeInspireCircle, WeInspirePinkBarMobile } from "../lottie"
 import { useScreen } from "../hooks/useScreen"
 import { NewsCarrouselMobile } from "../components/NewsCarrouselMobile"
+import { ShoppingBagIcon } from "@heroicons/react/24/outline"
 
 export const HomePage = () => {
     const { screen } = useScreen()
 
     return (
         <section>
+            <a href="https://inspiralab.com.mx" target="_blank" className="fixed bottom-7 right-7 p-7 bg-pink-800 rounded-full flex items-center justify-center z-20 shadow-sm cursor-none">
+                <div className="size-20 animate-ping absolute bg-pink-700 rounded-full"></div>
+                <ShoppingBagIcon className="w-8 h-8 z-10"/>
+            </a>
             <div className="relative flex flex-col items-center justify-center h-screen">
                 <div className="w-full h-full overflow-hidden">
                     {
