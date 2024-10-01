@@ -1,8 +1,8 @@
 {
   "name": "inspiralab",
-  "homepage": "http://inspiralab.devalowee.com",
+  "homepage": "http://inspiralab.com",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.24.1",
   "type": "module",
   "scripts": {
     "dev": "vite",

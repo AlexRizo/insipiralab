@@ -2,22 +2,23 @@ import { useForm } from "react-hook-form";
 import { useSelector } from "react-redux";
 import { useAuthStore } from "../hooks";
 import { useMemo } from "react";
+import { Navigate } from "react-router-dom";
 
 export const Login = () => {
     const { status, message } = useSelector(state => state.auth);
 
-    if (status === 'authenticated') return <Navigate to="/admin" />;
-    
     const { firebaseLogin } = useAuthStore();
     
     const { register, handleSubmit, formState: { errors } } = useForm();
-
+    
     const checking = useMemo(() => status === 'checking', [status]);
     
     const onSubmit = handleSubmit((data) => {
         firebaseLogin(data);
     });
     
+    if (status === 'authenticated') return <Navigate to="/admin" />;
+
     return (
         <section className="w-full flex items-center justify-center h-[600px]">
             <form onSubmit={ onSubmit } className="border py-5 px-8 rounded bg-white text-black flex flex-col gap-4">

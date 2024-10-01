@@ -115,7 +115,7 @@ export const GridData = [
         id: 1,
         title: 'Integridad Personal',
         text: 'En INSPIRA LAB, la integridad es el pilar de todo lo que hacemos. Nos comprometemos a actuar con honestidad y ética, asegurándonos de que cada producto que creamos cumpla con los más altos estándares de calidad y transparencia.',
-        customWidth: 'w-[208px] 2xl:w-auto',
+        customWidth: 'w-[208px] 2xl:w-[230px]',
         img: '/img/nosotros/nosotros-grid-1.jpg',
     },
     {
@@ -130,7 +130,7 @@ export const GridData = [
         id: 3,
         title: 'Productividad',
         text: 'La eficiencia y la eficacia son claves en nuestro proceso de producción. Nos esforzamos por ser altamente productivos, optimizando recursos y tiempos para ofrecer productos de excelencia sin comprometer la calidad.',
-        customWidth: 'w-[210px] 2xl:w-auto',
+        customWidth: 'w-[210px] 2xl:w-[230px]',
         img: '/img/nosotros/nosotros-grid-3.jpg',
     },
     {
@@ -158,7 +158,7 @@ export const newsData = [
             papás. Así<br className='hidden xl:block'/> nació Gardenia 
             Naturals.
         </>),
-        img: 'bg-[url("/img/home/news-slider-imagen-1.jpg")]',
+        img: 'bg-[url("/img/https://youtu.be/vIFRPvrLGvEhome/news-slider-imagen-1.jpg")]',
         url: 'https://inspiralab.devalowee.com/noticias'
     },
     {
