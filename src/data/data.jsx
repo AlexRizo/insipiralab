@@ -158,7 +158,7 @@ export const newsData = [
             papás. Así<br className='hidden xl:block'/> nació Gardenia 
             Naturals.
         </>),
-        img: 'bg-[url("/img/https://youtu.be/vIFRPvrLGvEhome/news-slider-imagen-1.jpg")]',
+        img: 'bg-[url("/img/home/news-slider-imagen-1.jpg")]',
         url: 'https://inspiralab.devalowee.com/noticias'
     },
     {

@@ -12,6 +12,7 @@ export const useAuthStore = () => {
 
         if (data.ok) {
             dispatch(onLogin(data));
+            localStorage.setItem('token', data.token);
         } else {
             dispatch(onLogout(data));
         }
