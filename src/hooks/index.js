@@ -4,3 +4,4 @@ export * from './useNavigateTo';
 export * from './usePath';
 export * from './useRandomContacts';
 export * from './useAuthStore';
+export * from './useDataStore';

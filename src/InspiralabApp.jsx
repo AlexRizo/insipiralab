@@ -2,13 +2,15 @@ import { Outlet, useLocation } from "react-router-dom"
 import { Footer, Header } from "./UI"
 import { useEffect } from "react"
 import { CursorTrail } from "./components"
-import { useScreen } from "./hooks"
+import { useDataStore, useScreen } from "./hooks"
 
 export const InspiralabApp = () => {
 
     const { screen } = useScreen()
 
     const location = useLocation()
+
+    const { startLoadingData } = useDataStore()
 
     useEffect(() => {
         // Si hay un hash en la URL, espera 200 ms y luego hace scroll al inicio
@@ -20,6 +22,10 @@ export const InspiralabApp = () => {
             return () => clearTimeout(timer);
         }
     }, [location]);
+
+    useEffect(() => {
+        startLoadingData();
+    }, [])
     
     return (
         <>
